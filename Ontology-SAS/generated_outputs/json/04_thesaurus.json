@@ -1,0 +1,1129 @@
+[
+  {
+    "Concept_ID": "B001",
+    "PT": "Organizations",
+    "UF": [],
+    "BT": [],
+    "NT": [
+      "C002",
+      "C041",
+      "C042",
+      "B002",
+      "B003",
+      "B004",
+      "B005"
+    ],
+    "Related_Term_RT": [
+      "C003",
+      "C040"
+    ],
+    "Scope_Note_SN": "Entities that operate within a structured framework to achieve specific objectives, including businesses, governments, and non-profits."
+  },
+  {
+    "Concept_ID": "B002",
+    "PT": "Facilities",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [
+      "C004",
+      "C005",
+      "C046",
+      "C059",
+      "C060",
+      "C064"
+    ],
+    "Related_Term_RT": [
+      "C039",
+      "C033"
+    ],
+    "Scope_Note_SN": "Physical locations or infrastructures designed to support specific activities, such as airports, terminals, and maintenance hangars."
+  },
+  {
+    "Concept_ID": "B003",
+    "PT": "Aircraft",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [
+      "C016",
+      "C017",
+      "C018",
+      "C019",
+      "C020",
+      "C021",
+      "C022",
+      "C023",
+      "C024",
+      "C053"
+    ],
+    "Related_Term_RT": [
+      "C028",
+      "C030"
+    ],
+    "Scope_Note_SN": "Vehicles designed for air travel, including commercial, cargo, and private airplanes."
+  },
+  {
+    "Concept_ID": "B004",
+    "PT": "Passenger Services",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [
+      "C009",
+      "C010",
+      "C011",
+      "C012",
+      "C013",
+      "C014",
+      "C015",
+      "C037",
+      "C038",
+      "C051",
+      "C055",
+      "C056",
+      "C057",
+      "C062",
+      "C063"
+    ],
+    "Related_Term_RT": [
+      "C047",
+      "C048"
+    ],
+    "Scope_Note_SN": "Services provided to passengers to enhance their travel experience, including ticketing, boarding, and in-flight amenities."
+  },
+  {
+    "Concept_ID": "B005",
+    "PT": "Operations and Logistics",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [
+      "C040",
+      "C043",
+      "C044",
+      "C045",
+      "C052",
+      "C054",
+      "C058",
+      "C061",
+      "C065"
+    ],
+    "Related_Term_RT": [
+      "C059",
+      "C060"
+    ],
+    "Scope_Note_SN": "Activities and processes involved in managing the movement of goods, services, and passengers efficiently."
+  },
+  {
+    "Concept_ID": "C001",
+    "PT": "KLM Royal Dutch Airlines",
+    "UF": [
+      "Koninklijke Luchtvaart Maatschappij N.V.",
+      "KLM"
+    ],
+    "BT": [
+      "C002"
+    ],
+    "NT": [
+      "C006",
+      "C007",
+      "C008",
+      "C028",
+      "C032"
+    ],
+    "Related_Term_RT": [
+      "C004",
+      "C005"
+    ],
+    "Scope_Note_SN": "The flag carrier airline of the Netherlands, part of the Air France-KLM group, operating globally with a dual hub strategy at Amsterdam Schiphol and Paris Charles de Gaulle."
+  },
+  {
+    "Concept_ID": "C002",
+    "PT": "Air France-KLM S.A.",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [
+      "C001",
+      "C003"
+    ],
+    "Related_Term_RT": [
+      "C041",
+      "C042"
+    ],
+    "Scope_Note_SN": "A Franco-Dutch airline holding company formed by the merger of Air France and KLM, operating as a global airline group."
+  },
+  {
+    "Concept_ID": "C003",
+    "PT": "SkyTeam Alliance",
+    "UF": [
+      "SkyTeam"
+    ],
+    "BT": [
+      "C002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001",
+      "C047"
+    ],
+    "Scope_Note_SN": "A global airline alliance providing shared benefits and connectivity across member airlines."
+  },
+  {
+    "Concept_ID": "C004",
+    "PT": "Amsterdam Airport Schiphol",
+    "UF": [
+      "AMS",
+      "EHAM",
+      "Schiphol"
+    ],
+    "BT": [
+      "B002"
+    ],
+    "NT": [
+      "C033",
+      "C034",
+      "C035",
+      "C036",
+      "C039"
+    ],
+    "Related_Term_RT": [
+      "C001",
+      "C005"
+    ],
+    "Scope_Note_SN": "The primary international airport of the Netherlands, serving as a major hub for KLM and other airlines."
+  },
+  {
+    "Concept_ID": "C005",
+    "PT": "Paris Charles de Gaulle",
+    "UF": [
+      "CDG"
+    ],
+    "BT": [
+      "B002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001",
+      "C004"
+    ],
+    "Scope_Note_SN": "The largest international airport in France and a major hub for Air France and other airlines."
+  },
+  {
+    "Concept_ID": "C006",
+    "PT": "KLM Cityhopper",
+    "UF": [
+      "KLM Cityhopper B.V.",
+      "KLC"
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [
+      "C025",
+      "C026",
+      "C027"
+    ],
+    "Related_Term_RT": [
+      "C028",
+      "C007"
+    ],
+    "Scope_Note_SN": "A regional airline subsidiary of KLM, operating short-haul flights within Europe using Embraer aircraft."
+  },
+  {
+    "Concept_ID": "C007",
+    "PT": "Transavia Airlines",
+    "UF": [
+      "Transavia Airlines C.V."
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C006",
+      "C008"
+    ],
+    "Scope_Note_SN": "A low-cost airline and subsidiary of KLM, operating flights across Europe and North Africa."
+  },
+  {
+    "Concept_ID": "C008",
+    "PT": "Martinair Holland",
+    "UF": [
+      "Martinair Holland N.V."
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [
+      "C029"
+    ],
+    "Related_Term_RT": [
+      "C028",
+      "C030"
+    ],
+    "Scope_Note_SN": "A cargo airline and subsidiary of KLM, specializing in freight and charter services."
+  },
+  {
+    "Concept_ID": "C009",
+    "PT": "Flying Blue Program",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C047",
+      "C048",
+      "C049",
+      "C050"
+    ],
+    "Scope_Note_SN": "A frequent flyer program offering rewards and benefits to passengers of Air France-KLM and partner airlines."
+  },
+  {
+    "Concept_ID": "C010",
+    "PT": "Passenger Name Record",
+    "UF": [
+      "PNR"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C011",
+      "C037"
+    ],
+    "Scope_Note_SN": "A digital record containing passenger information, flight details, and special service requests."
+  },
+  {
+    "Concept_ID": "C011",
+    "PT": "Electronic Ticket",
+    "UF": [
+      "E-Ticket"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C010",
+      "C038"
+    ],
+    "Scope_Note_SN": "A digital ticket used for air travel, containing flight details and passenger information."
+  },
+  {
+    "Concept_ID": "C012",
+    "PT": "World Business Class",
+    "UF": [
+      "WBC"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C055",
+      "C056"
+    ],
+    "Scope_Note_SN": "A premium cabin class offered by KLM, featuring full-flat seats, gourmet dining, and exclusive amenities."
+  },
+  {
+    "Concept_ID": "C013",
+    "PT": "Premium Comfort Class",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C014",
+      "C015"
+    ],
+    "Scope_Note_SN": "A cabin class offering enhanced comfort and services compared to Economy Class, including extra legroom and upgraded meals."
+  },
+  {
+    "Concept_ID": "C014",
+    "PT": "Economy Comfort Zone",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C013",
+      "C015"
+    ],
+    "Scope_Note_SN": "A section within Economy Class offering additional legroom and priority boarding for passengers."
+  },
+  {
+    "Concept_ID": "C015",
+    "PT": "Economy Standard Class",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C013",
+      "C014"
+    ],
+    "Scope_Note_SN": "The standard cabin class for air travel, offering basic seating and services."
+  },
+  {
+    "Concept_ID": "C016",
+    "PT": "Boeing 777-200ER",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C017",
+      "C018"
+    ],
+    "Scope_Note_SN": "A long-range, wide-body aircraft used for intercontinental flights, known for its fuel efficiency and passenger comfort."
+  },
+  {
+    "Concept_ID": "C017",
+    "PT": "Boeing 777-300ER",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C016",
+      "C018"
+    ],
+    "Scope_Note_SN": "An extended-range version of the Boeing 777, designed for long-haul flights with increased passenger capacity."
+  },
+  {
+    "Concept_ID": "C018",
+    "PT": "Boeing 787-9",
+    "UF": [
+      "Dreamliner"
+    ],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C019",
+      "C020"
+    ],
+    "Scope_Note_SN": "A fuel-efficient, wide-body aircraft known for its advanced technology and passenger comfort."
+  },
+  {
+    "Concept_ID": "C019",
+    "PT": "Boeing 787-10",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C018",
+      "C020"
+    ],
+    "Scope_Note_SN": "The largest variant of the Boeing 787 series, offering increased passenger capacity and range."
+  },
+  {
+    "Concept_ID": "C020",
+    "PT": "Airbus A330",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C018",
+      "C019"
+    ],
+    "Scope_Note_SN": "A wide-body aircraft used for medium to long-haul flights, known for its versatility and efficiency."
+  },
+  {
+    "Concept_ID": "C021",
+    "PT": "Boeing 737-700",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C022",
+      "C023"
+    ],
+    "Scope_Note_SN": "A narrow-body aircraft designed for short to medium-haul flights, offering efficient performance and reliability."
+  },
+  {
+    "Concept_ID": "C022",
+    "PT": "Boeing 737-800",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C021",
+      "C023"
+    ],
+    "Scope_Note_SN": "A popular narrow-body aircraft used for short to medium-haul flights, known for its fuel efficiency and passenger comfort."
+  },
+  {
+    "Concept_ID": "C023",
+    "PT": "Boeing 737-900",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C021",
+      "C022"
+    ],
+    "Scope_Note_SN": "A larger variant of the Boeing 737 series, offering increased passenger capacity for short to medium-haul flights."
+  },
+  {
+    "Concept_ID": "C024",
+    "PT": "Airbus A321neo",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C020",
+      "C018"
+    ],
+    "Scope_Note_SN": "A narrow-body aircraft with enhanced fuel efficiency and advanced technology, designed for short to medium-haul flights."
+  },
+  {
+    "Concept_ID": "C025",
+    "PT": "Embraer 175",
+    "UF": [],
+    "BT": [
+      "C006"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C026",
+      "C027"
+    ],
+    "Scope_Note_SN": "A regional jet designed for short-haul flights, offering efficient performance and passenger comfort."
+  },
+  {
+    "Concept_ID": "C026",
+    "PT": "Embraer 190",
+    "UF": [],
+    "BT": [
+      "C006"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C025",
+      "C027"
+    ],
+    "Scope_Note_SN": "A regional jet with increased passenger capacity, designed for short to medium-haul flights."
+  },
+  {
+    "Concept_ID": "C027",
+    "PT": "Embraer 195-E2",
+    "UF": [],
+    "BT": [
+      "C006"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C025",
+      "C026"
+    ],
+    "Scope_Note_SN": "An advanced version of the Embraer 195, featuring improved fuel efficiency and passenger comfort."
+  },
+  {
+    "Concept_ID": "C028",
+    "PT": "KLM Cargo",
+    "UF": [],
+    "BT": [
+      "C001"
+    ],
+    "NT": [
+      "C030",
+      "C031"
+    ],
+    "Related_Term_RT": [
+      "C008",
+      "C030"
+    ],
+    "Scope_Note_SN": "The cargo division of KLM, specializing in freight transport using dedicated freighters and belly capacity."
+  },
+  {
+    "Concept_ID": "C029",
+    "PT": "Martinair",
+    "UF": [],
+    "BT": [
+      "C008"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C028",
+      "C030"
+    ],
+    "Scope_Note_SN": "A cargo airline operating as a subsidiary of KLM, focusing on freight and charter services."
+  },
+  {
+    "Concept_ID": "C030",
+    "PT": "Boeing 747-400BCF",
+    "UF": [],
+    "BT": [
+      "C028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C031",
+      "C008"
+    ],
+    "Scope_Note_SN": "A converted freighter variant of the Boeing 747, used for cargo transport by KLM Cargo."
+  },
+  {
+    "Concept_ID": "C031",
+    "PT": "Boeing 747-400ERF",
+    "UF": [],
+    "BT": [
+      "C028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C030",
+      "C008"
+    ],
+    "Scope_Note_SN": "An extended-range freighter variant of the Boeing 747, designed for long-haul cargo transport."
+  },
+  {
+    "Concept_ID": "C032",
+    "PT": "KLM Engineering & Maintenance",
+    "UF": [
+      "KLM E&M"
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C054",
+      "C052"
+    ],
+    "Scope_Note_SN": "The maintenance and repair division of KLM, providing MRO services for aircraft and engines."
+  },
+  {
+    "Concept_ID": "C033",
+    "PT": "Hangar 10",
+    "UF": [],
+    "BT": [
+      "C004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C034",
+      "C035"
+    ],
+    "Scope_Note_SN": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs."
+  },
+  {
+    "Concept_ID": "C034",
+    "PT": "Hangar 11",
+    "UF": [],
+    "BT": [
+      "C004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C033",
+      "C035"
+    ],
+    "Scope_Note_SN": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs."
+  },
+  {
+    "Concept_ID": "C035",
+    "PT": "Hangar 12",
+    "UF": [],
+    "BT": [
+      "C004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C033",
+      "C034"
+    ],
+    "Scope_Note_SN": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs."
+  },
+  {
+    "Concept_ID": "C036",
+    "PT": "Hangar 14",
+    "UF": [],
+    "BT": [
+      "C004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C033",
+      "C034",
+      "C035"
+    ],
+    "Scope_Note_SN": "A maintenance facility located at Amsterdam Airport Schiphol, primarily used for aircraft servicing and repairs."
+  },
+  {
+    "Concept_ID": "C037",
+    "PT": "Amadeus Alt\u00e9a Passenger Service System",
+    "UF": [
+      "Amadeus Alt\u00e9a PSS"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C010",
+      "C011"
+    ],
+    "Scope_Note_SN": "A comprehensive passenger service system suite used for shopping, reservation, ticketing, and loyalty program management."
+  },
+  {
+    "Concept_ID": "C038",
+    "PT": "Boarding Pass Barcode",
+    "UF": [
+      "BCBP"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C010",
+      "C011",
+      "C037"
+    ],
+    "Scope_Note_SN": "A PDF417 barcode printed on boarding passes, used for security checkpoints and gate boarding."
+  },
+  {
+    "Concept_ID": "C039",
+    "PT": "Schiphol Wave Hub Base",
+    "UF": [
+      "Schiphol Hub"
+    ],
+    "BT": [
+      "C004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C036",
+      "C004"
+    ],
+    "Scope_Note_SN": "A centralized operational hub at Amsterdam Airport Schiphol, supporting wave-based flight operations."
+  },
+  {
+    "Concept_ID": "C040",
+    "PT": "Aviation Information Data Exchange",
+    "UF": [
+      "AIDX"
+    ],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C058",
+      "C059",
+      "C060"
+    ],
+    "Scope_Note_SN": "An industry standard for exchanging aviation-related data, including flight schedules and operational updates."
+  },
+  {
+    "Concept_ID": "C041",
+    "PT": "Eurocontrol",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C042",
+      "C058"
+    ],
+    "Scope_Note_SN": "A pan-European organization responsible for air traffic management and ensuring safe and efficient air navigation."
+  },
+  {
+    "Concept_ID": "C042",
+    "PT": "FAA",
+    "UF": [],
+    "BT": [
+      "B001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C041",
+      "C059"
+    ],
+    "Scope_Note_SN": "The Federal Aviation Administration, responsible for regulating and overseeing all aspects of civil aviation in the United States."
+  },
+  {
+    "Concept_ID": "C043",
+    "PT": "IATA Delay Code",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C061",
+      "C065"
+    ],
+    "Scope_Note_SN": "A standardized set of codes used by airlines to classify and report the reasons for flight delays."
+  },
+  {
+    "Concept_ID": "C044",
+    "PT": "Triple-A Passenger-Baggage Reconciliation Security Rule",
+    "UF": [
+      "Triple-A Rule"
+    ],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C061",
+      "C062"
+    ],
+    "Scope_Note_SN": "An international security regulation ensuring that checked baggage is matched with the passenger before being loaded onto an aircraft."
+  },
+  {
+    "Concept_ID": "C045",
+    "PT": "Unit Load Device",
+    "UF": [
+      "ULD"
+    ],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C065",
+      "C064"
+    ],
+    "Scope_Note_SN": "A standardized container or pallet used to load luggage, freight, and mail on wide-body and certain narrow-body aircraft."
+  },
+  {
+    "Concept_ID": "C046",
+    "PT": "Computed Tomography Explosive Detection Systems",
+    "UF": [
+      "EDS"
+    ],
+    "BT": [
+      "B002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C064",
+      "C062"
+    ],
+    "Scope_Note_SN": "Advanced security systems that use computed tomography to detect explosives in checked baggage."
+  },
+  {
+    "Concept_ID": "C047",
+    "PT": "Flying Blue Explorer",
+    "UF": [
+      "Explorer"
+    ],
+    "BT": [
+      "C051"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C048",
+      "C049",
+      "C050"
+    ],
+    "Scope_Note_SN": "The entry-level tier of the Flying Blue loyalty program, offering basic benefits for frequent flyers."
+  },
+  {
+    "Concept_ID": "C048",
+    "PT": "Flying Blue Silver",
+    "UF": [
+      "Silver"
+    ],
+    "BT": [
+      "C051"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C047",
+      "C049",
+      "C050"
+    ],
+    "Scope_Note_SN": "A mid-tier level of the Flying Blue loyalty program, offering enhanced benefits such as priority services."
+  },
+  {
+    "Concept_ID": "C049",
+    "PT": "Flying Blue Gold",
+    "UF": [
+      "Gold"
+    ],
+    "BT": [
+      "C051"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C047",
+      "C048",
+      "C050"
+    ],
+    "Scope_Note_SN": "A premium tier of the Flying Blue loyalty program, providing exclusive benefits such as lounge access and extra baggage allowance."
+  },
+  {
+    "Concept_ID": "C050",
+    "PT": "Flying Blue Platinum",
+    "UF": [
+      "Platinum"
+    ],
+    "BT": [
+      "C051"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C047",
+      "C048",
+      "C049"
+    ],
+    "Scope_Note_SN": "The highest tier of the Flying Blue loyalty program, offering VIP services and maximum benefits for frequent flyers."
+  },
+  {
+    "Concept_ID": "C051",
+    "PT": "Passenger Lifecycle",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [
+      "C047",
+      "C048",
+      "C049",
+      "C050"
+    ],
+    "Related_Term_RT": [
+      "C037",
+      "C038",
+      "C055"
+    ],
+    "Scope_Note_SN": "The end-to-end journey of a passenger, from booking and check-in to boarding, flying, and post-flight services."
+  },
+  {
+    "Concept_ID": "C052",
+    "PT": "Aircraft Turnaround",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C054",
+      "C065"
+    ],
+    "Scope_Note_SN": "The process of preparing an aircraft for its next flight, including unloading, refueling, cleaning, and boarding."
+  },
+  {
+    "Concept_ID": "C053",
+    "PT": "Aircraft Airframe",
+    "UF": [],
+    "BT": [
+      "B003"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C054",
+      "C046"
+    ],
+    "Scope_Note_SN": "The structural framework of an aircraft, including the fuselage, wings, and undercarriage."
+  },
+  {
+    "Concept_ID": "C054",
+    "PT": "Maintenance Check",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C053",
+      "C052"
+    ],
+    "Scope_Note_SN": "Scheduled inspections and maintenance tasks performed on an aircraft to ensure its airworthiness."
+  },
+  {
+    "Concept_ID": "C055",
+    "PT": "SkyPriority",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C051",
+      "C056"
+    ],
+    "Scope_Note_SN": "A premium service offering priority check-in, boarding, and baggage handling for eligible passengers."
+  },
+  {
+    "Concept_ID": "C056",
+    "PT": "Crown Lounge",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C055",
+      "C057"
+    ],
+    "Scope_Note_SN": "Exclusive airport lounges for premium passengers, offering amenities such as dining, relaxation areas, and business facilities."
+  },
+  {
+    "Concept_ID": "C057",
+    "PT": "Delft Blue Miniature House",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C056",
+      "C055"
+    ],
+    "Scope_Note_SN": "A collectible ceramic house given to KLM Royal Dutch Airlines' World Business Class passengers."
+  },
+  {
+    "Concept_ID": "C058",
+    "PT": "ADS-B State Vectors",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C040",
+      "C041"
+    ],
+    "Scope_Note_SN": "Real-time data transmitted by aircraft, including position, altitude, and velocity, used for air traffic management."
+  },
+  {
+    "Concept_ID": "C059",
+    "PT": "Airport Surface Radar",
+    "UF": [
+      "ASDE-X"
+    ],
+    "BT": [
+      "B002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C060",
+      "C041",
+      "C042"
+    ],
+    "Scope_Note_SN": "A ground-based radar system used to monitor and manage airport surface movements for safety and efficiency."
+  },
+  {
+    "Concept_ID": "C060",
+    "PT": "Gate Docking Guidance System",
+    "UF": [
+      "VDGS"
+    ],
+    "BT": [
+      "B002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C059",
+      "C040"
+    ],
+    "Scope_Note_SN": "A visual docking guidance system that assists pilots in parking aircraft at the gate."
+  },
+  {
+    "Concept_ID": "C061",
+    "PT": "IATA Resolution 753",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C043",
+      "C044"
+    ],
+    "Scope_Note_SN": "An IATA resolution mandating the tracking of baggage throughout its journey to reduce mishandling."
+  },
+  {
+    "Concept_ID": "C062",
+    "PT": "Checked Bag",
+    "UF": [
+      "Baggage"
+    ],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C044",
+      "C063",
+      "C064"
+    ],
+    "Scope_Note_SN": "Luggage that is handed over to the airline for transport in the cargo hold of an aircraft."
+  },
+  {
+    "Concept_ID": "C063",
+    "PT": "IATA Barcode Tag",
+    "UF": [],
+    "BT": [
+      "B004"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C062",
+      "C061"
+    ],
+    "Scope_Note_SN": "A standardized barcode tag used to identify and track checked baggage throughout its journey."
+  },
+  {
+    "Concept_ID": "C064",
+    "PT": "Baggage Reclaim Carousel",
+    "UF": [],
+    "BT": [
+      "B002"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C062",
+      "C046"
+    ],
+    "Scope_Note_SN": "A rotating conveyor belt system used for passengers to collect their checked baggage upon arrival."
+  },
+  {
+    "Concept_ID": "C065",
+    "PT": "Code 15 Baggage Offload Hold",
+    "UF": [],
+    "BT": [
+      "B005"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "C043",
+      "C052"
+    ],
+    "Scope_Note_SN": "A specific baggage handling code indicating that a bag has been offloaded and is being held for further processing."
+  }
+]

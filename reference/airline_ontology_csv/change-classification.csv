@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+breaking,Breaking,Requires consumer action; bumps MAJOR,5,active-phase-5
+non-breaking-additive,"Non-breaking, additive",New class/property/concept; bumps MINOR,5,active-phase-5
+non-breaking-deprecating,"Non-breaking, deprecating",Flagged deprecated but retained; bumps MINOR,5,active-phase-5

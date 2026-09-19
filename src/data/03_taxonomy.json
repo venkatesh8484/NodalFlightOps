@@ -1,0 +1,274 @@
+[
+  {
+    "Concept_ID": "F001",
+    "Preferred_Term_PT": "Airport",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "F002",
+      "F003",
+      "F004",
+      "F007",
+      "F008",
+      "F009"
+    ]
+  },
+  {
+    "Concept_ID": "F002",
+    "Preferred_Term_PT": "Passenger Terminal",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F003",
+    "Preferred_Term_PT": "Cargo Terminal",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F004",
+    "Preferred_Term_PT": "Ground Handling Facility",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F005",
+    "Preferred_Term_PT": "Transfer Desk",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F006",
+    "Preferred_Term_PT": "Self-Service Kiosk",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F007",
+    "Preferred_Term_PT": "Hub Airport",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F008",
+    "Preferred_Term_PT": "Spoke Airport",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F009",
+    "Preferred_Term_PT": "International Gateway",
+    "Broader_Term_BT": [
+      "F001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F010",
+    "Preferred_Term_PT": "Airline",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "F011",
+      "F012"
+    ]
+  },
+  {
+    "Concept_ID": "F011",
+    "Preferred_Term_PT": "Mainline Carrier",
+    "Broader_Term_BT": [
+      "F010"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F012",
+    "Preferred_Term_PT": "Codeshare Partner",
+    "Broader_Term_BT": [
+      "F010"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F013",
+    "Preferred_Term_PT": "Crew",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F014",
+    "Preferred_Term_PT": "Flight Route",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F015",
+    "Preferred_Term_PT": "Aircraft",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "F016",
+      "F017",
+      "F018",
+      "F019"
+    ]
+  },
+  {
+    "Concept_ID": "F016",
+    "Preferred_Term_PT": "Widebody Aircraft",
+    "Broader_Term_BT": [
+      "F015"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F017",
+    "Preferred_Term_PT": "Narrowbody Aircraft",
+    "Broader_Term_BT": [
+      "F015"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F018",
+    "Preferred_Term_PT": "Short-Haul Aircraft",
+    "Broader_Term_BT": [
+      "F015"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F019",
+    "Preferred_Term_PT": "Regional Jet",
+    "Broader_Term_BT": [
+      "F015"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F020",
+    "Preferred_Term_PT": "Flight",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F021",
+    "Preferred_Term_PT": "Aircraft Assignment",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F022",
+    "Preferred_Term_PT": "Telemetry Event",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "F023",
+      "F024",
+      "F025",
+      "F026",
+      "F027"
+    ]
+  },
+  {
+    "Concept_ID": "F023",
+    "Preferred_Term_PT": "Mechanical Fault",
+    "Broader_Term_BT": [
+      "F022"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F024",
+    "Preferred_Term_PT": "Passenger Surge",
+    "Broader_Term_BT": [
+      "F022"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F025",
+    "Preferred_Term_PT": "ADS-B Position Ping",
+    "Broader_Term_BT": [
+      "F022"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F026",
+    "Preferred_Term_PT": "Delay Event",
+    "Broader_Term_BT": [
+      "F022"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F027",
+    "Preferred_Term_PT": "Weather Hold",
+    "Broader_Term_BT": [
+      "F022"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F028",
+    "Preferred_Term_PT": "Action Type",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "F029",
+      "F030",
+      "F031",
+      "F032"
+    ]
+  },
+  {
+    "Concept_ID": "F029",
+    "Preferred_Term_PT": "Rebook Passengers",
+    "Broader_Term_BT": [
+      "F028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F030",
+    "Preferred_Term_PT": "Reallocate Gate Capacity",
+    "Broader_Term_BT": [
+      "F028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F031",
+    "Preferred_Term_PT": "Reassign Aircraft",
+    "Broader_Term_BT": [
+      "F028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F032",
+    "Preferred_Term_PT": "Notify Passenger SLA",
+    "Broader_Term_BT": [
+      "F028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F033",
+    "Preferred_Term_PT": "Action Execution",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "F034",
+    "Preferred_Term_PT": "IATA",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": []
+  }
+]

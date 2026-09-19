@@ -1,0 +1,17 @@
+AMS Ground Operations Briefing Note
+
+Ground handling at Amsterdam Schiphol (AMS) is coordinated by the Ramp Control
+Unit, which reports into the OCC (Operations Control Center). Each aircraft
+turnaround is managed by a Turnaround Coordinator who tracks pushback,
+de-icing, baggage loading, and catering against the scheduled block time.
+
+Key roles:
+- Ramp Agent: handles baggage and cargo loading/unloading on the apron.
+- Turnaround Coordinator: owns the overall turnaround timeline for a tail.
+- Load Controller: produces the final load sheet and weight-and-balance.
+- OCC Duty Manager: escalation point for delays exceeding 15 minutes.
+
+A delay code is assigned to every departure that misses its scheduled
+off-block time by more than 3 minutes, using the IATA AHM 730 delay code
+table. Recurring delay codes at a station trigger a root-cause review by
+the station manager and OCC.

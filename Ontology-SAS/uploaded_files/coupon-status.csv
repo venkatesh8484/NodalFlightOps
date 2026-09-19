@@ -1,0 +1,7 @@
+notation,pref_label,definition,phase,status
+open,Open (O),"Available for use, not yet flown",6,active-phase-6
+flown,Flown (F),The passenger flew this coupon's segment,6,active-phase-6
+exchanged,Exchanged (E),Exchanged for a new coupon/ticket,6,active-phase-6
+refunded,Refunded (R),The coupon was refunded,6,active-phase-6
+void,Void (V),The coupon was voided,6,active-phase-6
+airport-control,Airport Control (A),"Lifted/controlled at the airport, e.g. an irregular-ops reissue",6,active-phase-6

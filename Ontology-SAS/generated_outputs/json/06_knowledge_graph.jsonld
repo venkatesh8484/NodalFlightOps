@@ -1,0 +1,1153 @@
+{
+  "@context": {
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "ex": "http://example.org/ontology/",
+    "owns": {
+      "@id": "ex:owns",
+      "@type": "@id"
+    },
+    "is_owned_by": {
+      "@id": "ex:is_owned_by",
+      "@type": "@id"
+    },
+    "operates": {
+      "@id": "ex:operates",
+      "@type": "@id"
+    },
+    "is_operated_by": {
+      "@id": "ex:is_operated_by",
+      "@type": "@id"
+    },
+    "provides": {
+      "@id": "ex:provides",
+      "@type": "@id"
+    },
+    "is_provided_by": {
+      "@id": "ex:is_provided_by",
+      "@type": "@id"
+    },
+    "manages": {
+      "@id": "ex:manages",
+      "@type": "@id"
+    },
+    "is_managed_by": {
+      "@id": "ex:is_managed_by",
+      "@type": "@id"
+    },
+    "delivers": {
+      "@id": "ex:delivers",
+      "@type": "@id"
+    },
+    "is_delivered_by": {
+      "@id": "ex:is_delivered_by",
+      "@type": "@id"
+    },
+    "located_in": {
+      "@id": "ex:located_in",
+      "@type": "@id"
+    },
+    "contains": {
+      "@id": "ex:contains",
+      "@type": "@id"
+    },
+    "governs": {
+      "@id": "ex:governs",
+      "@type": "@id"
+    },
+    "is_governed_by": {
+      "@id": "ex:is_governed_by",
+      "@type": "@id"
+    },
+    "documents": {
+      "@id": "ex:documents",
+      "@type": "@id"
+    },
+    "is_documented_by": {
+      "@id": "ex:is_documented_by",
+      "@type": "@id"
+    },
+    "is_related_to": {
+      "@id": "ex:is_related_to",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:B001",
+      "@type": "Organization",
+      "skos:prefLabel": "Organizations",
+      "skos:scopeNote": "Entities that operate within a structured framework to achieve specific objectives, including businesses, governments, and non-profits.",
+      "skos:narrower": [
+        "concept:C002",
+        "concept:C041",
+        "concept:C042"
+      ],
+      "owns": [
+        "concept:B002"
+      ],
+      "operates": [
+        "concept:B003"
+      ],
+      "provides": [
+        "concept:B004"
+      ],
+      "manages": [
+        "concept:B005",
+        "concept:C040"
+      ],
+      "is_related_to": [
+        "concept:C003"
+      ]
+    },
+    {
+      "@id": "concept:B002",
+      "@type": "Facility",
+      "skos:prefLabel": "Facilities",
+      "skos:scopeNote": "Physical locations or infrastructures designed to support specific activities, such as airports, terminals, and maintenance hangars.",
+      "is_owned_by": [
+        "concept:B001"
+      ],
+      "skos:narrower": [
+        "concept:C004",
+        "concept:C005",
+        "concept:C064"
+      ],
+      "is_related_to": [
+        "concept:C046",
+        "concept:C059",
+        "concept:C060",
+        "concept:C039",
+        "concept:C033"
+      ]
+    },
+    {
+      "@id": "concept:B003",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Aircraft",
+      "skos:scopeNote": "Vehicles designed for air travel, including commercial, cargo, and private airplanes.",
+      "is_operated_by": [
+        "concept:B001"
+      ],
+      "skos:narrower": [
+        "concept:C016",
+        "concept:C017",
+        "concept:C018",
+        "concept:C019",
+        "concept:C020",
+        "concept:C021",
+        "concept:C022",
+        "concept:C023",
+        "concept:C024"
+      ],
+      "is_related_to": [
+        "concept:C053",
+        "concept:C028",
+        "concept:C030"
+      ]
+    },
+    {
+      "@id": "concept:B004",
+      "@type": "Service",
+      "skos:prefLabel": "Passenger Services",
+      "skos:scopeNote": "Services provided to passengers to enhance their travel experience, including ticketing, boarding, and in-flight amenities.",
+      "is_provided_by": [
+        "concept:B001"
+      ],
+      "skos:narrower": [
+        "concept:C009",
+        "concept:C037",
+        "concept:C055"
+      ],
+      "is_related_to": [
+        "concept:C010",
+        "concept:C011",
+        "concept:C012",
+        "concept:C013",
+        "concept:C014",
+        "concept:C015",
+        "concept:C038",
+        "concept:C051",
+        "concept:C056",
+        "concept:C057",
+        "concept:C062",
+        "concept:C063",
+        "concept:C047",
+        "concept:C048"
+      ]
+    },
+    {
+      "@id": "concept:B005",
+      "@type": "Process",
+      "skos:prefLabel": "Operations and Logistics",
+      "skos:scopeNote": "Activities and processes involved in managing the movement of goods, services, and passengers efficiently.",
+      "is_managed_by": [
+        "concept:B001"
+      ],
+      "skos:narrower": [
+        "concept:C040",
+        "concept:C052",
+        "concept:C054",
+        "concept:C058"
+      ],
+      "is_governed_by": [
+        "concept:C043",
+        "concept:C044",
+        "concept:C061",
+        "concept:C065"
+      ],
+      "is_related_to": [
+        "concept:C045",
+        "concept:C059",
+        "concept:C060"
+      ]
+    },
+    {
+      "@id": "concept:C001",
+      "@type": "Organization",
+      "skos:prefLabel": "KLM Royal Dutch Airlines",
+      "skos:scopeNote": "The flag carrier airline of the Netherlands, part of the Air France-KLM group, operating globally with a dual hub strategy at Amsterdam Schiphol and Paris Charles de Gaulle.",
+      "skos:altLabel": [
+        "Koninklijke Luchtvaart Maatschappij N.V.",
+        "KLM"
+      ],
+      "skos:broader": [
+        "concept:C002"
+      ],
+      "skos:narrower": [
+        "concept:C006",
+        "concept:C007",
+        "concept:C008"
+      ],
+      "provides": [
+        "concept:C028",
+        "concept:C032"
+      ],
+      "owns": [
+        "concept:C004",
+        "concept:C005"
+      ]
+    },
+    {
+      "@id": "concept:C002",
+      "@type": "Organization",
+      "skos:prefLabel": "Air France-KLM S.A.",
+      "skos:scopeNote": "A Franco-Dutch airline holding company formed by the merger of Air France and KLM, operating as a global airline group.",
+      "skos:broader": [
+        "concept:B001"
+      ],
+      "skos:narrower": [
+        "concept:C001",
+        "concept:C003"
+      ],
+      "is_related_to": [
+        "concept:C041",
+        "concept:C042"
+      ]
+    },
+    {
+      "@id": "concept:C003",
+      "@type": "Organization",
+      "skos:prefLabel": "SkyTeam Alliance",
+      "skos:scopeNote": "A global airline alliance providing shared benefits and connectivity across member airlines.",
+      "skos:altLabel": [
+        "SkyTeam"
+      ],
+      "skos:broader": [
+        "concept:C002"
+      ],
+      "is_related_to": [
+        "concept:C001"
+      ],
+      "provides": [
+        "concept:C047"
+      ]
+    },
+    {
+      "@id": "concept:C004",
+      "@type": "Facility",
+      "skos:prefLabel": "Amsterdam Airport Schiphol",
+      "skos:scopeNote": "The primary international airport of the Netherlands, serving as a major hub for KLM and other airlines.",
+      "skos:altLabel": [
+        "AMS",
+        "EHAM",
+        "Schiphol"
+      ],
+      "skos:broader": [
+        "concept:B002"
+      ],
+      "skos:narrower": [
+        "concept:C033",
+        "concept:C034",
+        "concept:C035",
+        "concept:C036",
+        "concept:C039"
+      ],
+      "is_owned_by": [
+        "concept:C001"
+      ],
+      "is_related_to": [
+        "concept:C005"
+      ]
+    },
+    {
+      "@id": "concept:C005",
+      "@type": "Facility",
+      "skos:prefLabel": "Paris Charles de Gaulle",
+      "skos:scopeNote": "The largest international airport in France and a major hub for Air France and other airlines.",
+      "skos:altLabel": [
+        "CDG"
+      ],
+      "skos:broader": [
+        "concept:B002"
+      ],
+      "is_owned_by": [
+        "concept:C001"
+      ],
+      "is_related_to": [
+        "concept:C004"
+      ]
+    },
+    {
+      "@id": "concept:C006",
+      "@type": "Organization",
+      "skos:prefLabel": "KLM Cityhopper",
+      "skos:scopeNote": "A regional airline subsidiary of KLM, operating short-haul flights within Europe using Embraer aircraft.",
+      "skos:altLabel": [
+        "KLM Cityhopper B.V.",
+        "KLC"
+      ],
+      "skos:broader": [
+        "concept:C001"
+      ],
+      "operates": [
+        "concept:C025",
+        "concept:C026",
+        "concept:C027"
+      ],
+      "provides": [
+        "concept:C028"
+      ],
+      "is_related_to": [
+        "concept:C007"
+      ]
+    },
+    {
+      "@id": "concept:C007",
+      "@type": "Organization",
+      "skos:prefLabel": "Transavia Airlines",
+      "skos:scopeNote": "A low-cost airline and subsidiary of KLM, operating flights across Europe and North Africa.",
+      "skos:altLabel": [
+        "Transavia Airlines C.V."
+      ],
+      "skos:broader": [
+        "concept:C001"
+      ],
+      "is_related_to": [
+        "concept:C006",
+        "concept:C008"
+      ]
+    },
+    {
+      "@id": "concept:C008",
+      "@type": "Organization",
+      "skos:prefLabel": "Martinair Holland",
+      "skos:scopeNote": "A cargo airline and subsidiary of KLM, specializing in freight and charter services.",
+      "skos:altLabel": [
+        "Martinair Holland N.V."
+      ],
+      "skos:broader": [
+        "concept:C001"
+      ],
+      "skos:narrower": [
+        "concept:C029"
+      ],
+      "provides": [
+        "concept:C028"
+      ],
+      "operates": [
+        "concept:C030"
+      ]
+    },
+    {
+      "@id": "concept:C009",
+      "@type": "Service",
+      "skos:prefLabel": "Flying Blue Program",
+      "skos:scopeNote": "A frequent flyer program offering rewards and benefits to passengers of Air France-KLM and partner airlines.",
+      "skos:broader": [
+        "concept:B004"
+      ],
+      "is_related_to": [
+        "concept:C047",
+        "concept:C048",
+        "concept:C049",
+        "concept:C050"
+      ]
+    },
+    {
+      "@id": "concept:C010",
+      "@type": "Document",
+      "skos:prefLabel": "Passenger Name Record",
+      "skos:scopeNote": "A digital record containing passenger information, flight details, and special service requests.",
+      "skos:altLabel": [
+        "PNR"
+      ],
+      "is_related_to": [
+        "concept:B004",
+        "concept:C011",
+        "concept:C037"
+      ]
+    },
+    {
+      "@id": "concept:C011",
+      "@type": "Document",
+      "skos:prefLabel": "Electronic Ticket",
+      "skos:scopeNote": "A digital ticket used for air travel, containing flight details and passenger information.",
+      "skos:altLabel": [
+        "E-Ticket"
+      ],
+      "is_related_to": [
+        "concept:B004",
+        "concept:C010",
+        "concept:C038"
+      ]
+    },
+    {
+      "@id": "concept:C012",
+      "@type": "Product",
+      "skos:prefLabel": "World Business Class",
+      "skos:scopeNote": "A premium cabin class offered by KLM, featuring full-flat seats, gourmet dining, and exclusive amenities.",
+      "skos:altLabel": [
+        "WBC"
+      ],
+      "is_related_to": [
+        "concept:B004",
+        "concept:C055",
+        "concept:C056"
+      ]
+    },
+    {
+      "@id": "concept:C013",
+      "@type": "Product",
+      "skos:prefLabel": "Premium Comfort Class",
+      "skos:scopeNote": "A cabin class offering enhanced comfort and services compared to Economy Class, including extra legroom and upgraded meals.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C014",
+        "concept:C015"
+      ]
+    },
+    {
+      "@id": "concept:C014",
+      "@type": "Product",
+      "skos:prefLabel": "Economy Comfort Zone",
+      "skos:scopeNote": "A section within Economy Class offering additional legroom and priority boarding for passengers.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C013",
+        "concept:C015"
+      ]
+    },
+    {
+      "@id": "concept:C015",
+      "@type": "Product",
+      "skos:prefLabel": "Economy Standard Class",
+      "skos:scopeNote": "The standard cabin class for air travel, offering basic seating and services.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C013",
+        "concept:C014"
+      ]
+    },
+    {
+      "@id": "concept:C016",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 777-200ER",
+      "skos:scopeNote": "A long-range, wide-body aircraft used for intercontinental flights, known for its fuel efficiency and passenger comfort.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C017",
+        "concept:C018"
+      ]
+    },
+    {
+      "@id": "concept:C017",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 777-300ER",
+      "skos:scopeNote": "An extended-range version of the Boeing 777, designed for long-haul flights with increased passenger capacity.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C016",
+        "concept:C018"
+      ]
+    },
+    {
+      "@id": "concept:C018",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 787-9",
+      "skos:scopeNote": "A fuel-efficient, wide-body aircraft known for its advanced technology and passenger comfort.",
+      "skos:altLabel": [
+        "Dreamliner"
+      ],
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C019",
+        "concept:C020"
+      ]
+    },
+    {
+      "@id": "concept:C019",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 787-10",
+      "skos:scopeNote": "The largest variant of the Boeing 787 series, offering increased passenger capacity and range.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C018",
+        "concept:C020"
+      ]
+    },
+    {
+      "@id": "concept:C020",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Airbus A330",
+      "skos:scopeNote": "A wide-body aircraft used for medium to long-haul flights, known for its versatility and efficiency.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C018",
+        "concept:C019"
+      ]
+    },
+    {
+      "@id": "concept:C021",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 737-700",
+      "skos:scopeNote": "A narrow-body aircraft designed for short to medium-haul flights, offering efficient performance and reliability.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C022",
+        "concept:C023"
+      ]
+    },
+    {
+      "@id": "concept:C022",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 737-800",
+      "skos:scopeNote": "A popular narrow-body aircraft used for short to medium-haul flights, known for its fuel efficiency and passenger comfort.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C021",
+        "concept:C023"
+      ]
+    },
+    {
+      "@id": "concept:C023",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 737-900",
+      "skos:scopeNote": "A larger variant of the Boeing 737 series, offering increased passenger capacity for short to medium-haul flights.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C021",
+        "concept:C022"
+      ]
+    },
+    {
+      "@id": "concept:C024",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Airbus A321neo",
+      "skos:scopeNote": "A narrow-body aircraft with enhanced fuel efficiency and advanced technology, designed for short to medium-haul flights.",
+      "skos:broader": [
+        "concept:B003"
+      ],
+      "is_related_to": [
+        "concept:C020",
+        "concept:C018"
+      ]
+    },
+    {
+      "@id": "concept:C025",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Embraer 175",
+      "skos:scopeNote": "A regional jet designed for short-haul flights, offering efficient performance and passenger comfort.",
+      "is_operated_by": [
+        "concept:C006"
+      ],
+      "is_related_to": [
+        "concept:C026",
+        "concept:C027"
+      ]
+    },
+    {
+      "@id": "concept:C026",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Embraer 190",
+      "skos:scopeNote": "A regional jet with increased passenger capacity, designed for short to medium-haul flights.",
+      "is_operated_by": [
+        "concept:C006"
+      ],
+      "is_related_to": [
+        "concept:C025",
+        "concept:C027"
+      ]
+    },
+    {
+      "@id": "concept:C027",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Embraer 195-E2",
+      "skos:scopeNote": "An advanced version of the Embraer 195, featuring improved fuel efficiency and passenger comfort.",
+      "is_operated_by": [
+        "concept:C006"
+      ],
+      "is_related_to": [
+        "concept:C025",
+        "concept:C026"
+      ]
+    },
+    {
+      "@id": "concept:C028",
+      "@type": "Service",
+      "skos:prefLabel": "KLM Cargo",
+      "skos:scopeNote": "The cargo division of KLM, specializing in freight transport using dedicated freighters and belly capacity.",
+      "is_provided_by": [
+        "concept:C001",
+        "concept:C008"
+      ],
+      "is_related_to": [
+        "concept:C030",
+        "concept:C031"
+      ]
+    },
+    {
+      "@id": "concept:C029",
+      "@type": "Organization",
+      "skos:prefLabel": "Martinair",
+      "skos:scopeNote": "A cargo airline operating as a subsidiary of KLM, focusing on freight and charter services.",
+      "skos:broader": [
+        "concept:C008"
+      ],
+      "provides": [
+        "concept:C028"
+      ],
+      "operates": [
+        "concept:C030"
+      ]
+    },
+    {
+      "@id": "concept:C030",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 747-400BCF",
+      "skos:scopeNote": "A converted freighter variant of the Boeing 747, used for cargo transport by KLM Cargo.",
+      "is_related_to": [
+        "concept:C028",
+        "concept:C031"
+      ],
+      "is_operated_by": [
+        "concept:C008"
+      ]
+    },
+    {
+      "@id": "concept:C031",
+      "@type": "Aircraft",
+      "skos:prefLabel": "Boeing 747-400ERF",
+      "skos:scopeNote": "An extended-range freighter variant of the Boeing 747, designed for long-haul cargo transport.",
+      "is_related_to": [
+        "concept:C028",
+        "concept:C030"
+      ],
+      "is_operated_by": [
+        "concept:C008"
+      ]
+    },
+    {
+      "@id": "concept:C032",
+      "@type": "Service",
+      "skos:prefLabel": "KLM Engineering & Maintenance",
+      "skos:scopeNote": "The maintenance and repair division of KLM, providing MRO services for aircraft and engines.",
+      "skos:altLabel": [
+        "KLM E&M"
+      ],
+      "is_provided_by": [
+        "concept:C001"
+      ],
+      "is_related_to": [
+        "concept:C054",
+        "concept:C052"
+      ]
+    },
+    {
+      "@id": "concept:C033",
+      "@type": "Facility",
+      "skos:prefLabel": "Hangar 10",
+      "skos:scopeNote": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs.",
+      "skos:broader": [
+        "concept:C004"
+      ],
+      "is_related_to": [
+        "concept:C034",
+        "concept:C035"
+      ]
+    },
+    {
+      "@id": "concept:C034",
+      "@type": "Facility",
+      "skos:prefLabel": "Hangar 11",
+      "skos:scopeNote": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs.",
+      "skos:broader": [
+        "concept:C004"
+      ],
+      "is_related_to": [
+        "concept:C033",
+        "concept:C035"
+      ]
+    },
+    {
+      "@id": "concept:C035",
+      "@type": "Facility",
+      "skos:prefLabel": "Hangar 12",
+      "skos:scopeNote": "A maintenance hangar at Amsterdam Airport Schiphol used for aircraft servicing and repairs.",
+      "skos:broader": [
+        "concept:C004"
+      ],
+      "is_related_to": [
+        "concept:C033",
+        "concept:C034"
+      ]
+    },
+    {
+      "@id": "concept:C036",
+      "@type": "Facility",
+      "skos:prefLabel": "Hangar 14",
+      "skos:scopeNote": "A maintenance facility located at Amsterdam Airport Schiphol, primarily used for aircraft servicing and repairs.",
+      "skos:broader": [
+        "concept:C004"
+      ],
+      "is_related_to": [
+        "concept:C033",
+        "concept:C034",
+        "concept:C035"
+      ]
+    },
+    {
+      "@id": "concept:C037",
+      "@type": "Service",
+      "skos:prefLabel": "Amadeus Alt\u00e9a Passenger Service System",
+      "skos:scopeNote": "A comprehensive passenger service system suite used for shopping, reservation, ticketing, and loyalty program management.",
+      "skos:altLabel": [
+        "Amadeus Alt\u00e9a PSS"
+      ],
+      "skos:broader": [
+        "concept:B004"
+      ],
+      "is_related_to": [
+        "concept:C010",
+        "concept:C011"
+      ]
+    },
+    {
+      "@id": "concept:C038",
+      "@type": "Document",
+      "skos:prefLabel": "Boarding Pass Barcode",
+      "skos:scopeNote": "A PDF417 barcode printed on boarding passes, used for security checkpoints and gate boarding.",
+      "skos:altLabel": [
+        "BCBP"
+      ],
+      "is_related_to": [
+        "concept:B004",
+        "concept:C010",
+        "concept:C011",
+        "concept:C037"
+      ]
+    },
+    {
+      "@id": "concept:C039",
+      "@type": "Facility",
+      "skos:prefLabel": "Schiphol Wave Hub Base",
+      "skos:scopeNote": "A centralized operational hub at Amsterdam Airport Schiphol, supporting wave-based flight operations.",
+      "skos:altLabel": [
+        "Schiphol Hub"
+      ],
+      "skos:broader": [
+        "concept:C004"
+      ],
+      "is_related_to": [
+        "concept:C036",
+        "concept:C004"
+      ]
+    },
+    {
+      "@id": "concept:C040",
+      "@type": "Process",
+      "skos:prefLabel": "Aviation Information Data Exchange",
+      "skos:scopeNote": "An industry standard for exchanging aviation-related data, including flight schedules and operational updates.",
+      "skos:altLabel": [
+        "AIDX"
+      ],
+      "skos:broader": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C058",
+        "concept:C059",
+        "concept:C060"
+      ]
+    },
+    {
+      "@id": "concept:C041",
+      "@type": "Organization",
+      "skos:prefLabel": "Eurocontrol",
+      "skos:scopeNote": "A pan-European organization responsible for air traffic management and ensuring safe and efficient air navigation.",
+      "skos:broader": [
+        "concept:B001"
+      ],
+      "is_related_to": [
+        "concept:C042"
+      ],
+      "manages": [
+        "concept:C058"
+      ]
+    },
+    {
+      "@id": "concept:C042",
+      "@type": "Organization",
+      "skos:prefLabel": "FAA",
+      "skos:scopeNote": "The Federal Aviation Administration, responsible for regulating and overseeing all aspects of civil aviation in the United States.",
+      "skos:broader": [
+        "concept:B001"
+      ],
+      "is_related_to": [
+        "concept:C041",
+        "concept:C059"
+      ]
+    },
+    {
+      "@id": "concept:C043",
+      "@type": "Policy",
+      "skos:prefLabel": "IATA Delay Code",
+      "skos:scopeNote": "A standardized set of codes used by airlines to classify and report the reasons for flight delays.",
+      "governs": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C061",
+        "concept:C065"
+      ]
+    },
+    {
+      "@id": "concept:C044",
+      "@type": "Policy",
+      "skos:prefLabel": "Triple-A Passenger-Baggage Reconciliation Security Rule",
+      "skos:scopeNote": "An international security regulation ensuring that checked baggage is matched with the passenger before being loaded onto an aircraft.",
+      "skos:altLabel": [
+        "Triple-A Rule"
+      ],
+      "governs": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C061",
+        "concept:C062"
+      ]
+    },
+    {
+      "@id": "concept:C045",
+      "@type": "Asset",
+      "skos:prefLabel": "Unit Load Device",
+      "skos:scopeNote": "A standardized container or pallet used to load luggage, freight, and mail on wide-body and certain narrow-body aircraft.",
+      "skos:altLabel": [
+        "ULD"
+      ],
+      "is_related_to": [
+        "concept:B005",
+        "concept:C065",
+        "concept:C064"
+      ]
+    },
+    {
+      "@id": "concept:C046",
+      "@type": "Infrastructure",
+      "skos:prefLabel": "Computed Tomography Explosive Detection Systems",
+      "skos:scopeNote": "Advanced security systems that use computed tomography to detect explosives in checked baggage.",
+      "skos:altLabel": [
+        "EDS"
+      ],
+      "is_related_to": [
+        "concept:B002",
+        "concept:C064",
+        "concept:C062"
+      ]
+    },
+    {
+      "@id": "concept:C047",
+      "@type": "Service",
+      "skos:prefLabel": "Flying Blue Explorer",
+      "skos:scopeNote": "The entry-level tier of the Flying Blue loyalty program, offering basic benefits for frequent flyers.",
+      "skos:altLabel": [
+        "Explorer"
+      ],
+      "is_related_to": [
+        "concept:C051",
+        "concept:C048",
+        "concept:C049",
+        "concept:C050"
+      ]
+    },
+    {
+      "@id": "concept:C048",
+      "@type": "Service",
+      "skos:prefLabel": "Flying Blue Silver",
+      "skos:scopeNote": "A mid-tier level of the Flying Blue loyalty program, offering enhanced benefits such as priority services.",
+      "skos:altLabel": [
+        "Silver"
+      ],
+      "is_related_to": [
+        "concept:C051",
+        "concept:C047",
+        "concept:C049",
+        "concept:C050"
+      ]
+    },
+    {
+      "@id": "concept:C049",
+      "@type": "Service",
+      "skos:prefLabel": "Flying Blue Gold",
+      "skos:scopeNote": "A premium tier of the Flying Blue loyalty program, providing exclusive benefits such as lounge access and extra baggage allowance.",
+      "skos:altLabel": [
+        "Gold"
+      ],
+      "is_related_to": [
+        "concept:C051",
+        "concept:C047",
+        "concept:C048",
+        "concept:C050"
+      ]
+    },
+    {
+      "@id": "concept:C050",
+      "@type": "Service",
+      "skos:prefLabel": "Flying Blue Platinum",
+      "skos:scopeNote": "The highest tier of the Flying Blue loyalty program, offering VIP services and maximum benefits for frequent flyers.",
+      "skos:altLabel": [
+        "Platinum"
+      ],
+      "is_related_to": [
+        "concept:C051",
+        "concept:C047",
+        "concept:C048",
+        "concept:C049"
+      ]
+    },
+    {
+      "@id": "concept:C051",
+      "@type": "Process",
+      "skos:prefLabel": "Passenger Lifecycle",
+      "skos:scopeNote": "The end-to-end journey of a passenger, from booking and check-in to boarding, flying, and post-flight services.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C047",
+        "concept:C048",
+        "concept:C049",
+        "concept:C050",
+        "concept:C037",
+        "concept:C038",
+        "concept:C055"
+      ]
+    },
+    {
+      "@id": "concept:C052",
+      "@type": "Process",
+      "skos:prefLabel": "Aircraft Turnaround",
+      "skos:scopeNote": "The process of preparing an aircraft for its next flight, including unloading, refueling, cleaning, and boarding.",
+      "skos:broader": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C054"
+      ],
+      "is_governed_by": [
+        "concept:C065"
+      ]
+    },
+    {
+      "@id": "concept:C053",
+      "@type": "Asset",
+      "skos:prefLabel": "Aircraft Airframe",
+      "skos:scopeNote": "The structural framework of an aircraft, including the fuselage, wings, and undercarriage.",
+      "is_related_to": [
+        "concept:B003",
+        "concept:C054",
+        "concept:C046"
+      ]
+    },
+    {
+      "@id": "concept:C054",
+      "@type": "Process",
+      "skos:prefLabel": "Maintenance Check",
+      "skos:scopeNote": "Scheduled inspections and maintenance tasks performed on an aircraft to ensure its airworthiness.",
+      "skos:broader": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C053",
+        "concept:C052"
+      ]
+    },
+    {
+      "@id": "concept:C055",
+      "@type": "Service",
+      "skos:prefLabel": "SkyPriority",
+      "skos:scopeNote": "A premium service offering priority check-in, boarding, and baggage handling for eligible passengers.",
+      "skos:broader": [
+        "concept:B004"
+      ],
+      "is_related_to": [
+        "concept:C051",
+        "concept:C056"
+      ]
+    },
+    {
+      "@id": "concept:C056",
+      "@type": "Facility",
+      "skos:prefLabel": "Crown Lounge",
+      "skos:scopeNote": "Exclusive airport lounges for premium passengers, offering amenities such as dining, relaxation areas, and business facilities.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C055",
+        "concept:C057"
+      ]
+    },
+    {
+      "@id": "concept:C057",
+      "@type": "Product",
+      "skos:prefLabel": "Delft Blue Miniature House",
+      "skos:scopeNote": "A collectible ceramic house given to KLM Royal Dutch Airlines' World Business Class passengers.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C056",
+        "concept:C055"
+      ]
+    },
+    {
+      "@id": "concept:C058",
+      "@type": "Process",
+      "skos:prefLabel": "ADS-B State Vectors",
+      "skos:scopeNote": "Real-time data transmitted by aircraft, including position, altitude, and velocity, used for air traffic management.",
+      "skos:broader": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C040"
+      ],
+      "is_managed_by": [
+        "concept:C041"
+      ]
+    },
+    {
+      "@id": "concept:C059",
+      "@type": "Infrastructure",
+      "skos:prefLabel": "Airport Surface Radar",
+      "skos:scopeNote": "A ground-based radar system used to monitor and manage airport surface movements for safety and efficiency.",
+      "skos:altLabel": [
+        "ASDE-X"
+      ],
+      "is_related_to": [
+        "concept:B002",
+        "concept:C060",
+        "concept:C041",
+        "concept:C042"
+      ]
+    },
+    {
+      "@id": "concept:C060",
+      "@type": "Infrastructure",
+      "skos:prefLabel": "Gate Docking Guidance System",
+      "skos:scopeNote": "A visual docking guidance system that assists pilots in parking aircraft at the gate.",
+      "skos:altLabel": [
+        "VDGS"
+      ],
+      "is_related_to": [
+        "concept:B002",
+        "concept:C059",
+        "concept:C040"
+      ]
+    },
+    {
+      "@id": "concept:C061",
+      "@type": "Policy",
+      "skos:prefLabel": "IATA Resolution 753",
+      "skos:scopeNote": "An IATA resolution mandating the tracking of baggage throughout its journey to reduce mishandling.",
+      "governs": [
+        "concept:B005"
+      ],
+      "is_related_to": [
+        "concept:C043",
+        "concept:C044"
+      ]
+    },
+    {
+      "@id": "concept:C062",
+      "@type": "Asset",
+      "skos:prefLabel": "Checked Bag",
+      "skos:scopeNote": "Luggage that is handed over to the airline for transport in the cargo hold of an aircraft.",
+      "skos:altLabel": [
+        "Baggage"
+      ],
+      "is_related_to": [
+        "concept:B004",
+        "concept:C044",
+        "concept:C063",
+        "concept:C064"
+      ]
+    },
+    {
+      "@id": "concept:C063",
+      "@type": "Asset",
+      "skos:prefLabel": "IATA Barcode Tag",
+      "skos:scopeNote": "A standardized barcode tag used to identify and track checked baggage throughout its journey.",
+      "is_related_to": [
+        "concept:B004",
+        "concept:C062",
+        "concept:C061"
+      ]
+    },
+    {
+      "@id": "concept:C064",
+      "@type": "Facility",
+      "skos:prefLabel": "Baggage Reclaim Carousel",
+      "skos:scopeNote": "A rotating conveyor belt system used for passengers to collect their checked baggage upon arrival.",
+      "skos:broader": [
+        "concept:B002"
+      ],
+      "is_related_to": [
+        "concept:C062",
+        "concept:C046"
+      ]
+    },
+    {
+      "@id": "concept:C065",
+      "@type": "Policy",
+      "skos:prefLabel": "Code 15 Baggage Offload Hold",
+      "skos:scopeNote": "A specific baggage handling code indicating that a bag has been offloaded and is being held for further processing.",
+      "governs": [
+        "concept:B005",
+        "concept:C052"
+      ],
+      "is_related_to": [
+        "concept:C043"
+      ]
+    }
+  ]
+}

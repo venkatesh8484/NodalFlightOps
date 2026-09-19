@@ -1,0 +1,102 @@
+{
+  "Classes": [
+    "Hub",
+    "Carrier",
+    "Driver",
+    "LinehaulRoute",
+    "TransportVehicle",
+    "ShipmentConsignment",
+    "ConsignmentVehicleAssignment",
+    "TelemetryEvent",
+    "ActionType",
+    "ActionExecutionLog",
+    "Mega-Hub",
+    "Regional Hub",
+    "Depot",
+    "Universal Postal Service",
+    "Parcel Locker",
+    "Service Point"
+  ],
+  "Object_Properties": [
+    {
+      "Verb": "based_at",
+      "Domain": "Driver",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "employed_by",
+      "Domain": "Driver",
+      "Range": "Carrier"
+    },
+    {
+      "Verb": "routes_to",
+      "Domain": "Hub",
+      "Range": "LinehaulRoute"
+    },
+    {
+      "Verb": "terminates_at",
+      "Domain": "LinehaulRoute",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "operated_by",
+      "Domain": "LinehaulRoute",
+      "Range": "Carrier"
+    },
+    {
+      "Verb": "travels_along",
+      "Domain": "TransportVehicle",
+      "Range": "LinehaulRoute"
+    },
+    {
+      "Verb": "operated_by",
+      "Domain": "TransportVehicle",
+      "Range": "Driver"
+    },
+    {
+      "Verb": "originates_at",
+      "Domain": "ShipmentConsignment",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "targets",
+      "Domain": "ShipmentConsignment",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "located_at",
+      "Domain": "ShipmentConsignment",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "assignment_consignment",
+      "Domain": "ConsignmentVehicleAssignment",
+      "Range": "ShipmentConsignment"
+    },
+    {
+      "Verb": "assignment_vehicle",
+      "Domain": "ConsignmentVehicleAssignment",
+      "Range": "TransportVehicle"
+    },
+    {
+      "Verb": "assignment_route",
+      "Domain": "ConsignmentVehicleAssignment",
+      "Range": "LinehaulRoute"
+    },
+    {
+      "Verb": "observed_at",
+      "Domain": "TelemetryEvent",
+      "Range": "Hub"
+    },
+    {
+      "Verb": "emitted_by",
+      "Domain": "TelemetryEvent",
+      "Range": "TransportVehicle"
+    },
+    {
+      "Verb": "instance_of",
+      "Domain": "ActionExecutionLog",
+      "Range": "ActionType"
+    }
+  ]
+}

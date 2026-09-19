@@ -1,0 +1,318 @@
+[
+  {
+    "Approved_Term": "KLM Royal Dutch Airlines",
+    "Aliases": [
+      "Koninklijke Luchtvaart Maatschappij N.V.",
+      "KLM"
+    ]
+  },
+  {
+    "Approved_Term": "Air France-KLM S.A.",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "SkyTeam Alliance",
+    "Aliases": [
+      "SkyTeam"
+    ]
+  },
+  {
+    "Approved_Term": "Amsterdam Airport Schiphol",
+    "Aliases": [
+      "AMS",
+      "EHAM",
+      "Schiphol"
+    ]
+  },
+  {
+    "Approved_Term": "Paris Charles de Gaulle",
+    "Aliases": [
+      "CDG"
+    ]
+  },
+  {
+    "Approved_Term": "KLM Cityhopper",
+    "Aliases": [
+      "KLM Cityhopper B.V.",
+      "KLC"
+    ]
+  },
+  {
+    "Approved_Term": "Transavia Airlines",
+    "Aliases": [
+      "Transavia Airlines C.V."
+    ]
+  },
+  {
+    "Approved_Term": "Martinair Holland",
+    "Aliases": [
+      "Martinair Holland N.V."
+    ]
+  },
+  {
+    "Approved_Term": "Flying Blue Program",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Passenger Name Record",
+    "Aliases": [
+      "PNR"
+    ]
+  },
+  {
+    "Approved_Term": "Electronic Ticket",
+    "Aliases": [
+      "E-Ticket"
+    ]
+  },
+  {
+    "Approved_Term": "World Business Class",
+    "Aliases": [
+      "WBC"
+    ]
+  },
+  {
+    "Approved_Term": "Premium Comfort Class",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Economy Comfort Zone",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Economy Standard Class",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 777-200ER",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 777-300ER",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 787-9",
+    "Aliases": [
+      "Dreamliner"
+    ]
+  },
+  {
+    "Approved_Term": "Boeing 787-10",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Airbus A330",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 737-700",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 737-800",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 737-900",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Airbus A321neo",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Embraer 175",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Embraer 190",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Embraer 195-E2",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "KLM Cargo",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Martinair",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 747-400BCF",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Boeing 747-400ERF",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "KLM Engineering & Maintenance",
+    "Aliases": [
+      "KLM E&M"
+    ]
+  },
+  {
+    "Approved_Term": "Hangar 10",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Hangar 11",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Hangar 12",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Hangar 14",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Amadeus Alt\u00e9a Passenger Service System",
+    "Aliases": [
+      "Amadeus Alt\u00e9a PSS"
+    ]
+  },
+  {
+    "Approved_Term": "Boarding Pass Barcode",
+    "Aliases": [
+      "BCBP"
+    ]
+  },
+  {
+    "Approved_Term": "Schiphol Wave Hub Base",
+    "Aliases": [
+      "Schiphol Hub"
+    ]
+  },
+  {
+    "Approved_Term": "Aviation Information Data Exchange",
+    "Aliases": [
+      "AIDX"
+    ]
+  },
+  {
+    "Approved_Term": "Eurocontrol",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "FAA",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "IATA Delay Code",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Triple-A Passenger-Baggage Reconciliation Security Rule",
+    "Aliases": [
+      "Triple-A Rule"
+    ]
+  },
+  {
+    "Approved_Term": "Unit Load Device",
+    "Aliases": [
+      "ULD"
+    ]
+  },
+  {
+    "Approved_Term": "Computed Tomography Explosive Detection Systems",
+    "Aliases": [
+      "EDS"
+    ]
+  },
+  {
+    "Approved_Term": "Flying Blue Explorer",
+    "Aliases": [
+      "Explorer"
+    ]
+  },
+  {
+    "Approved_Term": "Flying Blue Silver",
+    "Aliases": [
+      "Silver"
+    ]
+  },
+  {
+    "Approved_Term": "Flying Blue Gold",
+    "Aliases": [
+      "Gold"
+    ]
+  },
+  {
+    "Approved_Term": "Flying Blue Platinum",
+    "Aliases": [
+      "Platinum"
+    ]
+  },
+  {
+    "Approved_Term": "Passenger Lifecycle",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Aircraft Turnaround",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Aircraft Airframe",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Maintenance Check",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "SkyPriority",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Crown Lounge",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Delft Blue Miniature House",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "ADS-B State Vectors",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Airport Surface Radar",
+    "Aliases": [
+      "ASDE-X"
+    ]
+  },
+  {
+    "Approved_Term": "Gate Docking Guidance System",
+    "Aliases": [
+      "VDGS"
+    ]
+  },
+  {
+    "Approved_Term": "IATA Resolution 753",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Checked Bag",
+    "Aliases": [
+      "Baggage"
+    ]
+  },
+  {
+    "Approved_Term": "IATA Barcode Tag",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Baggage Reclaim Carousel",
+    "Aliases": []
+  },
+  {
+    "Approved_Term": "Code 15 Baggage Offload Hold",
+    "Aliases": []
+  }
+]

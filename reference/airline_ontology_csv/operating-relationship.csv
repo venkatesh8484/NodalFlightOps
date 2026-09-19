@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+OWN_METAL,Own Metal,Operated and marketed by the same airline as the original booking.,7,active-phase-7
+JOINT_VENTURE,Joint Venture,Operated under a revenue-sharing joint-venture partner (e.g. KLM/Delta transatlantic JV).,7,active-phase-7
+INTERLINE,Interline,Operated by a separate airline under a standard interline agreement.,7,active-phase-7
+CODESHARE,Codeshare,Marketed under the original airline's flight number but operated by a partner.,7,active-phase-7

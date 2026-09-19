@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+narrow-body,Narrow-Body,"A single-aisle aircraft, typically short/medium-haul (e.g. Boeing 737, Airbus A320 family)",4,active-phase-4
+wide-body,Wide-Body,"A twin-aisle aircraft, typically long-haul (e.g. Boeing 787, 777, Airbus A330)",4,active-phase-4
+regional,Regional,"A smaller single-aisle or turboprop aircraft used on shorter/lower-density routes (e.g. Embraer E-Jets, ATR turboprops)",4,active-phase-4

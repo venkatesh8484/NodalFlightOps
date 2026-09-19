@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+open,Open,Created but not yet fully fulfilled,6,active-phase-6
+fulfilled,Fulfilled,Every booking and ancillary has been ticketed/delivered,6,active-phase-6
+partially-fulfilled,Partially Fulfilled,"Some, but not all, items have been ticketed/delivered",6,active-phase-6
+cancelled,Cancelled,The order was cancelled in its entirety,6,active-phase-6

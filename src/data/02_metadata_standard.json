@@ -1,0 +1,296 @@
+[
+  {
+    "Concept_ID": "F001",
+    "Preferred_Term_PT": "Airport",
+    "Used_For_UF": [
+      "Aerodrome",
+      "Airfield"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F002",
+    "Preferred_Term_PT": "Passenger Terminal",
+    "Used_For_UF": [
+      "Departure Hall",
+      "Arrivals Terminal"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F003",
+    "Preferred_Term_PT": "Cargo Terminal",
+    "Used_For_UF": [
+      "Freight Terminal",
+      "Air Cargo Facility"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F004",
+    "Preferred_Term_PT": "Ground Handling Facility",
+    "Used_For_UF": [
+      "Ramp Services",
+      "Apron Operations"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F005",
+    "Preferred_Term_PT": "Transfer Desk",
+    "Used_For_UF": [
+      "Connections Desk",
+      "Transit Desk"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F006",
+    "Preferred_Term_PT": "Self-Service Kiosk",
+    "Used_For_UF": [
+      "Check-in Kiosk",
+      "Bag-Drop Kiosk"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F007",
+    "Preferred_Term_PT": "Hub Airport",
+    "Used_For_UF": [
+      "Primary Hub",
+      "Home Base"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F008",
+    "Preferred_Term_PT": "Spoke Airport",
+    "Used_For_UF": [
+      "Destination Airport",
+      "Outstation"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F009",
+    "Preferred_Term_PT": "International Gateway",
+    "Used_For_UF": [
+      "Long-Haul Gateway",
+      "Intercontinental Hub"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F010",
+    "Preferred_Term_PT": "Airline",
+    "Used_For_UF": [
+      "Operating Carrier",
+      "Air Carrier"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F011",
+    "Preferred_Term_PT": "Mainline Carrier",
+    "Used_For_UF": [
+      "KLM Mainline"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F012",
+    "Preferred_Term_PT": "Codeshare Partner",
+    "Used_For_UF": [
+      "Joint-Venture Partner",
+      "Alliance Partner"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F013",
+    "Preferred_Term_PT": "Crew",
+    "Used_For_UF": [
+      "Cockpit Crew",
+      "Cabin Crew"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F014",
+    "Preferred_Term_PT": "Flight Route",
+    "Used_For_UF": [
+      "City Pair",
+      "Sector"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F015",
+    "Preferred_Term_PT": "Aircraft",
+    "Used_For_UF": [
+      "Airframe",
+      "Tail Number"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F016",
+    "Preferred_Term_PT": "Widebody Aircraft",
+    "Used_For_UF": [
+      "Long-Haul Aircraft"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F017",
+    "Preferred_Term_PT": "Narrowbody Aircraft",
+    "Used_For_UF": [
+      "Mainline Narrowbody"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F018",
+    "Preferred_Term_PT": "Short-Haul Aircraft",
+    "Used_For_UF": [
+      "Regional Mainline"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F019",
+    "Preferred_Term_PT": "Regional Jet",
+    "Used_For_UF": [
+      "E-Jet"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F020",
+    "Preferred_Term_PT": "Flight",
+    "Used_For_UF": [
+      "Flight Instance",
+      "Scheduled Flight"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F021",
+    "Preferred_Term_PT": "Aircraft Assignment",
+    "Used_For_UF": [
+      "Tail Assignment",
+      "Rotation Assignment"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F022",
+    "Preferred_Term_PT": "Telemetry Event",
+    "Used_For_UF": [
+      "Ops Signal",
+      "Disruption Event"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F023",
+    "Preferred_Term_PT": "Mechanical Fault",
+    "Used_For_UF": [
+      "MEL Item",
+      "Tech Log Entry"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F024",
+    "Preferred_Term_PT": "Passenger Surge",
+    "Used_For_UF": [
+      "Peak Load Event"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F025",
+    "Preferred_Term_PT": "ADS-B Position Ping",
+    "Used_For_UF": [
+      "Live Position Update"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F026",
+    "Preferred_Term_PT": "Delay Event",
+    "Used_For_UF": [
+      "Departure Delay",
+      "Arrival Delay"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F027",
+    "Preferred_Term_PT": "Weather Hold",
+    "Used_For_UF": [
+      "ATC Ground Stop",
+      "Weather Delay"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F028",
+    "Preferred_Term_PT": "Action Type",
+    "Used_For_UF": [
+      "Operational Command",
+      "Playbook Action"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F029",
+    "Preferred_Term_PT": "Rebook Passengers",
+    "Used_For_UF": [
+      "Reroute Passengers"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F030",
+    "Preferred_Term_PT": "Reallocate Gate Capacity",
+    "Used_For_UF": [
+      "Reallocate Hub Capacity"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F031",
+    "Preferred_Term_PT": "Reassign Aircraft",
+    "Used_For_UF": [
+      "Swap Tail Number"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F032",
+    "Preferred_Term_PT": "Notify Passenger SLA",
+    "Used_For_UF": [
+      "Passenger Notification"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F033",
+    "Preferred_Term_PT": "Action Execution",
+    "Used_For_UF": [
+      "Action Log",
+      "Execution Record"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "F034",
+    "Preferred_Term_PT": "IATA",
+    "Used_For_UF": [
+      "International Air Transport Association"
+    ],
+    "Status": "ACTIVE"
+  }
+]

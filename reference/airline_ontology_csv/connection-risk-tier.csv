@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+STANDARD,Standard,Buffer meets or exceeds the minimum connecting time.,7,active-phase-7
+TIGHT_MCT,Tight MCT,Buffer is positive but below the minimum connecting time.,7,active-phase-7
+MISCONNECT,Misconnect,Buffer is zero or negative; the connection is already missed.,7,active-phase-7

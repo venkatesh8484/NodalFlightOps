@@ -1,0 +1,2071 @@
+[
+  {
+    "flightId": "KL1008",
+    "originAirportId": "LHR",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-LHR-AMS",
+    "assignedTailNumber": "PH-BVA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T12:25:00Z",
+    "scheduledArrivalUtc": "2026-08-30T13:40:00Z",
+    "delayMinutes": 45,
+    "connectionRiskTier": "TIGHT_MCT",
+    "paxCount": 318,
+    "status": "AT_RISK",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL1009",
+    "originAirportId": "AMS",
+    "destinationAirportId": "LHR",
+    "assignedRouteId": "RTE-AMS-LHR",
+    "assignedTailNumber": "PH-AXA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T16:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T17:15:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 165,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 2,
+      "SILVER": 3,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL1009-01",
+        "pnr": "G8HNWD",
+        "name": "Oliver Hughes",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2C",
+        "ffpNumber": "KL-822901",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-02",
+        "pnr": "H3QPRT",
+        "name": "Femke Groen",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5A",
+        "ffpNumber": "KL-631208",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-03",
+        "pnr": "J6VDSA",
+        "name": "Charlotte Bennett",
+        "tier": "GOLD",
+        "cabinClass": "Economy",
+        "seat": "20D",
+        "ffpNumber": "KL-632017",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-04",
+        "pnr": "K1XZML",
+        "name": "Ruben Peeters",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "27A",
+        "ffpNumber": "KL-423561",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-05",
+        "pnr": "L4TGKQ",
+        "name": "Amelia Clarke",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "27B",
+        "ffpNumber": "KL-424098",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-06",
+        "pnr": "M9WCFR",
+        "name": "Sem de Boer",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "29C",
+        "ffpNumber": "KL-424775",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-07",
+        "pnr": "N2BQJX",
+        "name": "Isla Robertson",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "34A",
+        "ffpNumber": "KL-122043",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1009-08",
+        "pnr": "P7DKLV",
+        "name": "Finn Mulder",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "34B",
+        "ffpNumber": "KL-122588",
+        "onwardFlightId": "KL1009",
+        "specialAssistance": "UMNR"
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "BA432",
+        "carrier": "British Airways",
+        "relationship": "INTERLINE",
+        "departureLocal": "18:45",
+        "departureUtc": "2026-08-30T16:45:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 2,
+          "economy": 10
+        },
+        "interlineTicketing": true,
+        "notes": "Oneworld interline — separate check-in desk at AMS."
+      }
+    ]
+  },
+  {
+    "flightId": "KL1250",
+    "originAirportId": "CDG",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-CDG-AMS",
+    "assignedTailNumber": "PH-AXB",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T12:25:00Z",
+    "scheduledArrivalUtc": "2026-08-30T13:35:00Z",
+    "delayMinutes": 75,
+    "connectionRiskTier": "TIGHT_MCT",
+    "paxCount": 187,
+    "status": "AT_RISK",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL1251",
+    "originAirportId": "AMS",
+    "destinationAirportId": "CDG",
+    "assignedRouteId": "RTE-AMS-CDG",
+    "assignedTailNumber": "PH-AXC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T16:20:00Z",
+    "scheduledArrivalUtc": "2026-08-30T17:30:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 172,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 2,
+      "SILVER": 3,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL1251-01",
+        "pnr": "Q5MRHT",
+        "name": "Aurelie Laurent",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1D",
+        "ffpNumber": "KL-823477",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-02",
+        "pnr": "R8NWXK",
+        "name": "Bastiaan Kramer",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4A",
+        "ffpNumber": "KL-633590",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-03",
+        "pnr": "S1QVDF",
+        "name": "Camille Rousseau",
+        "tier": "GOLD",
+        "cabinClass": "Economy",
+        "seat": "19C",
+        "ffpNumber": "KL-634102",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-04",
+        "pnr": "T6ZLJM",
+        "name": "Nina Verhoeven",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "26A",
+        "ffpNumber": "KL-425320",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-05",
+        "pnr": "U3GKPX",
+        "name": "Julien Moreau",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "26B",
+        "ffpNumber": "KL-425861",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-06",
+        "pnr": "V7HDCN",
+        "name": "Elise Dubois",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "28F",
+        "ffpNumber": "KL-426447",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-07",
+        "pnr": "W4TBQL",
+        "name": "Mathis Girard",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "33D",
+        "ffpNumber": "KL-123165",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1251-08",
+        "pnr": "X9RFVK",
+        "name": "Lena van Dam",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "33F",
+        "ffpNumber": "KL-123702",
+        "onwardFlightId": "KL1251",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "AF1680",
+        "carrier": "Air France",
+        "relationship": "JOINT_VENTURE",
+        "departureLocal": "19:00",
+        "departureUtc": "2026-08-30T17:00:00Z",
+        "mctMinutesRequired": 45,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 3,
+          "economy": 12
+        },
+        "interlineTicketing": true,
+        "notes": "Air France/KLM joint-venture — same terminal, ticket-agnostic rebooking."
+      }
+    ]
+  },
+  {
+    "flightId": "KL427",
+    "originAirportId": "DXB",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-DXB-AMS",
+    "assignedTailNumber": "PH-BHA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T07:10:00Z",
+    "scheduledArrivalUtc": "2026-08-30T13:50:00Z",
+    "delayMinutes": 35,
+    "connectionRiskTier": "TIGHT_MCT",
+    "paxCount": 301,
+    "status": "AT_RISK",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL428",
+    "originAirportId": "AMS",
+    "destinationAirportId": "DXB",
+    "assignedRouteId": "RTE-AMS-DXB",
+    "assignedTailNumber": "PH-BHB",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T21:15:00Z",
+    "scheduledArrivalUtc": "2026-08-31T04:55:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 289,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 2,
+      "SILVER": 3,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL428-01",
+        "pnr": "W5HKQT",
+        "name": "Fatima Al-Marri",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2A",
+        "ffpNumber": "KL-827512",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-02",
+        "pnr": "X9TGVL",
+        "name": "Arjun Mehta",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5C",
+        "ffpNumber": "KL-638119",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-03",
+        "pnr": "Y3QFNM",
+        "name": "Priya Sharma",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "19D",
+        "ffpNumber": "KL-638670",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-04",
+        "pnr": "Z7DLWK",
+        "name": "Omar Haddad",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "29A",
+        "ffpNumber": "KL-431142",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-05",
+        "pnr": "A4VMRX",
+        "name": "Sana Qureshi",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "29B",
+        "ffpNumber": "KL-431719",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-06",
+        "pnr": "B8JQTH",
+        "name": "Rashid Al-Farsi",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "33F",
+        "ffpNumber": "KL-432255",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-07",
+        "pnr": "C2NWKD",
+        "name": "Layla Hassan",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "40A",
+        "ffpNumber": "KL-128330",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL428-08",
+        "pnr": "D6XRVQ",
+        "name": "Yusuf Karim",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "40B",
+        "ffpNumber": "KL-128877",
+        "onwardFlightId": "KL428",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "EK148",
+        "carrier": "Emirates",
+        "relationship": "INTERLINE",
+        "departureLocal": "23:50",
+        "departureUtc": "2026-08-30T21:50:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 2,
+          "economy": 14
+        },
+        "interlineTicketing": true,
+        "notes": "Interline — separate check-in desk, longer MCT applies."
+      }
+    ]
+  },
+  {
+    "flightId": "KL198",
+    "originAirportId": "CPH",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-CPH-AMS",
+    "assignedTailNumber": "PH-BXA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T12:35:00Z",
+    "scheduledArrivalUtc": "2026-08-30T14:00:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "TIGHT_MCT",
+    "paxCount": 149,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL199",
+    "originAirportId": "AMS",
+    "destinationAirportId": "CPH",
+    "assignedRouteId": "RTE-AMS-CPH",
+    "assignedTailNumber": "PH-BXB",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T17:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T18:25:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 140,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 1,
+      "SILVER": 2,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL199-01",
+        "pnr": "Y2WMDG",
+        "name": "Frida Lindqvist",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1A",
+        "ffpNumber": "KL-824206",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL199-02",
+        "pnr": "Z6KPHV",
+        "name": "Mikkel Sorensen",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "3C",
+        "ffpNumber": "KL-634988",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL199-03",
+        "pnr": "A8QTNJ",
+        "name": "Ida Christensen",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "18A",
+        "ffpNumber": "KL-427103",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL199-04",
+        "pnr": "B3XFRL",
+        "name": "Casper Jensen",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "18B",
+        "ffpNumber": "KL-427650",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL199-05",
+        "pnr": "C7VDMQ",
+        "name": "Signe Poulsen",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "24D",
+        "ffpNumber": "KL-124188",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL199-06",
+        "pnr": "D1LHZK",
+        "name": "Anton Nielsen",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "24F",
+        "ffpNumber": "KL-124719",
+        "onwardFlightId": "KL199",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "SK541",
+        "carrier": "SAS",
+        "relationship": "INTERLINE",
+        "departureLocal": "19:30",
+        "departureUtc": "2026-08-30T17:30:00Z",
+        "mctMinutesRequired": 45,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 0,
+          "economy": 8
+        },
+        "interlineTicketing": true,
+        "notes": "Scandinavian intra-Europe interline — same-terminal handoff, standard MCT."
+      }
+    ]
+  },
+  {
+    "flightId": "KL605",
+    "originAirportId": "AMS",
+    "destinationAirportId": "JFK",
+    "assignedRouteId": "RTE-AMS-JFK",
+    "assignedTailNumber": "PH-BVB",
+    "operatingAirline": "KLM / Delta (joint venture)",
+    "scheduledDepartureUtc": "2026-08-30T15:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T23:25:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 335,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 2,
+      "GOLD": 3,
+      "SILVER": 3,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL605-01",
+        "pnr": "K7QXHT",
+        "name": "Anneke de Wit",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2A",
+        "ffpNumber": "KL-800214",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-02",
+        "pnr": "M2LPRB",
+        "name": "Rajiv Kapoor",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "3C",
+        "ffpNumber": "KL-800587",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-03",
+        "pnr": "T9FVDA",
+        "name": "Sophie Bakker",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5D",
+        "ffpNumber": "KL-611932",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-04",
+        "pnr": "W4NKQE",
+        "name": "Daniel Osei",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "21A",
+        "ffpNumber": "KL-611450",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-05",
+        "pnr": "C8RTZL",
+        "name": "Marieke Jansen",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "21C",
+        "ffpNumber": "KL-612871",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-06",
+        "pnr": "H5WQJX",
+        "name": "Thomas Berg",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "34F",
+        "ffpNumber": "KL-402216",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-07",
+        "pnr": "P1ZXCV",
+        "name": "Yuki Tanaka",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "34K",
+        "ffpNumber": "KL-403087",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-08",
+        "pnr": "B6MDGH",
+        "name": "Isabel Ramirez",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "37D",
+        "ffpNumber": "KL-403912",
+        "onwardFlightId": "KL605",
+        "specialAssistance": "WCHR"
+      },
+      {
+        "paxId": "PAX-KL605-09",
+        "pnr": "F3TYUN",
+        "name": "Lucas Meijer",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "42B",
+        "ffpNumber": "KL-105533",
+        "onwardFlightId": "KL605",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL605-10",
+        "pnr": "Q9LKAS",
+        "name": "Emma van Dijk",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "43A",
+        "ffpNumber": "KL-106784",
+        "onwardFlightId": "KL605",
+        "specialAssistance": "UMNR"
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "DL47",
+        "carrier": "Delta Air Lines",
+        "relationship": "JOINT_VENTURE",
+        "departureLocal": "17:35",
+        "departureUtc": "2026-08-30T15:35:00Z",
+        "mctMinutesRequired": 45,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 4,
+          "economy": 18
+        },
+        "interlineTicketing": true,
+        "notes": "Delta/KLM transatlantic joint-venture — same terminal, ticket-agnostic rebooking."
+      },
+      {
+        "altFlightId": "VS103",
+        "carrier": "Virgin Atlantic",
+        "relationship": "INTERLINE",
+        "departureLocal": "18:40",
+        "departureUtc": "2026-08-30T16:40:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 2,
+          "economy": 9
+        },
+        "interlineTicketing": true,
+        "notes": "Interline via LHR — separate check-in, longer MCT applies."
+      }
+    ]
+  },
+  {
+    "flightId": "KL606",
+    "originAirportId": "JFK",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-JFK-AMS",
+    "assignedTailNumber": "PH-BVC",
+    "operatingAirline": "KLM / Delta (joint venture)",
+    "scheduledDepartureUtc": "2026-08-30T18:30:00Z",
+    "scheduledArrivalUtc": "2026-08-31T02:55:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 340,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL607",
+    "originAirportId": "AMS",
+    "destinationAirportId": "JFK",
+    "assignedRouteId": "RTE-AMS-JFK",
+    "assignedTailNumber": "PH-AKA",
+    "operatingAirline": "KLM / Delta (joint venture)",
+    "scheduledDepartureUtc": "2026-08-30T19:30:00Z",
+    "scheduledArrivalUtc": "2026-08-31T03:55:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 241,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 2,
+      "GOLD": 3,
+      "SILVER": 3,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL607-01",
+        "pnr": "L4WHDX",
+        "name": "Sara Jacobs",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1C",
+        "ffpNumber": "KL-826331",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-02",
+        "pnr": "M7QFTV",
+        "name": "Marcus Bell",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2D",
+        "ffpNumber": "KL-826908",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-03",
+        "pnr": "N1XDGK",
+        "name": "Lieke Smits",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5A",
+        "ffpNumber": "KL-636311",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-04",
+        "pnr": "P6RMLQ",
+        "name": "Ethan Cole",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "20A",
+        "ffpNumber": "KL-636944",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-05",
+        "pnr": "Q2VBHZ",
+        "name": "Vera Mulder",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "20C",
+        "ffpNumber": "KL-637502",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-06",
+        "pnr": "R9JCWD",
+        "name": "Noah Fischer",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "32A",
+        "ffpNumber": "KL-429466",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-07",
+        "pnr": "S3TKPX",
+        "name": "Julia Adams",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "32B",
+        "ffpNumber": "KL-430018",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-08",
+        "pnr": "T7LZFN",
+        "name": "Bram Visser",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "35D",
+        "ffpNumber": "KL-430577",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-09",
+        "pnr": "U4QGXH",
+        "name": "Chloe Turner",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "41A",
+        "ffpNumber": "KL-126409",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL607-10",
+        "pnr": "V8DNWK",
+        "name": "Milan Jansen",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "41B",
+        "ffpNumber": "KL-127001",
+        "onwardFlightId": "KL607",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "DL48",
+        "carrier": "Delta Air Lines",
+        "relationship": "JOINT_VENTURE",
+        "departureLocal": "22:15",
+        "departureUtc": "2026-08-30T20:15:00Z",
+        "mctMinutesRequired": 45,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 4,
+          "economy": 16
+        },
+        "interlineTicketing": true,
+        "notes": "Delta/KLM transatlantic joint-venture — same terminal, ticket-agnostic rebooking."
+      }
+    ]
+  },
+  {
+    "flightId": "KL608",
+    "originAirportId": "JFK",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-JFK-AMS",
+    "assignedTailNumber": "PH-AKB",
+    "operatingAirline": "KLM / Delta (joint venture)",
+    "scheduledDepartureUtc": "2026-08-30T22:00:00Z",
+    "scheduledArrivalUtc": "2026-08-31T06:25:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 235,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL837",
+    "originAirportId": "AMS",
+    "destinationAirportId": "SIN",
+    "assignedRouteId": "RTE-AMS-SIN",
+    "assignedTailNumber": "PH-BHC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T15:10:00Z",
+    "scheduledArrivalUtc": "2026-08-31T03:35:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 282,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 2,
+      "SILVER": 4,
+      "EXPLORER": 3
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL837-01",
+        "pnr": "N4QWRT",
+        "name": "Hendrik Visser",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1A",
+        "ffpNumber": "KL-800912",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-02",
+        "pnr": "L8XZMD",
+        "name": "Priya Nair",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4C",
+        "ffpNumber": "KL-613305",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-03",
+        "pnr": "J2VBHK",
+        "name": "Willem Smit",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "22D",
+        "ffpNumber": "KL-614421",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-04",
+        "pnr": "R7GTNS",
+        "name": "Chloe Dubois",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "29A",
+        "ffpNumber": "KL-404556",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-05",
+        "pnr": "A5MPWQ",
+        "name": "Kenji Sato",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "29B",
+        "ffpNumber": "KL-405012",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-06",
+        "pnr": "Y3HLDF",
+        "name": "Fatima Haidari",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "31F",
+        "ffpNumber": "KL-405893",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-07",
+        "pnr": "E9CKXJ",
+        "name": "Bram Hendriks",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "31G",
+        "ffpNumber": "KL-406210",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-08",
+        "pnr": "U6TQAL",
+        "name": "Mei Lin",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "40C",
+        "ffpNumber": "KL-107345",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-09",
+        "pnr": "V1SDNB",
+        "name": "Noor El Amrani",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "41A",
+        "ffpNumber": "KL-108021",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL837-10",
+        "pnr": "G4RKPZ",
+        "name": "Tom Kuiper",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "43D",
+        "ffpNumber": "KL-108654",
+        "onwardFlightId": "KL837",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "SQ323",
+        "carrier": "Singapore Airlines",
+        "relationship": "INTERLINE",
+        "departureLocal": "21:00",
+        "departureUtc": "2026-08-30T19:00:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 3,
+          "economy": 14
+        },
+        "interlineTicketing": true,
+        "notes": "Star Alliance interline — separate check-in desk at AMS."
+      }
+    ]
+  },
+  {
+    "flightId": "KL836",
+    "originAirportId": "SIN",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-SIN-AMS",
+    "assignedTailNumber": "PH-AOE",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T09:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T21:25:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 228,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL839",
+    "originAirportId": "AMS",
+    "destinationAirportId": "SIN",
+    "assignedRouteId": "RTE-AMS-SIN",
+    "assignedTailNumber": "PH-AKC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T22:30:00Z",
+    "scheduledArrivalUtc": "2026-08-31T11:55:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 255,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 1,
+      "SILVER": 3,
+      "EXPLORER": 3
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL839-01",
+        "pnr": "E1TKPM",
+        "name": "Wei Chen",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1B",
+        "ffpNumber": "KL-828804",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-02",
+        "pnr": "F5QWXD",
+        "name": "Aisyah Rahman",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4C",
+        "ffpNumber": "KL-639287",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-03",
+        "pnr": "G9DLVK",
+        "name": "Marcus Tan",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "28A",
+        "ffpNumber": "KL-432891",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-04",
+        "pnr": "H3VXNQ",
+        "name": "Siti Nurhaliza",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "28B",
+        "ffpNumber": "KL-433458",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-05",
+        "pnr": "J7RGKT",
+        "name": "Ryan Goh",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "30F",
+        "ffpNumber": "KL-434002",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-06",
+        "pnr": "K2LMWH",
+        "name": "Farah Ismail",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "39A",
+        "ffpNumber": "KL-129404",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-07",
+        "pnr": "L6QDFX",
+        "name": "Kevin Lim",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "39B",
+        "ffpNumber": "KL-129955",
+        "onwardFlightId": "KL839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL839-08",
+        "pnr": "M9HZTN",
+        "name": "Nabila Yusof",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "42D",
+        "ffpNumber": "KL-130521",
+        "onwardFlightId": "KL839",
+        "specialAssistance": "UMNR"
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "SQ324",
+        "carrier": "Singapore Airlines",
+        "relationship": "INTERLINE",
+        "departureLocal": "10:00 (+1)",
+        "departureUtc": "2026-08-31T08:00:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 2,
+          "economy": 8
+        },
+        "interlineTicketing": true,
+        "notes": "Last SIN departure of the day already gone — next-day Star Alliance interline."
+      }
+    ]
+  },
+  {
+    "flightId": "KL838",
+    "originAirportId": "SIN",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-SIN-AMS",
+    "assignedTailNumber": "PH-BHC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T10:30:00Z",
+    "scheduledArrivalUtc": "2026-08-30T23:55:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 260,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL791",
+    "originAirportId": "AMS",
+    "destinationAirportId": "GRU",
+    "assignedRouteId": "RTE-AMS-GRU",
+    "assignedTailNumber": "PH-BVA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T15:20:00Z",
+    "scheduledArrivalUtc": "2026-08-31T03:00:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 229,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 2,
+      "GOLD": 4,
+      "SILVER": 4,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL791-01",
+        "pnr": "D2WYFH",
+        "name": "Carlos Mendes",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2C",
+        "ffpNumber": "KL-801447",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-02",
+        "pnr": "S8NRJQ",
+        "name": "Ingrid Larsen",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "3A",
+        "ffpNumber": "KL-801902",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-03",
+        "pnr": "K5TVBM",
+        "name": "Paulo Silva",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "6D",
+        "ffpNumber": "KL-615230",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-04",
+        "pnr": "F1LQXZ",
+        "name": "Ana Ferreira",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "20A",
+        "ffpNumber": "KL-616004",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-05",
+        "pnr": "H7GDPW",
+        "name": "Erik Nilsson",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "20C",
+        "ffpNumber": "KL-616755",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-06",
+        "pnr": "M3JKCV",
+        "name": "Renata Costa",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "20F",
+        "ffpNumber": "KL-617201",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-07",
+        "pnr": "B9XHNT",
+        "name": "Jorge Almeida",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "33A",
+        "ffpNumber": "KL-407332",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-08",
+        "pnr": "L6QFRS",
+        "name": "Ines Rocha",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "33B",
+        "ffpNumber": "KL-407889",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-09",
+        "pnr": "P4WMDK",
+        "name": "Gustavo Lima",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "35D",
+        "ffpNumber": "KL-408516",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-10",
+        "pnr": "T2ZBGH",
+        "name": "Beatriz Souza",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "35F",
+        "ffpNumber": "KL-409074",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-11",
+        "pnr": "C7VNJL",
+        "name": "Marco van Leeuwen",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "44A",
+        "ffpNumber": "KL-109233",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL791-12",
+        "pnr": "R5PKQD",
+        "name": "Sanne Vermeer",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "44C",
+        "ffpNumber": "KL-109887",
+        "onwardFlightId": "KL791",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "AF454",
+        "carrier": "Air France",
+        "relationship": "JOINT_VENTURE",
+        "departureLocal": "20:45",
+        "departureUtc": "2026-08-30T18:45:00Z",
+        "mctMinutesRequired": 75,
+        "seatsAvailable": {
+          "business": 2,
+          "premiumEconomy": 3,
+          "economy": 10
+        },
+        "interlineTicketing": true,
+        "notes": "Routes via CDG — requires a second connection, hence the wider MCT."
+      },
+      {
+        "altFlightId": "KL793",
+        "carrier": "KLM",
+        "relationship": "OWN_METAL",
+        "departureLocal": "01:00 (+1)",
+        "departureUtc": "2026-08-30T23:00:00Z",
+        "mctMinutesRequired": 45,
+        "seatsAvailable": {
+          "business": 3,
+          "premiumEconomy": 6,
+          "economy": 22
+        },
+        "interlineTicketing": false,
+        "notes": "Same-day KLM direct, later departure — no partner handoff, most seats free."
+      }
+    ]
+  },
+  {
+    "flightId": "KL792",
+    "originAirportId": "GRU",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-GRU-AMS",
+    "assignedTailNumber": "PH-BHA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T10:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T21:40:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 233,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL793",
+    "originAirportId": "AMS",
+    "destinationAirportId": "GRU",
+    "assignedRouteId": "RTE-AMS-GRU",
+    "assignedTailNumber": "PH-AKA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T23:00:00Z",
+    "scheduledArrivalUtc": "2026-08-31T10:40:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 210,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 2,
+      "GOLD": 2,
+      "SILVER": 4,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL793-01",
+        "pnr": "N4WTKQ",
+        "name": "Rafael Oliveira",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1A",
+        "ffpNumber": "KL-829377",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-02",
+        "pnr": "P8XVLM",
+        "name": "Camila Santos",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2C",
+        "ffpNumber": "KL-829950",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-03",
+        "pnr": "Q1DGRH",
+        "name": "Lucas Pereira",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5D",
+        "ffpNumber": "KL-639841",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-04",
+        "pnr": "R5QMWX",
+        "name": "Beatriz Carvalho",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "19A",
+        "ffpNumber": "KL-640409",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-05",
+        "pnr": "S9TKNF",
+        "name": "Gabriel Costa",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "27A",
+        "ffpNumber": "KL-434589",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-06",
+        "pnr": "T3VLXD",
+        "name": "Larissa Souza",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "27B",
+        "ffpNumber": "KL-435133",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-07",
+        "pnr": "U7HQWK",
+        "name": "Diego Almeida",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "31D",
+        "ffpNumber": "KL-435688",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-08",
+        "pnr": "V2NRGT",
+        "name": "Isabela Lima",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "31F",
+        "ffpNumber": "KL-436214",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-09",
+        "pnr": "W6DKQX",
+        "name": "Thiago Ferreira",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "38A",
+        "ffpNumber": "KL-131078",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL793-10",
+        "pnr": "X1LVMH",
+        "name": "Julia Barros",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "38B",
+        "ffpNumber": "KL-131622",
+        "onwardFlightId": "KL793",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "AF456",
+        "carrier": "Air France",
+        "relationship": "JOINT_VENTURE",
+        "departureLocal": "09:00 (+1)",
+        "departureUtc": "2026-08-31T07:00:00Z",
+        "mctMinutesRequired": 75,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 2,
+          "economy": 10
+        },
+        "interlineTicketing": true,
+        "notes": "Last GRU departure of the day already gone — routes via CDG next morning, requires a second connection."
+      }
+    ]
+  },
+  {
+    "flightId": "KL794",
+    "originAirportId": "GRU",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-GRU-AMS",
+    "assignedTailNumber": "PH-BVB",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T13:00:00Z",
+    "scheduledArrivalUtc": "2026-08-31T00:40:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 219,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL861",
+    "originAirportId": "AMS",
+    "destinationAirportId": "HND",
+    "assignedRouteId": "RTE-AMS-HND",
+    "assignedTailNumber": "PH-BHB",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T14:55:00Z",
+    "scheduledArrivalUtc": "2026-08-31T02:25:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 298,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 2,
+      "SILVER": 2,
+      "EXPLORER": 1
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL861-01",
+        "pnr": "Q6DRFM",
+        "name": "Akira Yamamoto",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1C",
+        "ffpNumber": "KL-802378",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL861-02",
+        "pnr": "W3LGZT",
+        "name": "Nadia Petrova",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "5A",
+        "ffpNumber": "KL-618044",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL861-03",
+        "pnr": "X8VBHN",
+        "name": "Sander de Groot",
+        "tier": "GOLD",
+        "cabinClass": "Premium Economy",
+        "seat": "23D",
+        "ffpNumber": "KL-618871",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL861-04",
+        "pnr": "Z1QKPJ",
+        "name": "Haruto Suzuki",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "36A",
+        "ffpNumber": "KL-410299",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL861-05",
+        "pnr": "N9TFCX",
+        "name": "Lotte Bosman",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "36B",
+        "ffpNumber": "KL-410845",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL861-06",
+        "pnr": "V4MHRD",
+        "name": "Kofi Owusu",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "45C",
+        "ffpNumber": "KL-110402",
+        "onwardFlightId": "KL861",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "JL412",
+        "carrier": "Japan Airlines",
+        "relationship": "INTERLINE",
+        "departureLocal": "19:15",
+        "departureUtc": "2026-08-30T17:15:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 0,
+          "premiumEconomy": 1,
+          "economy": 4
+        },
+        "interlineTicketing": true,
+        "notes": "Star Alliance interline, earliest departure but very limited economy allotment."
+      },
+      {
+        "altFlightId": "NH204",
+        "carrier": "ANA",
+        "relationship": "INTERLINE",
+        "departureLocal": "20:15",
+        "departureUtc": "2026-08-30T18:15:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 2,
+          "economy": 6
+        },
+        "interlineTicketing": true,
+        "notes": "Star Alliance interline — departs later, more headroom than JL412."
+      }
+    ]
+  },
+  {
+    "flightId": "KL862",
+    "originAirportId": "HND",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-HND-AMS",
+    "assignedTailNumber": "PH-BHC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T08:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T19:30:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 301,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL863",
+    "originAirportId": "AMS",
+    "destinationAirportId": "HND",
+    "assignedRouteId": "RTE-AMS-HND",
+    "assignedTailNumber": "PH-AOE",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T23:45:00Z",
+    "scheduledArrivalUtc": "2026-08-31T11:15:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 265,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 1,
+      "SILVER": 2,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL863-01",
+        "pnr": "Y5QTHK",
+        "name": "Rina Kobayashi",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "1D",
+        "ffpNumber": "KL-830512",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL863-02",
+        "pnr": "Z9XWVL",
+        "name": "Sota Watanabe",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4A",
+        "ffpNumber": "KL-641033",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL863-03",
+        "pnr": "A3DKMQ",
+        "name": "Emi Nakamura",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "26A",
+        "ffpNumber": "KL-436799",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL863-04",
+        "pnr": "B7VNRT",
+        "name": "Hiroshi Ito",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "26B",
+        "ffpNumber": "KL-437344",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL863-05",
+        "pnr": "C1LGXH",
+        "name": "Yui Matsumoto",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "36D",
+        "ffpNumber": "KL-132156",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL863-06",
+        "pnr": "D6QWFK",
+        "name": "Kenta Yamada",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "36F",
+        "ffpNumber": "KL-132701",
+        "onwardFlightId": "KL863",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "NH205",
+        "carrier": "ANA",
+        "relationship": "INTERLINE",
+        "departureLocal": "10:15 (+1)",
+        "departureUtc": "2026-08-31T08:15:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 1,
+          "economy": 6
+        },
+        "interlineTicketing": true,
+        "notes": "Last HND departure of the day already gone — next-day Star Alliance interline."
+      }
+    ]
+  },
+  {
+    "flightId": "KL864",
+    "originAirportId": "HND",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-HND-AMS",
+    "assignedTailNumber": "PH-BHC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T11:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T22:30:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 288,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL1837",
+    "originAirportId": "AMS",
+    "destinationAirportId": "FRA",
+    "assignedRouteId": "RTE-AMS-FRA",
+    "assignedTailNumber": "PH-BXC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T09:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T10:05:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 103,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 1,
+      "SILVER": 2,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL1837-01",
+        "pnr": "A2FQWK",
+        "name": "Petra Novak",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2A",
+        "ffpNumber": "KL-820115",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1837-02",
+        "pnr": "B7XMDL",
+        "name": "Jonas Weber",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4C",
+        "ffpNumber": "KL-630442",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1837-03",
+        "pnr": "C4RTNP",
+        "name": "Hanne Larsen",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "22A",
+        "ffpNumber": "KL-420987",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1837-04",
+        "pnr": "D9VKQH",
+        "name": "Milan Novotny",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "22B",
+        "ffpNumber": "KL-421356",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1837-05",
+        "pnr": "E1LMBZ",
+        "name": "Freya Andersen",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "31D",
+        "ffpNumber": "KL-120774",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1837-06",
+        "pnr": "F5JCGX",
+        "name": "Tobias Richter",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "31F",
+        "ffpNumber": "KL-121290",
+        "onwardFlightId": "KL1837",
+        "specialAssistance": "WCHR"
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "LH2312",
+        "carrier": "Lufthansa",
+        "relationship": "INTERLINE",
+        "departureLocal": "13:15",
+        "departureUtc": "2026-08-30T11:15:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 0,
+          "economy": 5
+        },
+        "interlineTicketing": true,
+        "notes": "Lufthansa hub — separate check-in, longer MCT applies."
+      }
+    ]
+  },
+  {
+    "flightId": "KL1838",
+    "originAirportId": "FRA",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-FRA-AMS",
+    "assignedTailNumber": "PH-EZA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T11:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T12:05:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 98,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  },
+  {
+    "flightId": "KL1839",
+    "originAirportId": "AMS",
+    "destinationAirportId": "FRA",
+    "assignedRouteId": "RTE-AMS-FRA",
+    "assignedTailNumber": "PH-BXC",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T18:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T19:05:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 110,
+    "status": "SCHEDULED",
+    "isKeyConnection": true,
+    "connectingPaxByTier": {
+      "PLATINUM": 1,
+      "GOLD": 1,
+      "SILVER": 2,
+      "EXPLORER": 2
+    },
+    "connectingPassengers": [
+      {
+        "paxId": "PAX-KL1839-01",
+        "pnr": "E5JQWX",
+        "name": "Katharina Fischer",
+        "tier": "PLATINUM",
+        "cabinClass": "Business",
+        "seat": "2B",
+        "ffpNumber": "KL-825014",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1839-02",
+        "pnr": "F9NRVT",
+        "name": "Willem Bakker",
+        "tier": "GOLD",
+        "cabinClass": "Business",
+        "seat": "4D",
+        "ffpNumber": "KL-635604",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1839-03",
+        "pnr": "G2DKML",
+        "name": "Lena Hoffmann",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "21A",
+        "ffpNumber": "KL-428277",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1839-04",
+        "pnr": "H6QXPF",
+        "name": "Daan Willems",
+        "tier": "SILVER",
+        "cabinClass": "Economy",
+        "seat": "21B",
+        "ffpNumber": "KL-428830",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1839-05",
+        "pnr": "J3TGVN",
+        "name": "Sophia Wagner",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "30C",
+        "ffpNumber": "KL-125244",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      },
+      {
+        "paxId": "PAX-KL1839-06",
+        "pnr": "K8ZLBR",
+        "name": "Niklas Becker",
+        "tier": "EXPLORER",
+        "cabinClass": "Economy",
+        "seat": "30D",
+        "ffpNumber": "KL-125881",
+        "onwardFlightId": "KL1839",
+        "specialAssistance": null
+      }
+    ],
+    "alternateFlightOptions": [
+      {
+        "altFlightId": "LH2317",
+        "carrier": "Lufthansa",
+        "relationship": "INTERLINE",
+        "departureLocal": "20:30",
+        "departureUtc": "2026-08-30T18:30:00Z",
+        "mctMinutesRequired": 60,
+        "seatsAvailable": {
+          "business": 1,
+          "premiumEconomy": 0,
+          "economy": 6
+        },
+        "interlineTicketing": true,
+        "notes": "Lufthansa hub — separate check-in, longer MCT applies."
+      }
+    ]
+  },
+  {
+    "flightId": "KL1840",
+    "originAirportId": "FRA",
+    "destinationAirportId": "AMS",
+    "assignedRouteId": "RTE-FRA-AMS",
+    "assignedTailNumber": "PH-BXA",
+    "operatingAirline": "KLM",
+    "scheduledDepartureUtc": "2026-08-30T20:00:00Z",
+    "scheduledArrivalUtc": "2026-08-30T21:05:00Z",
+    "delayMinutes": 0,
+    "connectionRiskTier": "STANDARD",
+    "paxCount": 95,
+    "status": "SCHEDULED",
+    "isKeyConnection": false
+  }
+]

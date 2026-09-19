@@ -1,0 +1,65 @@
+property,domain,range,phase,definition
+hasCodeScheme,Identifier,CodeScheme,1,Links a reified identifier to the scheme that governs it
+hasIdentifier,Entity,Identifier,1,Links any entity to a reified identifier instance
+derivedFrom,Entity,SourceRecord,1,Links an entity to the source record it was derived/conflated from
+assertedBy,Assertion,SourceRecord,1,Links an assertion to the source record that made it
+hasConfidence,Assertion,ConfidenceScore,1,Links an assertion to its confidence score
+hasLicense,SourceSystem,License,1,Links a source system to its usage license
+partOfDataset,SourceRecord,Dataset,1,Links a source record to the dataset load it came from
+fromSourceSystem,Dataset,SourceSystem,1,Links a dataset load to its source system
+memberOfAlliance,Airline,Alliance,1,Airline is a member of a commercial alliance
+parentOrganization,Organization,Organization,1,Links a subsidiary/business unit to its parent
+legalEntityOf,LegalEntity,Airline,1,Links a legal entity to the airline brand it operates under
+operatesFlight,Airline,FlightInstance,1 (range added phase 3),Airline is the operating carrier of a flight instance
+marketsFlight,Airline,ScheduledFlight or FlightInstance,1 (range added phase 3),Airline is the marketing carrier of a flight
+locatedInCountry,Place,Country,2,Links a City or Airport to its Country
+servesCity,Airport,City,2,Links an Airport to the City it serves (may differ from the airport's own municipality)
+belongsToAirport,Place,Airport,2,"Links a Terminal, Gate, or Stand to its parent Airport"
+belongsToTerminal,Gate,Terminal,2,Links a Gate to its Terminal (optional)
+hasGate,Stand,Gate,2,Links a Stand to the Gate it serves (optional -- remote stands have none)
+originAirport,TransportNetwork,Airport,3,Origin airport of a Route/FlightLeg/FlightSegment/ScheduledFlight/FlightInstance
+destinationAirport,TransportNetwork,Airport,3,Destination airport of a Route/FlightLeg/FlightSegment/ScheduledFlight/FlightInstance
+hasLeg,ScheduledFlight,FlightLeg,3,Links a scheduled flight to its ordered operational legs (order via legSequence)
+includesLeg,FlightSegment,FlightLeg,3,Links a commercial flight segment to the one or more legs it spans
+forScheduledFlight,FlightSegment,ScheduledFlight,3,Links a flight segment to the marketing scheduled flight it is sold under
+instanceOfScheduledFlight,FlightInstance,ScheduledFlight,3,Links a dated flight instance to the repeating scheduled flight plan it realizes
+representsMarketingFlight,CodeshareService,ScheduledFlight,3,Links a codeshare service to the marketing carrier's scheduled flight
+representsOperatingFlight,CodeshareService,ScheduledFlight,3,Links a codeshare service to the operating carrier's scheduled flight actually flown
+hasFlightEvent,FlightInstance,Event,3,Links a flight instance to a departure/arrival/delay/cancellation/diversion/position-report event
+departsFromGate,FlightInstance,Gate,3,Departure gate assigned to a flight instance
+arrivesAtGate,FlightInstance,Gate,3,Arrival gate assigned to a flight instance
+parksAtStand,FlightInstance,Stand,3,Aircraft parking stand assigned to a flight instance
+diversionAirport,DiversionEvent,Airport,3,The airport actually landed at when a flight instance diverted
+forFlightInstance,PositionReportEvent,FlightInstance,3,"Best-effort, asynchronous link from an OpenSky position report to the flight instance it belongs to"
+hasAircraftType,Aircraft,AircraftType,4,Links an aircraft to its make/model/variant
+containsCabin,AircraftType,Cabin,4,Links an aircraft type to a cabin-class section of its typical/reference configuration
+hasSeat,Cabin,Seat,4,Links a cabin section to an individual seat in its typical/reference configuration
+assignedAircraft,Airline,Aircraft,4,Links an airline to an aircraft in its owned/operated fleet
+operatedByAircraft,FlightInstance,Aircraft,4,The specific tail-numbered aircraft that flew this flight instance
+forAircraft,MaintenanceEvent,Aircraft,4,Links a maintenance event to the aircraft it was performed on
+observedAircraft,PositionReportEvent,Aircraft,4,Resolved link from a position report to the aircraft its icao24 hex address matches (optional; complements the raw observedIcao24Hex)
+hasBooking,PNR,Booking,6,Links a PNR to one of its bookings
+forPassenger,CommercialDocument,Passenger,6,Used by Booking and Ticket; domain scoped to the superclass
+bookedFlightSegment,Booking,FlightSegment,6,The schedule-level commercial segment purchased
+bookedFlightInstance,Booking,FlightInstance,6,"The resolved, specific dated occurrence (optional)"
+appliesFare,Booking,Fare,6,The fare priced against this booking
+bookedCabin,Booking,Cabin,6,The cabin class booked; reuses phase 4's AircraftType-scoped Cabin
+assignedSeat,Booking,Seat,6,The seat assigned (optional); reuses phase 4's Seat
+containsBooking,Order,Booking,6,Links an order to one of its bookings
+hasAncillaryService,Order,AncillaryService,6,Links an order to an ancillary line item
+fulfillsOrder,Ticket,Order,6,Links a ticket to the order it fulfills
+hasCoupon,Ticket,TicketCoupon,6,Links a ticket to one of its coupons
+forBooking,Entity,Booking,6,"Generic; used by TicketCoupon, AncillaryService, Bag, CheckInEvent, BoardingEvent"
+partOfOrder,AncillaryService,Order,6,Links an ancillary line item to its order
+memberOfProgram,LoyaltyAccount,LoyaltyProgram,6,Links a loyalty account to its program
+heldByPassenger,LoyaltyAccount,Passenger,6,Links a loyalty account to the passenger who holds it
+operatedByAirline,LoyaltyProgram,Airline,6,Links a loyalty program to its operating airline
+belongsToPassenger,Bag,Passenger,6,Links a bag to the passenger it belongs to
+assignedToFlightInstance,CrewMember,FlightInstance,6,Direct crew-roster link (no reified CrewAssignment; see phase 6 notes)
+crewBaseAirport,CrewMember,Airport,6,Links a crew member to their base airport; reuses phase 2's Airport
+assessesConnection,ConnectionRiskAssessment,FlightSegment,7,Links a risk assessment to the specific booked onward FlightSegment it is protecting
+projectsArrivalOf,ConnectionRiskAssessment,FlightInstance,7,Links a risk assessment to the inbound flight instance whose arrival is being projected
+appliesRule,ConnectionRiskAssessment,ReroutingBusinessRule,7,Links a risk assessment to the rerouting business rule(s) evaluated against it
+evaluatesOption,ReroutingBusinessRule,AlternateConnectionOption,7,Links a rule to a candidate alternate it has scored/considered
+selectedAlternate,ConnectionRiskAssessment,AlternateConnectionOption,7,The alternate ultimately chosen for this assessment once a rule reaches a SELECTED outcome (absent while unresolved)
+rebooksPassenger,AlternateConnectionOption,Passenger,7,Links the chosen alternate to the passenger being moved onto it (populated once rebooked)

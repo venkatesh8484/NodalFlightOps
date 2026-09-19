@@ -1,0 +1,609 @@
+
+/* ══════════════════════════════════════════════════════════════════════
+   LIVE KLM TRAFFIC MAP  (Console tab)
+   ══════════════════════════════════════════════════════════════════════
+   An OpenSky-style full-bleed map. Everything here is an overlay floating
+   on the map — there are no docked panels, so the map keeps the entire
+   workspace and the chrome sits on top of it in glass cards.
+
+   The overlays use their own dark token set rather than the app's light
+   palette, because they have to stay legible over a dark basemap and over
+   a light one without changing colour. */
+
+:root {
+  --osk-glass: rgba(15, 23, 42, 0.88);
+  --osk-glass-2: rgba(30, 41, 59, 0.92);
+  --osk-line: rgba(148, 163, 184, 0.22);
+  --osk-ink: #e2e8f0;
+  --osk-muted: #94a3b8;
+  --osk-accent: #38bdf8;
+}
+
+/* ── Map surface ─────────────────────────────────────────────────── */
+.osk-map-wrap {
+  position: relative;
+  flex: 1;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.osk-map {
+  width: 100%;
+  height: 100%;
+}
+
+.osk-map-wrap .leaflet-container {
+  background: transparent !important;
+  font-family: var(--sans);
+}
+
+/* ── Aircraft markers ────────────────────────────────────────────── */
+.osk-marker { background: none !important; border: none !important; }
+
+.osk-ac {
+  position: relative;
+  width: 22px;
+  height: 22px;
+  cursor: pointer;
+  transition: filter 120ms ease;
+}
+
+.osk-ac svg {
+  width: 22px;
+  height: 22px;
+  fill: var(--ac);
+  stroke: rgba(15, 23, 42, 0.65);
+  stroke-width: 0.7;
+  transform-origin: 50% 50%;
+  filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.55));
+}
+
+.osk-ac:hover svg { filter: drop-shadow(0 0 5px var(--ac)); }
+
+/* Selected aircraft gets a pulsing target ring, the way OpenSky rings the
+   aircraft whose detail card is open. */
+.osk-ac.selected::before {
+  content: '';
+  position: absolute;
+  inset: -7px;
+  border: 2px solid var(--osk-accent);
+  border-radius: 50%;
+  animation: osk-pulse 1.6s ease-out infinite;
+}
+
+@keyframes osk-pulse {
+  0%   { transform: scale(0.75); opacity: 1; }
+  100% { transform: scale(1.35); opacity: 0; }
+}
+
+.osk-ac.ground { width: 10px; height: 10px; }
+
+.osk-ground-dot {
+  display: block;
+  width: 8px;
+  height: 8px;
+  border-radius: 2px;
+  background: var(--ac);
+  border: 1px solid rgba(15, 23, 42, 0.7);
+}
+
+.osk-ac-label {
+  position: absolute;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-family: var(--mono);
+  font-size: 9px;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  color: #f1f5f9;
+  background: rgba(15, 23, 42, 0.72);
+  border-left: 2px solid var(--ac);
+  padding: 1px 4px;
+  border-radius: 2px;
+  pointer-events: none;
+}
+
+.osk-tooltip.leaflet-tooltip {
+  background: var(--osk-glass);
+  border: 1px solid var(--osk-line);
+  color: var(--osk-ink);
+  font-family: var(--mono);
+  font-size: 11px;
+  line-height: 1.5;
+  border-radius: 6px;
+  box-shadow: 0 8px 24px -8px rgba(0, 0, 0, 0.6);
+}
+.osk-tooltip.leaflet-tooltip-top::before { border-top-color: var(--osk-line); }
+
+/* ── Glass panel base ────────────────────────────────────────────── */
+.osk-panel {
+  position: absolute;
+  z-index: 900;
+  background: var(--osk-glass);
+  backdrop-filter: blur(14px);
+  -webkit-backdrop-filter: blur(14px);
+  border: 1px solid var(--osk-line);
+  border-radius: 10px;
+  color: var(--osk-ink);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.75);
+}
+
+.osk-panel-controls {
+  top: 14px;
+  left: 14px;
+  width: 268px;
+  padding: 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  max-height: calc(100% - 130px);
+}
+
+.osk-panel-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 8px;
+  color: var(--osk-accent);
+}
+
+.osk-panel-head h4 {
+  margin: 0;
+  font-family: var(--cond);
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--osk-ink);
+  letter-spacing: 0.01em;
+}
+
+.osk-panel-head p {
+  margin: 1px 0 0;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--osk-muted);
+}
+
+/* ── Search ──────────────────────────────────────────────────────── */
+.osk-search {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 8px;
+  background: rgba(2, 6, 23, 0.55);
+  border: 1px solid var(--osk-line);
+  border-radius: 7px;
+  color: var(--osk-muted);
+}
+
+.osk-search:focus-within { border-color: var(--osk-accent); }
+
+.osk-search input {
+  flex: 1;
+  min-width: 0;
+  background: none;
+  border: none;
+  outline: none;
+  color: var(--osk-ink);
+  font-family: var(--mono);
+  font-size: 11px;
+}
+
+.osk-search input::placeholder { color: rgba(148, 163, 184, 0.6); }
+
+/* ── Chips ───────────────────────────────────────────────────────── */
+.osk-chip-row { display: flex; flex-wrap: wrap; gap: 4px; }
+
+.osk-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 3px;
+  padding: 3px 7px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: var(--osk-muted);
+  background: rgba(2, 6, 23, 0.45);
+  border: 1px solid var(--osk-line);
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+
+.osk-chip:hover { color: var(--osk-ink); border-color: rgba(148, 163, 184, 0.45); }
+
+.osk-chip.on {
+  color: #0b1120;
+  background: var(--osk-accent);
+  border-color: var(--osk-accent);
+}
+
+/* ── Aircraft list ───────────────────────────────────────────────── */
+.osk-list-toggle {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  width: 100%;
+  padding: 5px 0 0;
+  background: none;
+  border: none;
+  border-top: 1px solid var(--osk-line);
+  color: var(--osk-muted);
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+}
+
+.osk-list-toggle:hover { color: var(--osk-ink); }
+
+.osk-list {
+  overflow-y: auto;
+  max-height: 260px;
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  margin-right: -4px;
+  padding-right: 4px;
+}
+
+.osk-list-empty {
+  padding: 10px 4px;
+  font-family: var(--mono);
+  font-size: 10px;
+  color: var(--osk-muted);
+  text-align: center;
+}
+
+.osk-list-row {
+  display: grid;
+  grid-template-columns: 8px 1fr auto auto;
+  align-items: center;
+  gap: 7px;
+  padding: 4px 6px;
+  background: none;
+  border: 1px solid transparent;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: var(--mono);
+  font-size: 10.5px;
+  color: var(--osk-muted);
+  text-align: left;
+}
+
+.osk-list-row:hover { background: rgba(56, 189, 248, 0.09); color: var(--osk-ink); }
+
+.osk-list-row.active {
+  background: rgba(56, 189, 248, 0.16);
+  border-color: var(--osk-accent);
+  color: var(--osk-ink);
+}
+
+.osk-list-row .dot { width: 7px; height: 7px; border-radius: 50%; }
+.osk-list-row .cs { font-weight: 600; color: var(--osk-ink); }
+.osk-list-row .fl { font-size: 9.5px; }
+.osk-list-row .kt { font-size: 9.5px; opacity: 0.75; }
+
+/* ── Feed controls ───────────────────────────────────────────────── */
+.osk-panel-feed {
+  top: 14px;
+  right: 14px;
+  width: 186px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 7px;
+}
+
+.osk-feed-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+.osk-feed-row label {
+  font-family: var(--mono);
+  font-size: 9.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--osk-muted);
+}
+
+.osk-feed-row select {
+  flex: 1;
+  max-width: 110px;
+  padding: 3px 6px;
+  background: rgba(2, 6, 23, 0.6);
+  border: 1px solid var(--osk-line);
+  border-radius: 5px;
+  color: var(--osk-ink);
+  font-family: var(--mono);
+  font-size: 10px;
+  cursor: pointer;
+  outline: none;
+}
+
+.osk-feed-actions { display: flex; gap: 5px; }
+
+.osk-feed-note {
+  font-family: var(--mono);
+  font-size: 9px;
+  color: var(--osk-muted);
+  text-align: center;
+}
+
+/* ── Buttons ─────────────────────────────────────────────────────── */
+.osk-btn {
+  flex: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  padding: 5px 8px;
+  background: var(--osk-accent);
+  border: 1px solid var(--osk-accent);
+  border-radius: 6px;
+  color: #0b1120;
+  font-family: var(--mono);
+  font-size: 10px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: all 140ms ease;
+}
+
+.osk-btn:hover { filter: brightness(1.12); }
+.osk-btn:disabled { opacity: 0.55; cursor: default; }
+
+.osk-btn.ghost {
+  flex: 0 0 auto;
+  background: rgba(2, 6, 23, 0.55);
+  border-color: var(--osk-line);
+  color: var(--osk-muted);
+}
+
+.osk-btn.ghost:hover { color: var(--osk-ink); border-color: var(--osk-accent); }
+
+.osk-icon-btn {
+  background: none;
+  border: none;
+  color: var(--osk-muted);
+  cursor: pointer;
+  padding: 2px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 4px;
+}
+
+.osk-icon-btn:hover { color: var(--osk-ink); background: rgba(148, 163, 184, 0.15); }
+
+.osk-spin { animation: osk-rotate 900ms linear infinite; }
+@keyframes osk-rotate { to { transform: rotate(360deg); } }
+
+/* ── Header feed pill ────────────────────────────────────────────── */
+.osk-feed-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-left: 10px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+}
+
+.osk-feed-pill .dot { width: 6px; height: 6px; border-radius: 50%; background: currentColor; }
+.osk-feed-pill.ok   { color: #15803d; background: var(--healthy-soft); border: 1px solid var(--healthy-border); }
+.osk-feed-pill.bad  { color: #b45309; background: var(--warn-soft);    border: 1px solid var(--warn-border); }
+.osk-feed-pill.idle { color: var(--muted-2); background: var(--surface-2); border: 1px solid var(--line); }
+.osk-feed-pill.ok .dot { animation: osk-blink 2s ease-in-out infinite; }
+
+@keyframes osk-blink { 50% { opacity: 0.25; } }
+
+/* ── Error banner ────────────────────────────────────────────────── */
+.osk-error {
+  position: absolute;
+  top: 14px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 950;
+  display: flex;
+  align-items: flex-start;
+  gap: 9px;
+  max-width: 460px;
+  padding: 10px 12px;
+  background: rgba(69, 26, 3, 0.94);
+  border: 1px solid rgba(249, 115, 22, 0.5);
+  border-radius: 9px;
+  color: #fed7aa;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 18px 40px -18px rgba(0, 0, 0, 0.8);
+}
+
+.osk-error strong { font-size: 11.5px; font-family: var(--cond); letter-spacing: 0.02em; }
+.osk-error p { margin: 2px 0 0; font-size: 11px; line-height: 1.45; color: #fdba74; }
+.osk-error .osk-icon-btn { color: #fdba74; }
+
+/* ── Altitude legend ─────────────────────────────────────────────── */
+.osk-legend {
+  position: absolute;
+  left: 14px;
+  bottom: 14px;
+  z-index: 900;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 7px 11px;
+  background: var(--osk-glass);
+  backdrop-filter: blur(14px);
+  border: 1px solid var(--osk-line);
+  border-radius: 999px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--osk-muted);
+  box-shadow: 0 14px 32px -16px rgba(0, 0, 0, 0.7);
+}
+
+.osk-legend-title {
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-weight: 700;
+  color: var(--osk-ink);
+}
+
+.osk-legend-item { display: inline-flex; align-items: center; gap: 4px; white-space: nowrap; }
+.osk-legend-item i { width: 9px; height: 9px; border-radius: 2px; display: inline-block; }
+
+/* ── Attribution ─────────────────────────────────────────────────── */
+.osk-attrib {
+  position: absolute;
+  right: 14px;
+  bottom: 62px;
+  z-index: 900;
+  max-width: 300px;
+  padding: 5px 9px;
+  background: rgba(15, 23, 42, 0.7);
+  border-radius: 6px;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  line-height: 1.5;
+  color: var(--osk-muted);
+  text-align: right;
+  pointer-events: none;
+}
+
+.osk-attrib strong { color: var(--osk-ink); }
+
+/* ── Aircraft detail drawer ──────────────────────────────────────── */
+.osk-drawer {
+  position: absolute;
+  top: 14px;
+  right: 216px;
+  z-index: 940;
+  width: 322px;
+  max-height: calc(100% - 28px);
+  overflow-y: auto;
+  padding: 0 0 12px;
+  background: var(--osk-glass);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid var(--osk-line);
+  border-radius: 10px;
+  color: var(--osk-ink);
+  box-shadow: 0 24px 55px -20px rgba(0, 0, 0, 0.85);
+  animation: osk-slide-in 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+@keyframes osk-slide-in {
+  from { opacity: 0; transform: translateX(14px); }
+  to   { opacity: 1; transform: translateX(0); }
+}
+
+.osk-drawer-head {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 8px;
+  padding: 12px 12px 10px;
+  border-left: 4px solid currentColor;
+  border-bottom: 1px solid var(--osk-line);
+}
+
+.osk-drawer-head h3 {
+  margin: 0;
+  font-family: var(--mono);
+  font-size: 17px;
+  font-weight: 700;
+  letter-spacing: 0.03em;
+  color: var(--osk-ink);
+}
+
+.osk-drawer-head p {
+  margin: 2px 0 0;
+  font-size: 10.5px;
+  color: var(--osk-muted);
+}
+
+.osk-drawer-status {
+  padding: 7px 14px;
+  font-family: var(--mono);
+  font-size: 11px;
+  font-weight: 600;
+  border-bottom: 1px solid var(--osk-line);
+}
+
+.osk-kv-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1px;
+  background: var(--osk-line);
+  border-bottom: 1px solid var(--osk-line);
+}
+
+.osk-kv-grid > div {
+  padding: 7px 12px;
+  background: var(--osk-glass-2);
+}
+
+.osk-kv-grid label {
+  display: block;
+  font-family: var(--mono);
+  font-size: 8.5px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--osk-muted);
+  margin-bottom: 2px;
+}
+
+.osk-kv-grid span {
+  font-family: var(--mono);
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--osk-ink);
+}
+
+.osk-drawer-foot { padding: 10px 12px 0; }
+
+.osk-fix-age {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--mono);
+  font-size: 9.5px;
+  color: var(--osk-muted);
+  margin-bottom: 9px;
+}
+
+.osk-spi {
+  padding: 1px 5px;
+  border-radius: 3px;
+  background: rgba(239, 68, 68, 0.18);
+  border: 1px solid rgba(239, 68, 68, 0.45);
+  color: #fca5a5;
+  font-weight: 700;
+}
+
+.osk-drawer-actions { display: flex; gap: 6px; }
+
+/* Leaflet's own zoom control, restyled to match the glass overlays. */
+.osk-map-wrap .leaflet-control-zoom a {
+  background: var(--osk-glass);
+  border: 1px solid var(--osk-line);
+  color: var(--osk-ink);
+  backdrop-filter: blur(10px);
+}
+.osk-map-wrap .leaflet-control-zoom a:hover { background: var(--osk-glass-2); color: var(--osk-accent); }
+
+/* Narrow windows: the drawer would collide with the feed card, so it moves
+   under it and the aircraft list gives up some height. */
+@media (max-width: 1180px) {
+  .osk-drawer { right: 14px; top: 150px; max-height: calc(100% - 172px); }
+  .osk-attrib { display: none; }
+  .osk-legend { flex-wrap: wrap; max-width: 268px; border-radius: 10px; }
+}

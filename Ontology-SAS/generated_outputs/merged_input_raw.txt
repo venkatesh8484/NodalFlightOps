@@ -1,0 +1,875 @@
+============================================================
+FILE: aircraft-body-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: aircraft-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: Airlines_Business_Handbook.pdf
+============================================================
+KLM ROYAL DUTCH AIRLINES  ·  ENTERPRISE BUSINESS HANDBOOK
+Understanding KLM Royal Dutch
+Airlines
+A Comprehensive Business Operations, Passenger Services, Commercial Distribution, and
+Fleet Management Manual
+Legal Operating Entity: Koninklijke Luchtvaart Maatschappij N.V. (Founded 7 October 1919)
+Corporate Identifiers: IATA Airline Designator: KL · ICAO Designator: KLM · Accounting Code: 074 · Callsign: KLM
+Parent Group: Air France-KLM S.A. (Dual Hub Strategy: Amsterdam Schiphol AMS & Paris Charles de Gaulle CDG)
+Alliance Membership: SkyTeam Alliance (Co-Founding Member with Air France, Delta Air Lines, Korean Air)
+Operational Scope: 160+ Global Destinations across 70 Countries · 34+ Million Annual Passengers · 500+ Daily Flights
+Primary Operating Base: Amsterdam Airport Schiphol (AMS / EHAM), Netherlands
+Subsidiaries: KLM Cityhopper B.V. (IATA: WA / ICAO: KLC), Transavia Airlines C.V., Martinair Holland N.V.
+1919
+World's Oldest Operating Airline
+160+
+Global Network Destinations
+074
+IATA Accountable Ticket Code
+AMS
+Schiphol Wave Hub Base
+ 1. Who We Are: Corporate Structure & Alliance Network
+Koninklijke Luchtvaart Maatschappij N.V. (KLM Royal Dutch Airlines) is the flag carrier airline of the Netherlands.
+Founded on 7 October 1919 by Albert Plesman under a royal charter from Queen Wilhelmina, KLM is the oldest airline in
+the world still operating under its original name. Headquartered in Amstelveen, adjacent to its primary operating base at
+Amsterdam Airport Schiphol, KLM forms one of Europe's largest airline groups following its 2004 merger with Air France.
+KLM operates a dual-carrier model for scheduled passenger services: KLM Mainline (IATA: KL / ICAO: KLM) operates
+intercontinental long-haul widebodies and trunk European narrowbody routes, while KLM Cityhopper (IATA: WA / ICAO:
+KLC) operates a high-frequency regional feeder network across the UK, Scandinavia, Germany, and Eastern Europe with
+Embraer E-Jets. Through the SkyTeam Alliance and a transatlantic joint venture with Delta Air Lines and Virgin Atlantic,
+KLM provides global reach with synchronized commercial schedules, reciprocal frequent flyer benefits, and shared lounge
+facilities.
+Entity / Operating Unit
+Role & Airline Codes
+Fleet & Network Scope
+Core Business Responsibilities
+KLM Mainline
+Flag Carrier
+IATA: KL · ICAO: KLM
+Boeing 777-200ER/300ER, Boeing
+787-9/10, Airbus A330, Boeing
+737-700/800/900, Airbus A321neo
+Intercontinental long-haul routes (North
+America, Asia, South America, Africa) and
+European trunk business routes.
+KLM Cityhopper (KLC)
+Regional Feeder
+Subsidiary
+IATA: WA · ICAO: KLC
+Embraer 175, Embraer 190,
+Embraer 195-E2 (60+ aircraft)
+High-frequency regional European feeder
+routes connecting regional stations (e.g.,
+BUD, NWI, BLL) into AMS hub waves.
+KLM Cargo / Martinair
+Freight & Logistics
+IATA: MP · ICAO: MPH
+Dedicated Boeing 747-400BCF/ERF
+Freighters + Belly Cargo Capacity
+Perishable goods (Dutch flowers,
+pharmaceuticals), high-value cargo, and
+global air freight forwarding.
+KLM Engineering &
+Maintenance (E&M;)
+MRO Business Unit
+EASA Part-145
+Certified
+Hangar 10, 11, 12, 14 complexes at
+Schiphol Oost
+Aircraft heavy maintenance, engine
+overhauls (GE90, GEnx, CFM56),
+component repair, and line maintenance.
+2. Commercial Passenger Lifecycle & Distribution Systems
+Commercial operations handle the entire customer engagement from shopping and reservation to accountable ticketing and
+loyalty accrual. KLM utilizes the Amadeus Altéa Passenger Service System (PSS) suite as its core commercial and
+departure control backbone.
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 2 of 7
+ Key Commercial Documents & Artifacts
+Document / Record
+Industry Standard
+KLM Format & Structure
+Business Function & Operational
+Lifecycle
+Passenger Name Record
+(PNR)
+IATA GDS/PSS
+Standard
+6-character alphanumeric code
+(e.g., AB12CD, XZ99KP)
+Master booking itinerary containing traveler
+names, contact details, SSRs (Special Service
+Requests), and flight segments.
+Electronic Ticket
+(E-Ticket)
+IATA Resolution 722f
+13-digit accountable number with
+prefix 074- (e.g.,
+074-2491048201)
+Accountable financial contract of carriage
+issued upon payment confirmation, containing
+one or more flight coupons.
+Flight Coupon
+IATA AIDM Coupon
+Coupon sequence 1..N (e.g.,
+Coupon 1: AMS-JFK, Coupon 2:
+JFK-AMS)
+Represents the right of passage for a single
+flight leg; transitions through states: OPEN  
+CHECKED_IN   FLOWN   EXCHANGED.
+Fare Basis & Booking
+Class
+IATA ATPCO Tariff
+Code
+Class letter (J, W, Y, M) + Tariff
+rules (e.g., YSTD, MLOW)
+Governs pricing tier, ticket refundability, date
+change penalties, baggage allowance, and
+mileage accrual rates.
+Boarding Pass Barcode
+IATA Resolution 792
+(BCBP)
+PDF417 2D Barcode string (e.g.,
+M1NOVAK/ELENA EAB12CD...)
+Authorizes passenger passage through
+security checkpoints and gate boarding optical
+scanners.
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 3 of 7
+ 3. Cabin Classes, Flying Blue Loyalty & Ancillaries
+KLM offers four distinctive passenger cabin experiences tailored to short-haul European and long-haul intercontinental
+travel, supported by the Flying Blue frequent flyer program and a wide range of unbundled ancillary service options.
+Cabin Class Compartment
+Booking
+Codes
+Seating Specs & Comfort
+Service Inclusions & Luggage Allowance
+World Business Class
+(WBC)
+J, C, D, I, Z
+Full-flat bed seats (207 cm), direct aisle
+access (1-2-1 layout on 787/777),
+personal privacy shield, 18-inch HD
+touchscreen.
+2x 32kg checked bags, SkyPriority fast-track,
+Crown Lounge 25/52 access, multi-course
+dining by Dutch Michelin-starred chefs, iconic
+Delft Blue miniature house.
+Premium Comfort Class
+W, S, A
+Dedicated quiet cabin (2-3-2 on 787),
+97 cm pitch, 20 cm recline, footrest,
+wider ergonomic seat.
+2x 23kg checked bags, SkyPriority boarding,
+enhanced dining menu, noise-cancelling
+headphones, amenity kit.
+Economy Comfort Zone
+Y, B, M
+(Ancillary)
+Forward rows of Economy cabin, up to
+89 cm pitch (+10 cm extra legroom),
+double recline angle.
+Standard economy catering, priority deplaning,
+USB/AC in-seat power, optional pre-ordered
+meal.
+Economy Standard Class
+U, K, H, L, Q,
+T, V, N, R
+Standard ergonomic seating (79 cm
+pitch), adjustable headrest, 11-inch
+in-flight entertainment screen.
+1x 23kg bag (standard ticket) or hand luggage
+only (Light fare), complimentary hot meals,
+snacks, and beverages.
+Flying Blue Frequent Flyer Program Tier Structure
+Tier Level
+XP Requirement
+Miles Bonus Rate
+Key Business Benefits & Privileges
+Explorer
+Entry Level (0 XP)
+4 Miles per € spent
+Earn & spend Miles on flights, €10 discount on 1st checked
+bag, seating selection options.
+Silver
+100 XP / 12 months
+6 Miles per € spent (+50%)
+Priority check-in & bag drop, +1 extra checked bag
+allowance, 25% discount on preferred seats.
+Gold
+180 XP / 12 months
+7 Miles per € spent (+75%)
+SkyPriority (dedicated check-in, priority security, priority
+boarding, baggage handling), complimentary worldwide
+SkyTeam Lounge access with +1 guest, 50% discount on
+Economy Comfort.
+Platinum
+300 XP / 12 months
+8 Miles per € spent
+(+100%)
+Guaranteed booking seats in Economy, 24/7 dedicated
+Platinum Service Line, complimentary preferred seating
+across entire cabin, access to VIP Crown Lounge reserved
+suites.
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 4 of 7
+ 4. Flight Operations, Schiphol Hub & Aircraft Turnaround
+KLM's operational hub at Amsterdam Airport Schiphol (AMS) operates as a synchronized wave-bank system (6 daily
+connecting peaks). A typical wave concentrates 40–50 arriving European flights within a 45-minute window, followed by a
+60–90 minute transfer bank that disperses connecting passengers and luggage onto outbound intercontinental widebody
+departures.
+Aviation Information Data Exchange (AIDX) Milestone Cycle
+Every operational flight instance tracks five mandatory AIDX timestamp milestones through the KLM Operations Control
+Centre (OCC):
+AIDX Milestone
+Aviation Event
+Sensor / Source Feed
+Operational Action Triggered
+1. Out-of-Gate (Out)
+Actual Off-Blocks Time
+(AOBT)
+Apron Stand Sensor / Chock
+Removal
+Tug pushback initiated; parking stand
+released; turnaround clock stopped.
+2. Off-Ground (Off)
+Actual Take-off Time (ATOT)
+Runway Inductive Loop /
+Telemetry
+Wheels-up confirmed; Eurocontrol en-route
+air traffic tracking initiated.
+3. In-Flight Telemetry
+ADS-B State Vectors (1 Hz)
+Transponder / OpenSky
+Network
+Real-time GPS coordinates, altitude (FL),
+groundspeed, heading, squawk code.
+4. On-Ground (On)
+Actual Touchdown Time
+(ALDT)
+Airport Surface Radar
+(ASDE-X)
+Touchdown confirmed; destination gate
+allocation and marshaling team alerted.
+5. In-Gate (In)
+Actual In-Blocks Time (AIBT)
+Gate Docking Guidance
+System (VDGS)
+Aircraft parked; chocks set; jet bridge
+connected; deplaning and baggage offload
+commence.
+IATA AHM730 Delay Code Classification & Attribution
+When flight block times deviate from schedule by more than 15 minutes, KLM OCC assigns standardized IATA delay codes
+to classify root causes for regulatory compliance (EU261), network recovery, and ground handler service level agreements
+(SLAs):
+IATA Delay Code
+Category
+Standard Root Cause Description
+KLM Mitigating Procedure
+Code 11–19
+Passenger & Baggage
+Late passenger check-in, boarding gate
+congestion, offloading bags of no-show
+passengers (Triple-A rule).
+Automated SMS gate alerts, baggage
+offload prioritization, transfer runners at
+AMS.
+Code 41–48
+Aircraft Defects
+Technical defect on airframe or systems,
+Minimum Equipment List (MEL) rectifications,
+unscheduled line maintenance.
+KLM E&M; fast-response teams
+dispatched from Hangar 14, spare parts
+pre-positioned at Pier D/E.
+Code 51–58
+Ground Handling
+Damage
+Damage inflicted during cargo/baggage
+loading, belt loader collision, high-loader
+malfunction.
+Aircraft structural damage inspection, tug
+replacement, incident reporting.
+Code 71–79
+Air Traffic Control
+(ATC)
+ATC slot delay, en-route airspace restriction,
+weather-related airport acceptance rate
+reduction.
+Collaborative Decision Making (CDM)
+slot negotiation with Eurocontrol / FAA.
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 5 of 7
+ 5. Baggage Operations & IATA Resolution 753 Custody Chain
+Baggage handling is a high-volume, mission-critical operational process. KLM processes over 50,000 checked bags daily at
+Schiphol. Under IATA Resolution 753, the airline must maintain an unbroken digital chain of custody across four
+mandatory verification touchpoints.
+End-to-End Baggage Custody Progression (IATA 10-Digit Tag)
+Custody Stage
+IATA 753 Mandate
+Handling Process at Schiphol (AMS) & Destination
+System Status Code
+1. Passenger Drop
+Mandatory Step 1:
+Acquisition of Bag
+Passenger deposits luggage at Self-Service Bag Drop
+or SkyPriority check-in desk. Weight verified against
+ticket allowance; 10-digit IATA barcode tag affixed (e.g.,
+0074829104).
+ACCEPTED_AT_CHECKIN
+2. Security EDS
+Regulatory Mandate:
+100% Screening
+Luggage enters the subterranean Schiphol Baggage
+Hall (BHS). Automated Computed Tomography
+Explosive Detection Systems (EDS) inspect and clear
+the bag at high speed.
+SCREENED_CLEARED
+3. Container Sortation
+Mandatory Step 2:
+Loading Unitisation
+High-speed sortation trays route bag to assigned flight
+makeup carousel at Pier D/E. Optical scanner reads
+barcode tag and assigns bag to specific Unit Load
+Device (ULD Container #AKE9941KL).
+LOADED_INTO_ULD
+4. Ramp Aircraft Load
+Mandatory Step 3:
+Delivery to Aircraft
+Ramp handlers transport ULD container to aircraft
+stand (Gate D04). Handheld optical scanner verifies
+bag against departure manifest before loading into
+aircraft cargo hold.
+LOADED_ON_AIRCRAFT
+5. Destination
+Carousel
+Mandatory Step 4:
+Return to Passenger
+Upon touchdown at destination (e.g. JFK Terminal 4),
+ramp crew offloads ULD and transfers bags onto
+reclaim belt. Final optical scan confirms delivery onto
+baggage reclaim carousel.
+DELIVERED_TO_CAROUSEL
+Triple-A Passenger-Baggage Reconciliation Security Rule
+International aviation security regulations mandate the Authorized Passenger and Baggage Reconciliation System
+(Triple-A). No baggage item may travel on an aircraft unless the passenger who checked the luggage has successfully
+scanned their boarding pass at the departure gate and embarked the aircraft. If a checked passenger fails to board before
+gate closure, the flight is placed on Code 15 Baggage Offload Hold, and the specific ULD container is opened to remove
+the bag before departure clearance.
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 6 of 7
+ 6. Master Business Glossary & Domain Taxonomy
+This business glossary defines all canonical terms, entities, and operational concepts used across KLM Royal Dutch
+Airlines. The ontology engine parses these definitions to extract classes, properties, thesauri, and relational knowledge
+graphs.
+Term / Entity
+Domain Area
+Official KLM Business Definition & Operational Meaning
+Airline (Carrier)
+Organization
+Commercial air transport operator holding an Air Operator Certificate (AOC)
+authorized for passenger carriage (e.g. KLM, KLM Cityhopper).
+Operating Carrier
+Organization
+The specific airline entity that physically provides aircraft, flight crew, and fuel to
+execute a flight leg.
+Marketing Carrier
+Organization
+The commercial carrier that sells seats on a flight under its own airline designator and
+flight number via codeshare.
+Alliance
+Organization
+Global partnership of airlines (e.g. SkyTeam) sharing network connectivity, frequent
+flyer reciprocal accrual, and lounge facilities.
+Commercial Airport
+Place & Facility
+Public aerodrome equipped with paved runways, passenger terminal facilities,
+customs/immigration, and navigational aids (e.g., AMS, JFK, BUD).
+Flight Instance
+FlightOperations
+The dated, individual operational execution of a scheduled commercial flight service
+on a specific calendar date (e.g. KL641 / 2026-09-01).
+Passenger Name Record
+CommercialDocume
+nt
+A 6-character master booking record locator created in the PSS containing traveler
+itinerary and ticketing status (e.g., AB12CD).
+Electronic Ticket
+CommercialDocume
+nt
+An accountable 13-digit standard transport document (KLM prefix 074) issued upon
+payment confirmation, legally binding carriage.
+Checked Bag (Baggage)
+Asset / Service
+Passenger luggage accepted at check-in for transport in the aircraft cargo hold,
+tracked via a 10-digit IATA barcode tag.
+Flying Blue Program
+Service & Loyalty
+The joint loyalty currency and tier recognition program of Air France-KLM, awarding
+Experience Points (XP) and redeemable Miles.
+Aircraft Airframe
+Asset & Fleet
+Individual commercial aircraft vehicle registered under a civil aviation tail number (e.g.
+PH-BHA Boeing 787-9 Dreamliner).
+Maintenance Check
+Asset & Fleet
+Scheduled technical inspection mandated by civil aviation authorities (Line check,
+A-Check, C-Check, Engine Borescope).
+KLM Royal Dutch Airlines · Business Operations & Passenger Services Handbook
+OPERATIONAL BUSINESS MANUAL
+Koninklijke Luchtvaart Maatschappij N.V. · Enterprise Business Reference
+Page 7 of 7
+
+============================================================
+FILE: airport-facility-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: ancillary-service-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: bag-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: bag-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: booking-class-designator.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- cabin_class
+- definition
+- phase
+- status
+
+============================================================
+FILE: booking-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: cabin-classes.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: canonical_data_model_tables.csv
+============================================================
+CSV Column Headers:
+- table_name
+- domain
+- primary_key
+- business_natural_key
+- table_type
+- description
+
+============================================================
+FILE: change-classification.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: checkin-channel.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: controlled_vocabularies_catalog.csv
+============================================================
+CSV Column Headers:
+- vocab_name
+- item_count
+- purpose
+- sample_values
+
+============================================================
+FILE: coupon-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: crew-role.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: data_properties_master.csv
+============================================================
+CSV Column Headers:
+- property
+- domain
+- range
+- phase
+- definition
+
+============================================================
+FILE: delay-reasons.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: entities_master.csv
+============================================================
+CSV Column Headers:
+- entity_name
+- domain
+- meta_type
+- parent_class
+- iata_aidm_term
+- description
+- klm_context
+
+============================================================
+FILE: flight-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: klm_airports_hubs.csv
+============================================================
+CSV Column Headers:
+- airport_id
+- iata_code
+- icao_code
+- airport_name
+- city
+- country
+- iso_country
+- latitude
+- longitude
+- elevation_ft
+- facility_type
+- is_primary_hub
+- terminals
+- assigned_gates
+- hourly_passenger_capacity
+- daily_flights
+- utilization_rate_pct
+- operational_status
+- metar_weather
+
+============================================================
+FILE: klm_baggage_tracking.csv
+============================================================
+CSV Column Headers:
+- bag_tag_number
+- pnr_locator
+- passenger_name
+- flight_number
+- origin
+- destination
+- bag_weight_kg
+- event_name
+- timestamp
+- location
+- scanner_id
+- status
+- is_discrepancy
+
+============================================================
+FILE: klm_fleet_master.csv
+============================================================
+CSV Column Headers:
+- registration
+- icao24_hex
+- aircraft_model
+- iata_type
+- icao_type
+- airline
+- manufacturer
+- msn_serial
+- delivery_date
+- total_capacity
+- business_seats
+- premium_economy_seats
+- economy_seats
+- engine_type
+- status
+- current_flight
+- assigned_hub
+- next_scheduled_maintenance
+- flight_hours
+- flight_cycles
+
+============================================================
+FILE: klm_flight_operations.csv
+============================================================
+CSV Column Headers:
+- flight_instance_id
+- flight_number
+- callsign
+- marketing_carrier
+- operating_carrier
+- codeshare_numbers
+- origin_airport
+- destination_airport
+- scheduled_departure
+- actual_departure
+- scheduled_arrival
+- actual_arrival
+- assigned_aircraft
+- departure_terminal
+- departure_gate
+- arrival_terminal
+- arrival_gate
+- flight_status
+- delay_minutes
+- primary_delay_code
+- booked_passengers
+- max_capacity
+- passenger_load_factor_pct
+- checked_bags_count
+- block_fuel_kg
+- distance_nm
+- telemetry_cruise_altitude_ft
+- telemetry_avg_groundspeed_kts
+
+============================================================
+FILE: klm_operational_events.csv
+============================================================
+CSV Column Headers:
+- event_id
+- flight_instance_id
+- event_category
+- event_name
+- timestamp
+- facility
+- source_system
+- data_payload
+
+============================================================
+FILE: klm_passenger_bookings.csv
+============================================================
+CSV Column Headers:
+- passenger_id
+- full_name
+- pnr_locator
+- ticket_number
+- e_ticket_coupon_id
+- flight_instance_id
+- flight_number
+- route
+- cabin_class
+- booking_class_code
+- fare_basis_code
+- assigned_seat
+- seat_type
+- flying_blue_account
+- loyalty_tier
+- checkin_channel
+- checkin_timestamp
+- boarding_pass_barcode
+- boarding_status
+- boarding_scan_time
+- boarding_gate
+- checked_bag_tag
+- bag_weight_kg
+- bag_status
+- purchased_ancillaries
+
+============================================================
+FILE: license-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: loyalty-tier.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: maintenance-event-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: metadata_registry.csv
+============================================================
+CSV Column Headers:
+- catalog_id
+- system_name
+- authority_level
+- domain_coverage
+- update_frequency
+- governance_tier
+- data_format
+- owner
+
+============================================================
+FILE: object_properties_master.csv
+============================================================
+CSV Column Headers:
+- property
+- domain
+- range
+- phase
+- definition
+
+============================================================
+FILE: order-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: sales-channel.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: seat-type.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: steward-role.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+============================================================
+FILE: thesaurus_terms.csv
+============================================================
+CSV Column Headers:
+- term_id
+- pref_label
+- alt_labels
+- broader_term
+- definition
+- grounded_class
+- domain
+
+============================================================
+FILE: ticket-status.csv
+============================================================
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status

@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+checked,Checked,A bag checked into the aircraft hold at check-in,6,active-phase-6
+carry-on,Carry-On,A bag carried into the cabin by the passenger,6,active-phase-6
+gate-checked,Gate-Checked,A carry-on bag checked into the hold at the boarding gate,6,active-phase-6

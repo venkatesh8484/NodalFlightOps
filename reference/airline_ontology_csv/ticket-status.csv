@@ -1,0 +1,6 @@
+notation,pref_label,definition,phase,status
+open,Open,Issued and at least one coupon remains unused,6,active-phase-6
+used,Used,Every coupon on the ticket has been flown,6,active-phase-6
+exchanged,Exchanged,Exchanged for a new ticket,6,active-phase-6
+refunded,Refunded,The ticket was refunded,6,active-phase-6
+void,Void,"Voided within the void window, no refund process needed",6,active-phase-6

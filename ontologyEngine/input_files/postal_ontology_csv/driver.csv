@@ -1,0 +1,11 @@
+driver_id,driver_name,home_hub_id,carrier_id,hours_available_today,status,certifications
+DRV-0001,Lena Hoffmann,HUB-CGN-01,CAR-INH,6.5,ON_DUTY,C+E;ADR
+DRV-0002,Mattis Vogel,HUB-CGN-01,CAR-INH,4.0,ON_DUTY,C+E
+DRV-0003,Sofia Braun,HUB-NUE-01,CAR-INH,7.5,ON_DUTY,C+E;ADR
+DRV-0004,Jonas Keller,HUB-NUE-01,CAR-DBS,3.0,ON_DUTY,C+E
+DRV-0005,Amelie Fischer,HUB-STR-01,CAR-INH,5.5,ON_DUTY,C+E
+DRV-0006,Noah Wagner,HUB-STR-01,CAR-DBS,8.0,RESTING,C+E;ADR
+DRV-0007,Emil Richter,HUB-FRA-01,CAR-INH,2.0,ON_DUTY,C+E;ADR
+DRV-0008,Clara Schulz,HUB-MUC-01,CAR-GLS,6.0,ON_DUTY,C+E
+DRV-0009,Paul Neumann,HUB-BER-01,CAR-INH,7.0,ON_DUTY,C+E
+DRV-0010,Marie Zimmermann,HUB-LYS-01,CAR-DPD,5.0,ON_DUTY,C+E

@@ -1,0 +1,127 @@
+[
+  {
+    "Approved_Term": "Hub",
+    "Aliases": [
+      "Terminal",
+      "Sorting Centre",
+      "Sorting Center",
+      "Sorting Facility"
+    ]
+  },
+  {
+    "Approved_Term": "Carrier",
+    "Aliases": [
+      "Logistics Provider",
+      "3PL Carrier",
+      "Hauler"
+    ]
+  },
+  {
+    "Approved_Term": "Driver",
+    "Aliases": [
+      "Operator",
+      "Chauffeur",
+      "Truck Driver"
+    ]
+  },
+  {
+    "Approved_Term": "LinehaulRoute",
+    "Aliases": [
+      "Linehaul",
+      "Logistics Route",
+      "Transit Leg"
+    ]
+  },
+  {
+    "Approved_Term": "TransportVehicle",
+    "Aliases": [
+      "Vehicle",
+      "Fleet Asset",
+      "Truck"
+    ]
+  },
+  {
+    "Approved_Term": "ShipmentConsignment",
+    "Aliases": [
+      "Consignment",
+      "Shipment",
+      "Parcel Batch"
+    ]
+  },
+  {
+    "Approved_Term": "ConsignmentVehicleAssignment",
+    "Aliases": [
+      "Assignment",
+      "Vehicle Assignment",
+      "Manifest Entry"
+    ]
+  },
+  {
+    "Approved_Term": "TelemetryEvent",
+    "Aliases": [
+      "Telemetry",
+      "Alert Event",
+      "SCADA Event"
+    ]
+  },
+  {
+    "Approved_Term": "ActionType",
+    "Aliases": [
+      "Operational Action",
+      "Action Class",
+      "Intervention Type"
+    ]
+  },
+  {
+    "Approved_Term": "ActionExecutionLog",
+    "Aliases": [
+      "Action Log",
+      "Execution Record",
+      "Operational Log"
+    ]
+  },
+  {
+    "Approved_Term": "Mega-Hub",
+    "Aliases": [
+      "Mega Sorting Centre",
+      "Central Hub"
+    ]
+  },
+  {
+    "Approved_Term": "Regional Hub",
+    "Aliases": [
+      "Regional sorting terminal",
+      "Secondary Hub"
+    ]
+  },
+  {
+    "Approved_Term": "Depot",
+    "Aliases": [
+      "Delivery Depot",
+      "Local Office"
+    ]
+  },
+  {
+    "Approved_Term": "Universal Postal Service",
+    "Aliases": [
+      "Universal Service Obligation",
+      "USO",
+      "Public Service Mail"
+    ]
+  },
+  {
+    "Approved_Term": "Parcel Locker",
+    "Aliases": [
+      "Smart Locker",
+      "Locker Box"
+    ]
+  },
+  {
+    "Approved_Term": "Service Point",
+    "Aliases": [
+      "PUDO",
+      "Pick-up Drop-off Point",
+      "Retail Outlet"
+    ]
+  }
+]

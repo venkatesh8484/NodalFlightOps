@@ -1,0 +1,228 @@
+[
+  {
+    "Approved_Term": "Airport",
+    "Aliases": [
+      "Aerodrome",
+      "Airfield"
+    ]
+  },
+  {
+    "Approved_Term": "Passenger Terminal",
+    "Aliases": [
+      "Departure Hall",
+      "Arrivals Terminal"
+    ]
+  },
+  {
+    "Approved_Term": "Cargo Terminal",
+    "Aliases": [
+      "Freight Terminal",
+      "Air Cargo Facility"
+    ]
+  },
+  {
+    "Approved_Term": "Ground Handling Facility",
+    "Aliases": [
+      "Ramp Services",
+      "Apron Operations"
+    ]
+  },
+  {
+    "Approved_Term": "Transfer Desk",
+    "Aliases": [
+      "Connections Desk",
+      "Transit Desk"
+    ]
+  },
+  {
+    "Approved_Term": "Self-Service Kiosk",
+    "Aliases": [
+      "Check-in Kiosk",
+      "Bag-Drop Kiosk"
+    ]
+  },
+  {
+    "Approved_Term": "Hub Airport",
+    "Aliases": [
+      "Primary Hub",
+      "Home Base"
+    ]
+  },
+  {
+    "Approved_Term": "Spoke Airport",
+    "Aliases": [
+      "Destination Airport",
+      "Outstation"
+    ]
+  },
+  {
+    "Approved_Term": "International Gateway",
+    "Aliases": [
+      "Long-Haul Gateway",
+      "Intercontinental Hub"
+    ]
+  },
+  {
+    "Approved_Term": "Airline",
+    "Aliases": [
+      "Operating Carrier",
+      "Air Carrier"
+    ]
+  },
+  {
+    "Approved_Term": "Mainline Carrier",
+    "Aliases": [
+      "KLM Mainline"
+    ]
+  },
+  {
+    "Approved_Term": "Codeshare Partner",
+    "Aliases": [
+      "Joint-Venture Partner",
+      "Alliance Partner"
+    ]
+  },
+  {
+    "Approved_Term": "Crew",
+    "Aliases": [
+      "Cockpit Crew",
+      "Cabin Crew"
+    ]
+  },
+  {
+    "Approved_Term": "Flight Route",
+    "Aliases": [
+      "City Pair",
+      "Sector"
+    ]
+  },
+  {
+    "Approved_Term": "Aircraft",
+    "Aliases": [
+      "Airframe",
+      "Tail Number"
+    ]
+  },
+  {
+    "Approved_Term": "Widebody Aircraft",
+    "Aliases": [
+      "Long-Haul Aircraft"
+    ]
+  },
+  {
+    "Approved_Term": "Narrowbody Aircraft",
+    "Aliases": [
+      "Mainline Narrowbody"
+    ]
+  },
+  {
+    "Approved_Term": "Short-Haul Aircraft",
+    "Aliases": [
+      "Regional Mainline"
+    ]
+  },
+  {
+    "Approved_Term": "Regional Jet",
+    "Aliases": [
+      "E-Jet"
+    ]
+  },
+  {
+    "Approved_Term": "Flight",
+    "Aliases": [
+      "Flight Instance",
+      "Scheduled Flight"
+    ]
+  },
+  {
+    "Approved_Term": "Aircraft Assignment",
+    "Aliases": [
+      "Tail Assignment",
+      "Rotation Assignment"
+    ]
+  },
+  {
+    "Approved_Term": "Telemetry Event",
+    "Aliases": [
+      "Ops Signal",
+      "Disruption Event"
+    ]
+  },
+  {
+    "Approved_Term": "Mechanical Fault",
+    "Aliases": [
+      "MEL Item",
+      "Tech Log Entry"
+    ]
+  },
+  {
+    "Approved_Term": "Passenger Surge",
+    "Aliases": [
+      "Peak Load Event"
+    ]
+  },
+  {
+    "Approved_Term": "ADS-B Position Ping",
+    "Aliases": [
+      "Live Position Update"
+    ]
+  },
+  {
+    "Approved_Term": "Delay Event",
+    "Aliases": [
+      "Departure Delay",
+      "Arrival Delay"
+    ]
+  },
+  {
+    "Approved_Term": "Weather Hold",
+    "Aliases": [
+      "ATC Ground Stop",
+      "Weather Delay"
+    ]
+  },
+  {
+    "Approved_Term": "Action Type",
+    "Aliases": [
+      "Operational Command",
+      "Playbook Action"
+    ]
+  },
+  {
+    "Approved_Term": "Rebook Passengers",
+    "Aliases": [
+      "Reroute Passengers"
+    ]
+  },
+  {
+    "Approved_Term": "Reallocate Gate Capacity",
+    "Aliases": [
+      "Reallocate Hub Capacity"
+    ]
+  },
+  {
+    "Approved_Term": "Reassign Aircraft",
+    "Aliases": [
+      "Swap Tail Number"
+    ]
+  },
+  {
+    "Approved_Term": "Notify Passenger SLA",
+    "Aliases": [
+      "Passenger Notification"
+    ]
+  },
+  {
+    "Approved_Term": "Action Execution",
+    "Aliases": [
+      "Action Log",
+      "Execution Record"
+    ]
+  },
+  {
+    "Approved_Term": "IATA",
+    "Aliases": [
+      "International Air Transport Association"
+    ]
+  }
+]

@@ -1,0 +1,11 @@
+vocab_name,item_count,purpose,sample_values
+flight-status,8,Standard operational flight progress states,"SCHEDULED, BOARDING, DEPARTED, AIRBORNE, ARRIVED, DELAYED, CANCELLED, DIVERTED"
+delay-reasons,14,IATA AHM730 delay cause taxonomy codes,"Code 11 (Late Check-in), Code 41 (Aircraft Defect), Code 51 (Cargo Damage), Code 71 (ATC En-Route)"
+cabin-classes,4,Physical cabin compartment designations,"World Business Class (J), Premium Comfort (W), Economy Comfort (Y+), Economy Standard (Y)"
+booking-class-designator,10,IATA single-letter fare class hierarchy,"J (Full Business), C (Business Standard), W (Premium), Y (Full Economy), M (Restricted Economy)"
+bag-status,7,IATA Resolution 753 baggage tracking states,"ACCEPTED, SCREENED, SORTED, LOADED_INTO_ULD, LOADED_ON_AIRCRAFT, DELIVERED_TO_CAROUSEL"
+checkin-channel,5,Passenger check-in ingress touchpoints,"MOBILE_APP, WEB, AIRPORT_KIOSK, COUNTER, AUTO_CHECKIN"
+loyalty-tier,4,Flying Blue frequent flyer membership levels,"Explorer (Base), Silver (20% Bonus), Gold (SkyPriority), Platinum (Club 2000)"
+aircraft-status,6,Airframe operational and maintenance status,"OPERATIONAL, IN_FLIGHT, ON_GROUND, MAINTENANCE, AOG (Aircraft On Ground), STORED"
+maintenance-event-type,5,Civil aviation engineering check levels,"PRE_FLIGHT, LINE_CHECK, A_CHECK, C_CHECK, ENGINE_OVERHAUL"
+crew-role,6,Cockpit and cabin flight crew duties,"CAPTAIN (PIC), FIRST_OFFICER, SENIOR_PURSER, CABIN_ATTENDANT, RELIEF_PILOT"

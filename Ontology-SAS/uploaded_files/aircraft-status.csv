@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+active,Active,In active revenue service,4,active-phase-4
+stored,Stored,Temporarily withdrawn from service and placed in storage,4,active-phase-4
+retired,Retired,"Permanently withdrawn from service (sold, scrapped, or preserved)",4,active-phase-4

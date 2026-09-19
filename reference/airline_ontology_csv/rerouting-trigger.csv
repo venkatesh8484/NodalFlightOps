@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+DELAY,Delay,Inbound flight is running late against its schedule.,7,active-phase-7
+DIVERSION,Diversion,Inbound flight landed at an airport other than its scheduled destination.,7,active-phase-7
+CANCELLATION,Cancellation,Inbound flight was withdrawn and did not operate.,7,active-phase-7

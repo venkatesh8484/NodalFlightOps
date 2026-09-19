@@ -1,0 +1,170 @@
+property,domain,range,phase,definition
+codeValue,Identifier,xsd:string,1,The literal code value held by a reified identifier
+validFrom,Identifier,xsd:date,1,Date the identifier became valid
+validTo,Identifier,xsd:date,1,Date the identifier stopped being valid (absent = current)
+sourceRecordId,SourceRecord,xsd:string,1,Natural key of the record within its source system
+ingestedAt,SourceRecord,xsd:dateTime,1,Timestamp the record was ingested into the pipeline
+retrievedAt,Dataset,xsd:dateTime,1,Timestamp the dataset snapshot was retrieved from its source
+confidenceScoreValue,ConfidenceScore,xsd:decimal,1,Numeric confidence 0.0-1.0
+sourceAuthorityLevel,SourceSystem,xsd:string,1,authoritative | non-authoritative | community-maintained
+freshnessRiskNote,SourceSystem,xsd:string,1,Free-text note on staleness risk (e.g. OpenFlights routes frozen since 2014)
+iataCode,Airline,xsd:string,1,2-character IATA airline designator
+icaoCode,Airline,xsd:string,1,3-character ICAO airline designator
+airlineName,Airline,xsd:string,1,Commercial/brand name of the airline
+callsign,Airline,xsd:string,1,Radiotelephony callsign of the airline
+allianceName,Alliance,xsd:string,1,Name of the alliance
+isActive,Organization,xsd:boolean,1,Whether the organization is currently operating
+carrierType,Airline,xsd:string,1,Controlled carrier-type value (see controlled vocabularies)
+legalEntityName,LegalEntity,xsd:string,1,"Registered legal name, e.g. Koninklijke Luchtvaart Maatschappij N.V. for KLM"
+isoCountryCode,Country,xsd:string,2,"ISO 3166-1 alpha-2 country code, e.g. NL"
+countryName,Country,xsd:string,2,English-language country name
+continentCode,Country,xsd:string,2,OurAirports continent enum: AF|AN|AS|EU|NA|OC|SA
+iataCityCode,City,xsd:string,2,"IATA city code, may differ from any single airport's own code (e.g. LON)"
+cityName,City,xsd:string,2,English-language city name
+airportIataCode,Airport,xsd:string,2,3-character IATA airport code (distinct property from Airline's iataCode -- see code-scheme-registry.md)
+airportIcaoCode,Airport,xsd:string,2,"4-character ICAO airport code, globally unique"
+airportName,Airport,xsd:string,2,Official airport name
+airportFacilityType,Airport,xsd:string,2,"Controlled value from cv:airport-facility-type, verbatim from OurAirports 'type' column"
+latitudeDeg,Airport,xsd:decimal,2,"Decimal degrees, north positive, range -90..90"
+longitudeDeg,Airport,xsd:decimal,2,"Decimal degrees, east positive, range -180..180"
+elevationFt,Airport,xsd:integer,2,"Field elevation above mean sea level, in feet"
+hasScheduledService,Airport,xsd:boolean,2,Mirrors OurAirports scheduled_service (yes/no)
+municipalityName,Airport,xsd:string,2,"Raw municipality string from source, retained alongside resolved servesCity"
+isoRegionCode,Airport,xsd:string,2,"ISO 3166-2 subdivision code (OurAirports iso_region); denormalized, not its own dimension in phase 2"
+terminalCode,Terminal,xsd:string,2,e.g. '5' for London Heathrow Terminal 5
+terminalName,Terminal,xsd:string,2,Terminal display name
+gateCode,Gate,xsd:string,2,"Gate designator, e.g. 'A10'"
+standCode,Stand,xsd:string,2,Aircraft parking stand designator
+isRemoteStand,Stand,xsd:boolean,2,True if the stand has no boarding gate (bused/walked passengers)
+ourairportsIdent,Airport,xsd:string,2,OurAirports' own natural-key 'ident' value; populated even without an IATA/ICAO code
+flightNumber,ScheduledFlight,xsd:string,3,"Numeric/alphanumeric flight number suffix, e.g. '672' (carrier code comes from the marketing airline's iataCode)"
+serviceStartDate,ScheduledFlight,xsd:date,3,Date this scheduled flight plan takes effect
+serviceEndDate,ScheduledFlight,xsd:date,3,Date this scheduled flight plan ends (absent = still in service)
+operatingDaysOfWeek,ScheduledFlight,xsd:string,3,"7-char '0'/'1' bitstring, Monday-first, e.g. 1111100 for weekdays only"
+legSequence,FlightLeg,xsd:integer,3,1-based ordinal position of this leg within its scheduled flight
+scheduledDepartureTimeOfDay,FlightLeg,xsd:string,3,Local time of day 'HH:MM' for this leg's scheduled departure
+scheduledArrivalTimeOfDay,FlightLeg,xsd:string,3,Local time of day 'HH:MM' for this leg's scheduled arrival
+scheduledDurationMinutes,FlightLeg,xsd:integer,3,"Scheduled block time for this leg, in minutes"
+routeDistanceKm,Route,xsd:decimal,3,"Great-circle distance in km, when known (derived from airport lat/long, not sourced directly)"
+flightDate,FlightInstance,xsd:date,3,The specific date this flight instance operates
+scheduledDeparture,FlightInstance,xsd:dateTime,3,"Scheduled departure instant, timezone-aware"
+scheduledArrival,FlightInstance,xsd:dateTime,3,"Scheduled arrival instant, timezone-aware"
+estimatedDeparture,FlightInstance,xsd:dateTime,3,AIDX ETD
+estimatedArrival,FlightInstance,xsd:dateTime,3,AIDX ETA
+actualDeparture,FlightInstance,xsd:dateTime,3,Actual departure instant
+actualArrival,FlightInstance,xsd:dateTime,3,Actual arrival instant
+flightStatus,FlightInstance,xsd:string,3,Controlled value from cv:flight-status (scheduled|active|landed|cancelled|diverted|delayed|unknown)
+eventTimestamp,Event,xsd:dateTime,3,Timestamp shared by every Event subclass for when the event occurred/was recorded
+delayReasonCode,Event,xsd:string,3,Controlled value from cv:delay-reason-code (IATA/AHM730-style 2-digit code); used by DelayEvent and optionally CancellationEvent
+delayDurationMinutes,DelayEvent,xsd:integer,3,Length of the delay in minutes
+observedLatitude,PositionReportEvent,xsd:decimal,3,"OpenSky-observed latitude, decimal degrees"
+observedLongitude,PositionReportEvent,xsd:decimal,3,"OpenSky-observed longitude, decimal degrees"
+observedBaroAltitudeFt,PositionReportEvent,xsd:integer,3,OpenSky baro_altitude converted from meters to feet
+observedVelocityMps,PositionReportEvent,xsd:decimal,3,"OpenSky ground speed, meters/second (native unit, not converted)"
+observedTrueTrackDeg,PositionReportEvent,xsd:decimal,3,"OpenSky true track, degrees"
+observedVerticalRateMps,PositionReportEvent,xsd:decimal,3,"OpenSky vertical rate, meters/second"
+onGround,PositionReportEvent,xsd:boolean,3,OpenSky on_ground flag
+observedCallsign,PositionReportEvent,xsd:string,3,Raw whitespace-padded OpenSky callsign (OPENSKY_CALLSIGN scheme); distinct from Airline.callsign
+observedIcao24Hex,PositionReportEvent,xsd:string,3,OpenSky ICAO24 hex Mode-S address; denormalized here pending phase 4 dim_aircraft
+recordStatus,Entity,xsd:string,3,Mirrors canonical record_status (active|deprecated|suspended|historical); absence implies active
+icaoAircraftTypeCode,AircraftType,xsd:string,4,"ICAO equipment code, e.g. B789"
+iataAircraftTypeCode,AircraftType,xsd:string,4,"IATA equipment code, e.g. 789 (sourced from OpenFlights planes.dat)"
+manufacturerName,AircraftType,xsd:string,4,"e.g. Boeing, Airbus, Embraer -- split from planes.dat's single Name field"
+aircraftModelName,AircraftType,xsd:string,4,e.g. 787-9 -- manufacturer-name prefix removed from planes.dat's Name field
+aircraftBodyType,AircraftType,xsd:string,4,"Controlled value from cv:aircraft-body-type (narrow-body|wide-body|regional); not present in OpenFlights, manually curated per family"
+typicalSeatingCapacity,AircraftType,xsd:integer,4,Manufacturer/operator-published typical multi-class seating figure; not from OpenFlights
+tailNumber,Aircraft,xsd:string,4,"Aircraft registration mark, e.g. PH-BHA"
+aircraftIcao24Hex,Aircraft,xsd:string,4,ICAO24 Mode-S hex address; separate property from PositionReportEvent's observedIcao24Hex
+manufactureYear,Aircraft,xsd:gYear,4,Year of manufacture
+aircraftStatus,Aircraft,xsd:string,4,Controlled value from cv:aircraft-status (active|stored|retired)
+cabinClass,Cabin,xsd:string,4,Controlled value from cv:cabin-class (J|Y|W|F)
+cabinSeatCount,Cabin,xsd:integer,4,Number of seats in this cabin section
+cabinSequence,Cabin,xsd:integer,4,1-based front-to-back ordinal position of this cabin (optional)
+seatNumber,Seat,xsd:string,4,e.g. 14A
+seatType,Seat,xsd:string,4,Controlled value from cv:seat-type (window|middle|aisle)
+isExitRow,Seat,xsd:boolean,4,Whether this seat is in an emergency exit row
+maintenanceEventType,MaintenanceEvent,xsd:string,4,Controlled value from cv:maintenance-event-type (line-maintenance|a-check|c-check|d-check|aog-unscheduled)
+maintenanceOutOfServiceFrom,MaintenanceEvent,xsd:dateTime,4,When the aircraft went out of service for this maintenance action
+maintenanceReturnToServiceAt,MaintenanceEvent,xsd:dateTime,4,When the aircraft returned to service (absent = still in maintenance)
+maintenanceDescription,MaintenanceEvent,xsd:string,4,Free-text description of the maintenance action
+licenseName,License,xsd:string,5,Human-readable license/terms name
+licenseType,License,xsd:string,5,Controlled value from cv:license-type (public-domain|share-alike|attribution-only|restricted-access|community-terms)
+licenseUrl,License,xsd:string,5,"Canonical reference URL for the license text, where publicly published"
+attributionRequired,License,xsd:boolean,5,Whether attribution to the source is a licensing obligation
+shareAlikeRequired,License,xsd:boolean,5,Whether publicly redistributed derived works must use a compatible license (e.g. ODbL)
+stewardRoleTitle,StewardshipAssignment,xsd:string,5,"A role, never a named person, e.g. 'Data Domain Owner -- Place'"
+coversSubjectArea,StewardshipAssignment,xsd:string,5,The ontology branch/bounded context this assignment is accountable for
+assignedAt,StewardshipAssignment,xsd:date,5,Date the assignment took effect
+reviewCadence,StewardshipAssignment,xsd:string,5,"Free-text review cadence, e.g. quarterly"
+passengerGivenName,Passenger,xsd:string,6,Passenger's given name
+passengerFamilyName,Passenger,xsd:string,6,Passenger's family name
+dateOfBirth,Passenger,xsd:date,6,"Direct-identifier PII; access-controlled, synthetic sample values only"
+nationalityCountryCode,Passenger,xsd:string,6,ISO_3166_1 alpha-2 nationality code
+employeeId,CrewMember,xsd:string,6,Internal employee identifier
+crewMemberName,CrewMember,xsd:string,6,Single display-name field (PII-minimized)
+crewRole,CrewMember,xsd:string,6,"Controlled value from cv:crew-role; per-CrewMember, not per-assignment"
+recordLocator,PNR,xsd:string,6,6-character alphanumeric PNR code (PNR_RECORD_LOCATOR)
+pnrCreatedAt,PNR,xsd:dateTime,6,When the PNR was created
+bookingStatus,Booking,xsd:string,6,Controlled value from cv:booking-status
+bookingClassCode,Booking,xsd:string,6,Single-letter RBD; controlled value from cv:booking-class-designator
+bookingCreatedAt,Booking,xsd:dateTime,6,When the booking was created
+orderNumber,Order,xsd:string,6,Business-key order number
+orderCreatedAt,Order,xsd:dateTime,6,When the order was created
+orderStatus,Order,xsd:string,6,Controlled value from cv:order-status
+orderTotalAmount,Order,xsd:decimal,6,Total order amount
+orderCurrencyCode,Order,xsd:string,6,ISO 4217 currency code (ISO_4217_CURRENCY)
+salesChannel,Order,xsd:string,6,Controlled value from cv:sales-channel
+eTicketNumber,Ticket,xsd:string,6,13-digit IATA e-ticket number (IATA_ETICKET_NUMBER)
+ticketIssueDate,Ticket,xsd:date,6,Date the ticket was issued
+ticketStatus,Ticket,xsd:string,6,Controlled value from cv:ticket-status
+ticketTotalAmount,Ticket,xsd:decimal,6,"Denormalized total amount, mirrors legalEntityName precedent"
+ticketCurrencyCode,Ticket,xsd:string,6,ISO 4217 currency code
+couponNumber,TicketCoupon,xsd:integer,6,1-based sequence of this coupon within its ticket
+couponStatus,TicketCoupon,xsd:string,6,Controlled value from cv:coupon-status (aligned to IATA/ARC O/F/E/R/V/A)
+fareBasisCode,Fare,xsd:string,6,Free-text industry-standard fare basis string
+fareAmount,Fare,xsd:decimal,6,Priced fare amount
+fareCurrencyCode,Fare,xsd:string,6,ISO 4217 currency code
+programName,LoyaltyProgram,xsd:string,6,Program display name
+programCode,LoyaltyProgram,xsd:string,6,Program short code
+membershipNumber,LoyaltyAccount,xsd:string,6,"Direct-identifier PII; access-controlled, synthetic sample values only"
+loyaltyTier,LoyaltyAccount,xsd:string,6,Controlled value from cv:loyalty-tier (generic tier names)
+enrollmentDate,LoyaltyAccount,xsd:date,6,Date the account was enrolled
+milesBalance,LoyaltyAccount,xsd:integer,6,Current loyalty miles balance
+ancillaryServiceType,AncillaryService,xsd:string,6,Controlled value from cv:ancillary-service-type
+ancillaryAmount,AncillaryService,xsd:decimal,6,Priced amount for the ancillary
+ancillaryCurrencyCode,AncillaryService,xsd:string,6,ISO 4217 currency code
+orderedAt,AncillaryService,xsd:dateTime,6,When the ancillary was ordered
+bagTagNumber,Bag,xsd:string,6,10-digit IATA baggage tag number (IATA_BAG_TAG)
+bagType,Bag,xsd:string,6,Controlled value from cv:bag-type
+bagWeightKg,Bag,xsd:decimal,6,Bag weight in kilograms
+bagStatus,Bag,xsd:string,6,Controlled value from cv:bag-status
+checkInChannel,CheckInEvent,xsd:string,6,Controlled value from cv:checkin-channel
+boardingSequenceNumber,BoardingEvent,xsd:integer,6,Boarding sequence number
+boardingGroup,BoardingEvent,xsd:string,6,Boarding group label
+assessedAt,ConnectionRiskAssessment,xsd:dateTime,7,Timestamp the connection-risk check was computed
+estimatedArrivalUsed,ConnectionRiskAssessment,xsd:dateTime,7,"Arrival instant used for the check: actualArrival if landed, else the live/projected arrival"
+onwardScheduledDeparture,ConnectionRiskAssessment,xsd:dateTime,7,Scheduled departure instant of the onward flight being protected
+minimumConnectingTimeMinutes,ConnectionRiskAssessment,xsd:integer,7,"Minimum connecting time applied to this pairing (Schengen-Schengen 40min; non-Schengen default 50min, per the KLM Schiphol Operations Reference)"
+bufferMinutes,ConnectionRiskAssessment,xsd:integer,7,"onwardScheduledDeparture minus estimatedArrivalUsed, in minutes; negative means already missed"
+connectionRiskTier,ConnectionRiskAssessment,xsd:string,7,Controlled value from cv:connection-risk-tier (STANDARD | TIGHT_MCT | MISCONNECT)
+affectedPaxCount,ConnectionRiskAssessment,xsd:integer,7,Number of booked passengers on the onward flight tied to this arrival
+ruleCode,ReroutingBusinessRule,xsd:string,7,"Short business-readable rule identifier, e.g. R-MCT-01"
+ruleDescription,ReroutingBusinessRule,xsd:string,7,Human-readable statement of what the rule checks and why
+triggerCondition,ReroutingBusinessRule,xsd:string,7,Controlled value from cv:rerouting-trigger (DELAY | DIVERSION | CANCELLATION)
+requiredBufferMinutes,ReroutingBusinessRule,xsd:integer,7,"Minimum bufferMinutes an AlternateConnectionOption must itself clear to be offered -- its own MCT compliance against the passenger's new arrival time, not just the original connection's"
+maxAcceptableDelayMinutes,ReroutingBusinessRule,xsd:integer,7,Delay ceiling past which this rule no longer applies and the case must escalate instead of auto-resolving
+voucherThresholdMinutes,ReroutingBusinessRule,xsd:integer,7,Delay duration at or above which EU261 hotel+meal voucher issuance is required (default 180)
+cabinMatchRequired,ReroutingBusinessRule,xsd:boolean,7,"Whether the alternate must match the passenger's originally booked cabin, or a downgrade/upgrade is acceptable"
+partnerPriorityOrder,ReroutingBusinessRule,xsd:string,7,Ordered preference across cv:operating-relationship values when multiple options qualify (e.g. OWN_METAL > JOINT_VENTURE > INTERLINE)
+minSeatAvailability,ReroutingBusinessRule,xsd:integer,7,Minimum bookable seats an alternate must show in the passenger's cabin/fare class
+requiresApprovalRole,ReroutingBusinessRule,xsd:string,7,"Approver role (e.g. OCC_DUTY_MANAGER, AIRPORT_OPS_MANAGER) required for actions this rule proposes"
+ruleOutcome,ReroutingBusinessRule,xsd:string,7,"Controlled value from cv:rerouting-decision-outcome, once evaluated against a specific ConnectionRiskAssessment (SELECTED | REJECTED | ESCALATED | NO_ACTION_NEEDED)"
+evaluatedAt,ReroutingBusinessRule,xsd:dateTime,7,Timestamp this rule was last evaluated against a given assessment
+effectiveFrom,ReroutingBusinessRule,xsd:date,7,Date this rule version became effective
+alternateFlightNumber,AlternateConnectionOption,xsd:string,7,"Marketing flight number of the candidate replacement, e.g. DL47"
+operatingRelationship,AlternateConnectionOption,xsd:string,7,Controlled value from cv:operating-relationship
+alternateDepartureLocal,AlternateConnectionOption,xsd:dateTime,7,Local scheduled departure of the alternate
+seatsAvailable,AlternateConnectionOption,xsd:integer,7,Bookable seat count in the relevant cabin/fare class at time of check
+cabinOffered,AlternateConnectionOption,xsd:string,7,Controlled value from cv:cabin-classes for the alternate's offered cabin
+feasibleForPassenger,AlternateConnectionOption,xsd:boolean,7,"Whether this option's own bufferMinutes -- checked against the passenger's new, delayed arrival -- clears the rule's requiredBufferMinutes; computed, never hand-asserted"
+rankOrder,AlternateConnectionOption,xsd:integer,7,"1-based preference rank among evaluated options for one ConnectionRiskAssessment, per the rule's partnerPriorityOrder and feasibleForPassenger"

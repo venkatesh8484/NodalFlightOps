@@ -1,0 +1,386 @@
+{
+    "ontology": "KLM Amsterdam Schiphol — Operational Flight Ontology",
+    "version": "1.0.0",
+    "description": "Palantir Foundry / AIP-style Dynamic Ontology for the KLM Amsterdam Schiphol (AMS) hub network. Defines Object Types (state), Link Types (topology/context) and Action Types (deterministic, transactional writebacks). Sample records live in the sibling data files and are internally consistent (foreign keys resolve across tables). Mirrors the PostalOps ontology's structure (Hub/Route/Consignment/Vehicle -> Airport/FlightRoute/Flight/Aircraft), with cargo/consignments intentionally out of scope for this pass.",
+    "sourceSystems": {
+        "FLIFO": "Flight Information Schedule System (Fleet Management / Aircraft Rotation System) — system of record for FlightRoute/Flight assignments",
+        "PSS": "Passenger Service System (Altéa Departure Control) — boarding pass, PNR, connection data",
+        "AODB": "Airport Operational Database — gate/stand allocation, airport capacity",
+        "VMS": "Voucher Management System (SITA Passenger Care API) — EU261 compensation vouchers",
+        "OPENSKY": "OpenSky Network live ADS-B telemetry stream (currentLat/currentLon/speedKph) for ambient background traffic"
+    },
+    "objectTypes": {
+        "Airport": {
+            "primaryKey": "airportId",
+            "titleProperty": "name",
+            "dataFile": "airports.json",
+            "description": "A KLM network airport — the AMS hub or a spoke destination.",
+            "properties": {
+                "airportId": {
+                    "type": "string",
+                    "example": "AMS"
+                },
+                "role": {
+                    "type": "string",
+                    "enum": [
+                        "HUB",
+                        "SPOKE"
+                    ]
+                },
+                "name": {
+                    "type": "string"
+                },
+                "city": {
+                    "type": "string"
+                },
+                "coords": {
+                    "type": "array",
+                    "items": "number",
+                    "format": "[lat, lon]"
+                },
+                "terminalType": {
+                    "type": "string",
+                    "enum": [
+                        "HUB",
+                        "SPOKE"
+                    ]
+                },
+                "gateThroughputPerHr": {
+                    "type": "integer",
+                    "unit": "passengers/hour"
+                },
+                "currentThroughputPerHr": {
+                    "type": "integer",
+                    "unit": "passengers/hour"
+                },
+                "currentUtilizationPct": {
+                    "type": "number",
+                    "unit": "percent"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "OPERATIONAL",
+                        "DEGRADED",
+                        "DOWN"
+                    ]
+                },
+                "gates": {
+                    "type": "integer"
+                },
+                "freeGates": {
+                    "type": "integer"
+                },
+                "marking": {
+                    "type": "string",
+                    "description": "CBAC security marking",
+                    "example": "NL-OPS//SCHIPHOL"
+                }
+            }
+        },
+        "FlightRoute": {
+            "primaryKey": "routeId",
+            "titleProperty": "routeId",
+            "dataFile": "flight_routes.json",
+            "description": "A scheduled flight leg between two Airports.",
+            "properties": {
+                "routeId": {
+                    "type": "string",
+                    "example": "RTE-LHR-AMS"
+                },
+                "sourceAirportId": {
+                    "type": "string",
+                    "foreignKey": "Airport.airportId"
+                },
+                "destinationAirportId": {
+                    "type": "string",
+                    "foreignKey": "Airport.airportId"
+                },
+                "serviceType": {
+                    "type": "string",
+                    "enum": [
+                        "MAINLINE",
+                        "CODESHARE",
+                        "REGIONAL"
+                    ]
+                },
+                "distanceKm": {
+                    "type": "number"
+                },
+                "scheduledFlightTimeMin": {
+                    "type": "integer"
+                },
+                "operatingAirline": {
+                    "type": "string"
+                },
+                "maxSeats": {
+                    "type": "integer"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "ACTIVE",
+                        "SEASONAL",
+                        "SLOT_CONSTRAINED"
+                    ]
+                }
+            }
+        },
+        "Flight": {
+            "primaryKey": "flightId",
+            "titleProperty": "flightId",
+            "dataFile": "flights.json",
+            "description": "A scheduled/operating flight instance carrying passengers under a connection-time SLA. The at-risk/flow entity — analogous to PostalOps' ShipmentConsignment, but tracking passenger connections rather than cargo.",
+            "properties": {
+                "flightId": {
+                    "type": "string",
+                    "example": "KL1008"
+                },
+                "originAirportId": {
+                    "type": "string",
+                    "foreignKey": "Airport.airportId"
+                },
+                "destinationAirportId": {
+                    "type": "string",
+                    "foreignKey": "Airport.airportId"
+                },
+                "assignedRouteId": {
+                    "type": "string",
+                    "foreignKey": "FlightRoute.routeId"
+                },
+                "assignedTailNumber": {
+                    "type": "string",
+                    "foreignKey": "Aircraft.tailNumber"
+                },
+                "operatingAirline": {
+                    "type": "string"
+                },
+                "scheduledDepartureUtc": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "scheduledArrivalUtc": {
+                    "type": "string",
+                    "format": "date-time"
+                },
+                "delayMinutes": {
+                    "type": "integer"
+                },
+                "connectionRiskTier": {
+                    "type": "string",
+                    "enum": [
+                        "TIGHT_MCT",
+                        "STANDARD",
+                        "BUFFERED"
+                    ]
+                },
+                "paxCount": {
+                    "type": "integer"
+                },
+                "isKeyConnection": {
+                    "type": "boolean",
+                    "description": "True if this flight is a monitored onward connection — one the connection-risk engine checks other inbound arrivals against."
+                },
+                "connectingPaxByTier": {
+                    "type": "object",
+                    "description": "Headcount of passengers connecting ONTO this flight, broken down by Flying Blue loyalty tier. Only populated on isKeyConnection flights.",
+                    "properties": {
+                        "PLATINUM": {
+                            "type": "integer"
+                        },
+                        "GOLD": {
+                            "type": "integer"
+                        },
+                        "SILVER": {
+                            "type": "integer"
+                        },
+                        "EXPLORER": {
+                            "type": "integer"
+                        }
+                    }
+                },
+                "connectingPassengers": {
+                    "type": "array",
+                    "description": "Named passenger manifest for this flight's connecting passengers (PNR, tier, cabin, seat, special-assistance codes) — the actual entities a RebookPassengers action rebooks, not a headcount.",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "alternateFlightOptions": {
+                    "type": "array",
+                    "description": "Structured rebooking alternatives for this flight's connecting passengers if they misconnect: real scheduled departure, carrier, alliance relationship, per-cabin seat availability and the MCT that alternative requires — not free text. The recovery planner ranks and allocates against this list.",
+                    "items": {
+                        "type": "object"
+                    }
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "SCHEDULED",
+                        "AT_RISK",
+                        "DELAYED",
+                        "DIVERTED",
+                        "LANDED"
+                    ]
+                }
+            }
+        },
+        "Aircraft": {
+            "primaryKey": "tailNumber",
+            "titleProperty": "registration",
+            "dataFile": "aircraft.json",
+            "description": "A physical aircraft frame assigned to fly sectors.",
+            "properties": {
+                "tailNumber": {
+                    "type": "string",
+                    "example": "PH-BVA"
+                },
+                "registration": {
+                    "type": "string"
+                },
+                "aircraftType": {
+                    "type": "string",
+                    "example": "B777-300ER"
+                },
+                "seatCapacity": {
+                    "type": "integer"
+                },
+                "assignedRouteId": {
+                    "type": "string",
+                    "foreignKey": "FlightRoute.routeId"
+                },
+                "currentLat": {
+                    "type": "number"
+                },
+                "currentLon": {
+                    "type": "number"
+                },
+                "speedKph": {
+                    "type": "number"
+                },
+                "etaMinutes": {
+                    "type": "integer"
+                },
+                "status": {
+                    "type": "string",
+                    "enum": [
+                        "EN_ROUTE",
+                        "BOARDING",
+                        "GROUND",
+                        "STANDBY"
+                    ]
+                }
+            }
+        }
+    },
+    "linkTypes": {
+        "airport_operates_route": {
+            "from": "Airport",
+            "to": "FlightRoute",
+            "verb": "operates_route",
+            "cardinality": "one-to-many",
+            "dataFile": "links.json"
+        },
+        "route_destinates_at_airport": {
+            "from": "FlightRoute",
+            "to": "Airport",
+            "verb": "destinates_at",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        },
+        "flight_assigned_to_aircraft": {
+            "from": "Flight",
+            "to": "Aircraft",
+            "verb": "assigned_to",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        },
+        "flight_departs_from_airport": {
+            "from": "Flight",
+            "to": "Airport",
+            "verb": "departs_from",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        },
+        "flight_arrives_at_airport": {
+            "from": "Flight",
+            "to": "Airport",
+            "verb": "arrives_at",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        },
+        "flight_operates_on_route": {
+            "from": "Flight",
+            "to": "FlightRoute",
+            "verb": "operates_on_route",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        },
+        "aircraft_travels_along_route": {
+            "from": "Aircraft",
+            "to": "FlightRoute",
+            "verb": "travels_along",
+            "cardinality": "many-to-one",
+            "dataFile": "links.json"
+        }
+    },
+    "actionTypes": {
+        "RebookPassengers": {
+            "description": "Deterministic writeback that rebooks an at-risk connecting passenger cohort onto an alternate/partner flight and issues EU261 vouchers where applicable. Writes to PSS (ticket re-issue) and VMS (voucher allocation).",
+            "parameters": {
+                "flightId": {
+                    "type": "string",
+                    "foreignKey": "Flight.flightId",
+                    "required": true
+                },
+                "alternateConnectingFlightId": {
+                    "type": "string",
+                    "required": true
+                },
+                "voucherPolicy": {
+                    "type": "string",
+                    "required": false
+                }
+            },
+            "sideEffects": [
+                "PSS.reissueTicket",
+                "VMS.allocateVoucher",
+                "CNS.notifyPassengers"
+            ],
+            "governance": {
+                "requiresApproval": true,
+                "approverRole": "OCC_DUTY_MANAGER",
+                "auditLogged": true
+            },
+            "sampleFile": "actions.sample.json"
+        },
+        "ReallocateGateCapacity": {
+            "description": "Deterministic writeback that opens additional gate/stand hours at an airport and sets a divert threshold above which inbound flights are auto-diverted to a remote stand. Writes to AODB.",
+            "parameters": {
+                "airportId": {
+                    "type": "string",
+                    "foreignKey": "Airport.airportId",
+                    "required": true
+                },
+                "additionalGateHours": {
+                    "type": "number",
+                    "required": true
+                },
+                "divertThresholdPct": {
+                    "type": "number",
+                    "required": true
+                }
+            },
+            "sideEffects": [
+                "AODB.updateStandPlan",
+                "AODB.setDivertThreshold"
+            ],
+            "governance": {
+                "requiresApproval": true,
+                "approverRole": "AIRPORT_OPS_MANAGER",
+                "auditLogged": true
+            },
+            "sampleFile": "actions.sample.json"
+        }
+    }
+}

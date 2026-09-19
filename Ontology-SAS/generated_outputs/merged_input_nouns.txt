@@ -1,0 +1,344 @@
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+KLM ROYAL DUTCH AIRLINES ENTERPRISE BUSINESS HANDBOOK Understanding Comprehensive Operations Passenger Services Distribution Fleet Management Manual Legal Operating Entity Koninklijke Luchtvaart Maatschappij N.V. October Identifiers IATA Airline Designator KL ICAO Accounting Code Callsign Parent Group Air France-KLM S.A. Dual Hub Strategy Amsterdam Schiphol AMS Paris Charles Gaulle CDG Alliance Membership Member France Delta Lines Korean Operational Scope Global Destinations Countries Million Annual Passengers Daily Flights Primary Base Airport EHAM Netherlands Subsidiaries Cityhopper B.V. WA KLC Transavia C.V. Martinair Holland World Network Accountable Ticket Wave Corporate Structure flag carrier Albert Plesman charter Queen Wilhelmina name Amstelveen Europe groups merger model Mainline widebodies narrowbody routes feeder UK Scandinavia Germany Eastern Embraer E-Jets SkyTeam venture Virgin Atlantic reach schedules frequent flyer benefits lounge facilities Unit Role Codes Core Responsibilities Boeing 777-200ER/300ER Airbus A330 A321neo Intercontinental North America Asia South Africa trunk Regional Subsidiary aircraft High-frequency stations e.g. BUD NWI BLL waves Cargo Freight Logistics MP MPH Dedicated Freighters Belly Capacity Perishable goods flowers pharmaceuticals forwarding Engineering Maintenance MRO EASA Part-145 Certified Hangar complexes Oost engine overhauls GE90 GEnx CFM56 repair line Lifecycle Systems Commercial customer engagement shopping reservation ticketing loyalty accrual Amadeus Altéa Service System PSS suite control backbone Reference Page Key Documents Artifacts Document Record Industry Standard Format Function PNR GDS/PSS AB12CD XZ99KP Master traveler names contact details SSRs Special Requests flight segments E-Ticket Resolution number contract carriage payment confirmation coupons Coupon AIDM sequence JFK-AMS right passage leg transitions states OPEN CHECKED_IN FLOWN EXCHANGED Fare Basis Booking Class ATPCO Tariff letter rules YSTD MLOW Governs tier refundability date change penalties baggage allowance mileage rates Pass Barcode BCBP PDF417 string M1NOVAK/ELENA EAB12CD Authorizes security checkpoints gate boarding scanners Cabin Classes Blue Ancillaries distinctive experiences travel Flying program range options Compartment Seating Specs Comfort Inclusions Luggage WBC Full-flat bed seats cm aisle access layout privacy shield HD touchscreen checked bags SkyPriority fast-track Crown dining Michelin-starred chefs Delft miniature house Premium pitch recline seat menu headphones amenity kit Economy Zone Ancillary Forward legroom angle catering priority deplaning USB/AC in-seat power meal headrest entertainment screen bag hand Light meals snacks beverages Level XP Requirement Miles Bonus Rate Privileges Explorer Entry spent Earn discount selection months check-in drop Gold handling worldwide guest Platinum VIP suites Turnaround wave-bank peaks window minute transfer bank widebody departures Aviation Information Data Exchange AIDX Milestone Cycle Every instance tracks timestamp milestones Centre OCC Event Sensor Source Feed Action Out-of-Gate Out Actual Off-Blocks Time AOBT Apron Stand Chock Removal Tug pushback clock Off-Ground Off Take-off ATOT Runway Inductive Loop Telemetry Wheels-up Eurocontrol traffic ADS-B State Vectors Hz Transponder OpenSky Real-time GPS coordinates altitude FL groundspeed heading On-Ground Touchdown ALDT Surface Radar ASDE-X destination allocation team In-Gate In-Blocks AIBT Docking Guidance VDGS chocks jet bridge offload commence AHM730 Delay Classification Attribution block times schedule minutes root causes compliance EU261 recovery ground handler agreements SLAs Category Cause Description Mitigating Procedure Late congestion Triple-A rule SMS alerts prioritization runners Defects Technical defect airframe Minimum Equipment List MEL rectifications teams parts Pier D/E Damage cargo/baggage loading collision malfunction inspection replacement reporting ATC slot airspace restriction acceptance reduction Decision Making CDM negotiation FAA Custody Chain process digital verification touchpoints Progression Tag Stage Mandate Status Mandatory Step Acquisition Self-Service desk Weight affixed EDS Regulatory Screening Hall BHS Computed Tomography Explosive Detection inspect speed Container Sortation Unitisation High-speed trays makeup carousel scanner assigns Load Device ULD AKE9941KL LOADED_INTO_ULD Ramp Delivery handlers transport D04 Handheld verifies departure manifest hold LOADED_ON_AIRCRAFT Return Upon e.g JFK Terminal crew offloads transfers reclaim belt Final confirms DELIVERED_TO_CAROUSEL Passenger-Baggage Reconciliation International regulations Authorized item board closure specific clearance Glossary Domain Taxonomy defines terms entities concepts ontology definitions properties thesauri knowledge graphs Term Area Official Definition Meaning Organization operator Certificate AOC fuel codeshare partnership connectivity Place Facility Public runways customs/immigration aids FlightOperations execution calendar KL641 CommercialDocume locator itinerary Asset currency recognition Experience Points Individual vehicle tail Dreamliner Check Scheduled authorities A-Check C-Check Borescope
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- cabin_class
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- table_name
+- domain
+- primary_key
+- business_natural_key
+- table_type
+- description
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- vocab_name
+- item_count
+- purpose
+- sample_values
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- property
+- domain
+- range
+- phase
+- definition
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- entity_name
+- domain
+- meta_type
+- parent_class
+- iata_aidm_term
+- description
+- klm_context
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- airport_id
+- iata_code
+- icao_code
+- airport_name
+- city
+- country
+- iso_country
+- latitude
+- longitude
+- elevation_ft
+- facility_type
+- is_primary_hub
+- terminals
+- assigned_gates
+- hourly_passenger_capacity
+- daily_flights
+- utilization_rate_pct
+- operational_status
+- metar_weather
+
+CSV Column Headers:
+- bag_tag_number
+- pnr_locator
+- passenger_name
+- flight_number
+- origin
+- destination
+- bag_weight_kg
+- event_name
+- timestamp
+- location
+- scanner_id
+- status
+- is_discrepancy
+
+CSV Column Headers:
+- registration
+- icao24_hex
+- aircraft_model
+- iata_type
+- icao_type
+- airline
+- manufacturer
+- msn_serial
+- delivery_date
+- total_capacity
+- business_seats
+- premium_economy_seats
+- economy_seats
+- engine_type
+- status
+- current_flight
+- assigned_hub
+- next_scheduled_maintenance
+- flight_hours
+- flight_cycles
+
+CSV Column Headers:
+- flight_instance_id
+- flight_number
+- callsign
+- marketing_carrier
+- operating_carrier
+- codeshare_numbers
+- origin_airport
+- destination_airport
+- scheduled_departure
+- actual_departure
+- scheduled_arrival
+- actual_arrival
+- assigned_aircraft
+- departure_terminal
+- departure_gate
+- arrival_terminal
+- arrival_gate
+- flight_status
+- delay_minutes
+- primary_delay_code
+- booked_passengers
+- max_capacity
+- passenger_load_factor_pct
+- checked_bags_count
+- block_fuel_kg
+- distance_nm
+- telemetry_cruise_altitude_ft
+- telemetry_avg_groundspeed_kts
+
+CSV Column Headers:
+- event_id
+- flight_instance_id
+- event_category
+- event_name
+- timestamp
+- facility
+- source_system
+- data_payload
+
+CSV Column Headers:
+- passenger_id
+- full_name
+- pnr_locator
+- ticket_number
+- e_ticket_coupon_id
+- flight_instance_id
+- flight_number
+- route
+- cabin_class
+- booking_class_code
+- fare_basis_code
+- assigned_seat
+- seat_type
+- flying_blue_account
+- loyalty_tier
+- checkin_channel
+- checkin_timestamp
+- boarding_pass_barcode
+- boarding_status
+- boarding_scan_time
+- boarding_gate
+- checked_bag_tag
+- bag_weight_kg
+- bag_status
+- purchased_ancillaries
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- catalog_id
+- system_name
+- authority_level
+- domain_coverage
+- update_frequency
+- governance_tier
+- data_format
+- owner
+
+CSV Column Headers:
+- property
+- domain
+- range
+- phase
+- definition
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status
+
+CSV Column Headers:
+- term_id
+- pref_label
+- alt_labels
+- broader_term
+- definition
+- grounded_class
+- domain
+
+CSV Column Headers:
+- notation
+- pref_label
+- definition
+- phase
+- status

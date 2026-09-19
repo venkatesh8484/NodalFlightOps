@@ -1,0 +1,293 @@
+{
+  "Classes": [
+    "Airport",
+    "PassengerTerminal",
+    "CargoTerminal",
+    "GroundHandlingFacility",
+    "HubAirport",
+    "SpokeAirport",
+    "InternationalGateway",
+    "Airline",
+    "Crew",
+    "FlightRoute",
+    "Aircraft",
+    "Flight",
+    "TelemetryEvent",
+    "ActionType",
+    "ActionExecution",
+    "AircraftAssignment",
+    "ActionExecutionLog"
+  ],
+  "Object_Properties": [
+    {
+      "Verb": "hasCapacity",
+      "Domain": "Airport",
+      "Range": "xsd:integer"
+    },
+    {
+      "Verb": "connectsTo",
+      "Domain": "Airport",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "originatesAt",
+      "Domain": "FlightRoute",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "destinatesAt",
+      "Domain": "FlightRoute",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "operatedBy",
+      "Domain": "FlightRoute",
+      "Range": "Airline"
+    },
+    {
+      "Verb": "assignedTo",
+      "Domain": "Crew",
+      "Range": "Airline"
+    },
+    {
+      "Verb": "homeBaseOf",
+      "Domain": "Crew",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "operatesAircraft",
+      "Domain": "Crew",
+      "Range": "Aircraft"
+    },
+    {
+      "Verb": "onRoute",
+      "Domain": "Aircraft",
+      "Range": "FlightRoute"
+    },
+    {
+      "Verb": "operatesFlight",
+      "Domain": "Aircraft",
+      "Range": "Flight"
+    },
+    {
+      "Verb": "currentlyAt",
+      "Domain": "Flight",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "destinationAirport",
+      "Domain": "Flight",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "emitsEvent",
+      "Domain": "Airport",
+      "Range": "TelemetryEvent"
+    },
+    {
+      "Verb": "emitsEvent",
+      "Domain": "Aircraft",
+      "Range": "TelemetryEvent"
+    },
+    {
+      "Verb": "proposesAction",
+      "Domain": "ActionExecution",
+      "Range": "ActionType"
+    },
+    {
+      "Verb": "requiresApproval",
+      "Domain": "ActionType",
+      "Range": "xsd:boolean"
+    },
+    {
+      "Verb": "affectsSystem",
+      "Domain": "ActionType",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasCapacityPerHour",
+      "Domain": "Airport",
+      "Range": "xsd:integer"
+    },
+    {
+      "Verb": "hasUtilization",
+      "Domain": "Airport",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasAirportId",
+      "Domain": "Airport",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasAirportName",
+      "Domain": "Airport",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasCity",
+      "Domain": "Airport",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasCountryCode",
+      "Domain": "Airport",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasLatitude",
+      "Domain": "Airport",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasLongitude",
+      "Domain": "Airport",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasLastTelemetryTimestamp",
+      "Domain": "Airport",
+      "Range": "xsd:dateTime"
+    },
+    {
+      "Verb": "hasAirlineId",
+      "Domain": "Airline",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasAirlineName",
+      "Domain": "Airline",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasHomeCountry",
+      "Domain": "Airline",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasReliabilityRating",
+      "Domain": "Airline",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasCrewId",
+      "Domain": "Crew",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasCrewName",
+      "Domain": "Crew",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasHomeBase",
+      "Domain": "Crew",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "hasHoursAvailableToday",
+      "Domain": "Crew",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasOriginAirport",
+      "Domain": "FlightRoute",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "hasDestinationAirport",
+      "Domain": "FlightRoute",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "hasDistanceKm",
+      "Domain": "FlightRoute",
+      "Range": "xsd:decimal"
+    },
+    {
+      "Verb": "hasOperatingAirline",
+      "Domain": "FlightRoute",
+      "Range": "Airline"
+    },
+    {
+      "Verb": "hasTailNumber",
+      "Domain": "Aircraft",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasAircraftType",
+      "Domain": "Aircraft",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasSeatCapacity",
+      "Domain": "Aircraft",
+      "Range": "xsd:integer"
+    },
+    {
+      "Verb": "hasCurrentRoute",
+      "Domain": "Aircraft",
+      "Range": "FlightRoute"
+    },
+    {
+      "Verb": "hasAssignedCrew",
+      "Domain": "Aircraft",
+      "Range": "Crew"
+    },
+    {
+      "Verb": "hasFlightId",
+      "Domain": "Flight",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasPaxCount",
+      "Domain": "Flight",
+      "Range": "xsd:integer"
+    },
+    {
+      "Verb": "hasConnectionRiskTier",
+      "Domain": "Flight",
+      "Range": "xsd:string"
+    },
+    {
+      "Verb": "hasTargetAirport",
+      "Domain": "Flight",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "hasCurrentAirport",
+      "Domain": "Flight",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "assignsFlight",
+      "Domain": "AircraftAssignment",
+      "Range": "Flight"
+    },
+    {
+      "Verb": "assignsAircraft",
+      "Domain": "AircraftAssignment",
+      "Range": "Aircraft"
+    },
+    {
+      "Verb": "assignsRoute",
+      "Domain": "AircraftAssignment",
+      "Range": "FlightRoute"
+    },
+    {
+      "Verb": "eventAtAirport",
+      "Domain": "TelemetryEvent",
+      "Range": "Airport"
+    },
+    {
+      "Verb": "eventForAircraft",
+      "Domain": "TelemetryEvent",
+      "Range": "Aircraft"
+    },
+    {
+      "Verb": "executesAction",
+      "Domain": "ActionExecutionLog",
+      "Range": "ActionType"
+    }
+  ]
+}

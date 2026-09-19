@@ -1,0 +1,4 @@
+notation,pref_label,definition,phase,status
+window,Window,A seat adjacent to the cabin window,4,active-phase-4
+middle,Middle,A seat between a window and an aisle seat,4,active-phase-4
+aisle,Aisle,A seat adjacent to the cabin aisle,4,active-phase-4

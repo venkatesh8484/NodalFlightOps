@@ -1,0 +1,387 @@
+{
+  "Classes": [
+    "Organization",
+    "Facility",
+    "Aircraft",
+    "Service",
+    "Process",
+    "Document",
+    "Policy",
+    "Asset",
+    "Event",
+    "Location",
+    "Person",
+    "Infrastructure",
+    "Product",
+    "Concept"
+  ],
+  "Object_Properties": [
+    {
+      "Verb": "owns",
+      "Domain": "Organization",
+      "Range": "Facility"
+    },
+    {
+      "Verb": "is_owned_by",
+      "Domain": "Facility",
+      "Range": "Organization"
+    },
+    {
+      "Verb": "operates",
+      "Domain": "Organization",
+      "Range": "Aircraft"
+    },
+    {
+      "Verb": "is_operated_by",
+      "Domain": "Aircraft",
+      "Range": "Organization"
+    },
+    {
+      "Verb": "provides",
+      "Domain": "Organization",
+      "Range": "Service"
+    },
+    {
+      "Verb": "is_provided_by",
+      "Domain": "Service",
+      "Range": "Organization"
+    },
+    {
+      "Verb": "manages",
+      "Domain": "Organization",
+      "Range": "Process"
+    },
+    {
+      "Verb": "is_managed_by",
+      "Domain": "Process",
+      "Range": "Organization"
+    },
+    {
+      "Verb": "delivers",
+      "Domain": "Service",
+      "Range": "Person"
+    },
+    {
+      "Verb": "is_delivered_by",
+      "Domain": "Person",
+      "Range": "Service"
+    },
+    {
+      "Verb": "located_in",
+      "Domain": "Facility",
+      "Range": "Location"
+    },
+    {
+      "Verb": "contains",
+      "Domain": "Location",
+      "Range": "Facility"
+    },
+    {
+      "Verb": "governs",
+      "Domain": "Policy",
+      "Range": "Process"
+    },
+    {
+      "Verb": "is_governed_by",
+      "Domain": "Process",
+      "Range": "Policy"
+    },
+    {
+      "Verb": "documents",
+      "Domain": "Document",
+      "Range": "Event"
+    },
+    {
+      "Verb": "is_documented_by",
+      "Domain": "Event",
+      "Range": "Document"
+    },
+    {
+      "Verb": "is_related_to",
+      "Domain": "Concept",
+      "Range": "Concept"
+    }
+  ],
+  "Concept_Class_Map": [
+    {
+      "Concept_ID": "B001",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "B002",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "B003",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "B004",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "B005",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C001",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C002",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C003",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C004",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C005",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C006",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C007",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C008",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C009",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C010",
+      "Class": "Document"
+    },
+    {
+      "Concept_ID": "C011",
+      "Class": "Document"
+    },
+    {
+      "Concept_ID": "C012",
+      "Class": "Product"
+    },
+    {
+      "Concept_ID": "C013",
+      "Class": "Product"
+    },
+    {
+      "Concept_ID": "C014",
+      "Class": "Product"
+    },
+    {
+      "Concept_ID": "C015",
+      "Class": "Product"
+    },
+    {
+      "Concept_ID": "C016",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C017",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C018",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C019",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C020",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C021",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C022",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C023",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C024",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C025",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C026",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C027",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C028",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C029",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C030",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C031",
+      "Class": "Aircraft"
+    },
+    {
+      "Concept_ID": "C032",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C033",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C034",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C035",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C036",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C037",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C038",
+      "Class": "Document"
+    },
+    {
+      "Concept_ID": "C039",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C040",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C041",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C042",
+      "Class": "Organization"
+    },
+    {
+      "Concept_ID": "C043",
+      "Class": "Policy"
+    },
+    {
+      "Concept_ID": "C044",
+      "Class": "Policy"
+    },
+    {
+      "Concept_ID": "C045",
+      "Class": "Asset"
+    },
+    {
+      "Concept_ID": "C046",
+      "Class": "Infrastructure"
+    },
+    {
+      "Concept_ID": "C047",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C048",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C049",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C050",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C051",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C052",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C053",
+      "Class": "Asset"
+    },
+    {
+      "Concept_ID": "C054",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C055",
+      "Class": "Service"
+    },
+    {
+      "Concept_ID": "C056",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C057",
+      "Class": "Product"
+    },
+    {
+      "Concept_ID": "C058",
+      "Class": "Process"
+    },
+    {
+      "Concept_ID": "C059",
+      "Class": "Infrastructure"
+    },
+    {
+      "Concept_ID": "C060",
+      "Class": "Infrastructure"
+    },
+    {
+      "Concept_ID": "C061",
+      "Class": "Policy"
+    },
+    {
+      "Concept_ID": "C062",
+      "Class": "Asset"
+    },
+    {
+      "Concept_ID": "C063",
+      "Class": "Asset"
+    },
+    {
+      "Concept_ID": "C064",
+      "Class": "Facility"
+    },
+    {
+      "Concept_ID": "C065",
+      "Class": "Policy"
+    }
+  ]
+}

@@ -1,0 +1,448 @@
+[
+  {
+    "Concept_ID": "C001",
+    "Preferred_Term_PT": "KLM Royal Dutch Airlines",
+    "Used_For_UF": [
+      "Koninklijke Luchtvaart Maatschappij N.V.",
+      "KLM"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C002",
+    "Preferred_Term_PT": "Air France-KLM S.A.",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C003",
+    "Preferred_Term_PT": "SkyTeam Alliance",
+    "Used_For_UF": [
+      "SkyTeam"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C004",
+    "Preferred_Term_PT": "Amsterdam Airport Schiphol",
+    "Used_For_UF": [
+      "AMS",
+      "EHAM",
+      "Schiphol"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C005",
+    "Preferred_Term_PT": "Paris Charles de Gaulle",
+    "Used_For_UF": [
+      "CDG"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C006",
+    "Preferred_Term_PT": "KLM Cityhopper",
+    "Used_For_UF": [
+      "KLM Cityhopper B.V.",
+      "KLC"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C007",
+    "Preferred_Term_PT": "Transavia Airlines",
+    "Used_For_UF": [
+      "Transavia Airlines C.V."
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C008",
+    "Preferred_Term_PT": "Martinair Holland",
+    "Used_For_UF": [
+      "Martinair Holland N.V."
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C009",
+    "Preferred_Term_PT": "Flying Blue Program",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C010",
+    "Preferred_Term_PT": "Passenger Name Record",
+    "Used_For_UF": [
+      "PNR"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C011",
+    "Preferred_Term_PT": "Electronic Ticket",
+    "Used_For_UF": [
+      "E-Ticket"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C012",
+    "Preferred_Term_PT": "World Business Class",
+    "Used_For_UF": [
+      "WBC"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C013",
+    "Preferred_Term_PT": "Premium Comfort Class",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C014",
+    "Preferred_Term_PT": "Economy Comfort Zone",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C015",
+    "Preferred_Term_PT": "Economy Standard Class",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C016",
+    "Preferred_Term_PT": "Boeing 777-200ER",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C017",
+    "Preferred_Term_PT": "Boeing 777-300ER",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C018",
+    "Preferred_Term_PT": "Boeing 787-9",
+    "Used_For_UF": [
+      "Dreamliner"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C019",
+    "Preferred_Term_PT": "Boeing 787-10",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C020",
+    "Preferred_Term_PT": "Airbus A330",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C021",
+    "Preferred_Term_PT": "Boeing 737-700",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C022",
+    "Preferred_Term_PT": "Boeing 737-800",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C023",
+    "Preferred_Term_PT": "Boeing 737-900",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C024",
+    "Preferred_Term_PT": "Airbus A321neo",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C025",
+    "Preferred_Term_PT": "Embraer 175",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C026",
+    "Preferred_Term_PT": "Embraer 190",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C027",
+    "Preferred_Term_PT": "Embraer 195-E2",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C028",
+    "Preferred_Term_PT": "KLM Cargo",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C029",
+    "Preferred_Term_PT": "Martinair",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C030",
+    "Preferred_Term_PT": "Boeing 747-400BCF",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C031",
+    "Preferred_Term_PT": "Boeing 747-400ERF",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C032",
+    "Preferred_Term_PT": "KLM Engineering & Maintenance",
+    "Used_For_UF": [
+      "KLM E&M"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C033",
+    "Preferred_Term_PT": "Hangar 10",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C034",
+    "Preferred_Term_PT": "Hangar 11",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C035",
+    "Preferred_Term_PT": "Hangar 12",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C036",
+    "Preferred_Term_PT": "Hangar 14",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C037",
+    "Preferred_Term_PT": "Amadeus Alt\u00e9a Passenger Service System",
+    "Used_For_UF": [
+      "Amadeus Alt\u00e9a PSS"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C038",
+    "Preferred_Term_PT": "Boarding Pass Barcode",
+    "Used_For_UF": [
+      "BCBP"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C039",
+    "Preferred_Term_PT": "Schiphol Wave Hub Base",
+    "Used_For_UF": [
+      "Schiphol Hub"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C040",
+    "Preferred_Term_PT": "Aviation Information Data Exchange",
+    "Used_For_UF": [
+      "AIDX"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C041",
+    "Preferred_Term_PT": "Eurocontrol",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C042",
+    "Preferred_Term_PT": "FAA",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C043",
+    "Preferred_Term_PT": "IATA Delay Code",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C044",
+    "Preferred_Term_PT": "Triple-A Passenger-Baggage Reconciliation Security Rule",
+    "Used_For_UF": [
+      "Triple-A Rule"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C045",
+    "Preferred_Term_PT": "Unit Load Device",
+    "Used_For_UF": [
+      "ULD"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C046",
+    "Preferred_Term_PT": "Computed Tomography Explosive Detection Systems",
+    "Used_For_UF": [
+      "EDS"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C047",
+    "Preferred_Term_PT": "Flying Blue Explorer",
+    "Used_For_UF": [
+      "Explorer"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C048",
+    "Preferred_Term_PT": "Flying Blue Silver",
+    "Used_For_UF": [
+      "Silver"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C049",
+    "Preferred_Term_PT": "Flying Blue Gold",
+    "Used_For_UF": [
+      "Gold"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C050",
+    "Preferred_Term_PT": "Flying Blue Platinum",
+    "Used_For_UF": [
+      "Platinum"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C051",
+    "Preferred_Term_PT": "Passenger Lifecycle",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C052",
+    "Preferred_Term_PT": "Aircraft Turnaround",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C053",
+    "Preferred_Term_PT": "Aircraft Airframe",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C054",
+    "Preferred_Term_PT": "Maintenance Check",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C055",
+    "Preferred_Term_PT": "SkyPriority",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C056",
+    "Preferred_Term_PT": "Crown Lounge",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C057",
+    "Preferred_Term_PT": "Delft Blue Miniature House",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C058",
+    "Preferred_Term_PT": "ADS-B State Vectors",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C059",
+    "Preferred_Term_PT": "Airport Surface Radar",
+    "Used_For_UF": [
+      "ASDE-X"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C060",
+    "Preferred_Term_PT": "Gate Docking Guidance System",
+    "Used_For_UF": [
+      "VDGS"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C061",
+    "Preferred_Term_PT": "IATA Resolution 753",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C062",
+    "Preferred_Term_PT": "Checked Bag",
+    "Used_For_UF": [
+      "Baggage"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C063",
+    "Preferred_Term_PT": "IATA Barcode Tag",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C064",
+    "Preferred_Term_PT": "Baggage Reclaim Carousel",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C065",
+    "Preferred_Term_PT": "Code 15 Baggage Offload Hold",
+    "Used_For_UF": [],
+    "Status": "ACTIVE"
+  }
+]

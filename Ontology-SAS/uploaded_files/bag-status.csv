@@ -1,0 +1,7 @@
+notation,pref_label,definition,phase,status
+checked-in,Checked In,Tagged and accepted at check-in,6,active-phase-6
+loaded,Loaded,Loaded onto the aircraft,6,active-phase-6
+in-transit,In Transit,Between flights on a connecting itinerary,6,active-phase-6
+delivered,Delivered,Delivered to the passenger at destination baggage claim,6,active-phase-6
+missing,Missing,Not located at the expected point in its journey (mishandled),6,active-phase-6
+damaged,Damaged,Delivered with reported damage,6,active-phase-6

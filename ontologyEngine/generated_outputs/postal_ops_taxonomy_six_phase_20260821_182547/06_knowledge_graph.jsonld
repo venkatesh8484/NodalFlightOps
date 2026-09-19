@@ -1,0 +1,180 @@
+{
+  "@context": {
+    "@vocab": "http://example.org/",
+    "has_broader_concept": {
+      "@id": "http://example.org/ontology/has_broader_concept",
+      "@type": "@id"
+    },
+    "has_narrower_concept": {
+      "@id": "http://example.org/ontology/has_narrower_concept",
+      "@type": "@id"
+    },
+    "is_related_to": {
+      "@id": "http://example.org/ontology/is_related_to",
+      "@type": "@id"
+    }
+  },
+  "@graph": [
+    {
+      "@id": "concept:C001",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [
+        "concept:C011",
+        "concept:C012",
+        "concept:C013"
+      ],
+      "is_related_to": [
+        "concept:C004",
+        "concept:C008",
+        "concept:C016"
+      ]
+    },
+    {
+      "@id": "concept:C002",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C003",
+        "concept:C004"
+      ]
+    },
+    {
+      "@id": "concept:C003",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C002",
+        "concept:C005"
+      ]
+    },
+    {
+      "@id": "concept:C004",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C001",
+        "concept:C002",
+        "concept:C005"
+      ]
+    },
+    {
+      "@id": "concept:C005",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C003",
+        "concept:C004",
+        "concept:C007",
+        "concept:C008"
+      ]
+    },
+    {
+      "@id": "concept:C006",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C007",
+        "concept:C014"
+      ]
+    },
+    {
+      "@id": "concept:C007",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C004",
+        "concept:C005",
+        "concept:C006"
+      ]
+    },
+    {
+      "@id": "concept:C008",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C001",
+        "concept:C005"
+      ]
+    },
+    {
+      "@id": "concept:C009",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C010"
+      ]
+    },
+    {
+      "@id": "concept:C010",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C009"
+      ]
+    },
+    {
+      "@id": "concept:C011",
+      "@type": "Concept",
+      "has_broader_concept": [
+        "concept:C001"
+      ],
+      "has_narrower_concept": [],
+      "is_related_to": []
+    },
+    {
+      "@id": "concept:C012",
+      "@type": "Concept",
+      "has_broader_concept": [
+        "concept:C001"
+      ],
+      "has_narrower_concept": [],
+      "is_related_to": []
+    },
+    {
+      "@id": "concept:C013",
+      "@type": "Concept",
+      "has_broader_concept": [
+        "concept:C001"
+      ],
+      "has_narrower_concept": [],
+      "is_related_to": []
+    },
+    {
+      "@id": "concept:C014",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C006"
+      ]
+    },
+    {
+      "@id": "concept:C015",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C001"
+      ]
+    },
+    {
+      "@id": "concept:C016",
+      "@type": "Concept",
+      "has_broader_concept": [],
+      "has_narrower_concept": [],
+      "is_related_to": [
+        "concept:C001"
+      ]
+    }
+  ]
+}

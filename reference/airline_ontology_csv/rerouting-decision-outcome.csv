@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+SELECTED,Selected,This alternate was chosen and the passenger is being rebooked onto it.,7,active-phase-7
+REJECTED,Rejected,This alternate failed one or more rule checks and was not offered.,7,active-phase-7
+ESCALATED,Escalated,No qualifying alternate was found within rule limits; a human must decide.,7,active-phase-7
+NO_ACTION_NEEDED,No Action Needed,The connection assessment cleared the MCT; no rerouting is required.,7,active-phase-7

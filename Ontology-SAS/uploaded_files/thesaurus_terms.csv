@@ -1,0 +1,14 @@
+term_id,pref_label,alt_labels,broader_term,definition,grounded_class,domain
+ths:airline,Airline,Carrier | Air Carrier,Organization,A commercial air transport operator licensed under an AOC.,:Airline,Organization
+ths:operating-carrier,Operating Carrier,Operating Airline,ths:airline,The airline that physically operates a given flight with aircraft & crew.,:OperatingCarrier,Organization
+ths:marketing-carrier,Marketing Carrier,Marketing Airline,ths:airline,The airline selling the flight under its own flight number.,:MarketingCarrier,Organization
+ths:alliance,Alliance,Airline Alliance,Organization,Global commercial partnership (e.g. SkyTeam) sharing network & lounges.,:Alliance,Organization
+ths:airport,Airport,Aerodrome | Airfield,Place,"Defined aerodrome with runways, navigation aids, and passenger terminals.",:Airport,Place
+ths:hub,Hub Airport,Airline Hub | Connecting Base,ths:airport,Primary transfer airport used by an airline to concentrate passenger traffic.,:Airport,Place
+ths:flight-instance,Flight Instance,Dated Flight | Flight Movement,FlightOperations,Specific operational execution of a flight schedule on a calendar date.,:FlightInstance,FlightOperations
+ths:delay,Flight Delay,Operational Disruption,Event,Positive difference between scheduled and actual departure/arrival block times.,:DelayEvent,FlightOperations
+ths:aircraft,Aircraft,Airframe | Plane | Fleet Unit,Asset,Physical civil aviation vehicle identified by country tail registration.,:Aircraft,Asset
+ths:pnr,Passenger Name Record (PNR),Booking Locator | Reservation Code,CommercialDocument,6-character master reservation record stored in the Airline GDS/PSS.,:PNR,CommercialDocument
+ths:ticket,Electronic Ticket,E-Ticket | Accountable Ticket,CommercialDocument,IATA standard 13-digit accountable transport document.,:Ticket,CommercialDocument
+ths:bag,Checked Baggage,Luggage | Checked Bag,Asset,Passenger luggage checked in for transport in cargo hold with 10-digit tag.,:Bag,PassengerService
+ths:flying-blue,Flying Blue,Loyalty Program,Service,Air France-KLM frequent flyer loyalty currency and tier status program.,:LoyaltyProgram,Service

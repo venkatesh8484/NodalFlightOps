@@ -1,0 +1,6 @@
+notation,pref_label,definition,phase,status
+confirmed,Confirmed,The booking holds a confirmed seat on the flight segment,6,active-phase-6
+waitlisted,Waitlisted,Pending a confirmed seat becoming available,6,active-phase-6
+cancelled,Cancelled,The booking was cancelled prior to travel,6,active-phase-6
+no-show,No-Show,The passenger did not check in or board for a confirmed booking,6,active-phase-6
+flown,Flown,The passenger completed travel on this booking,6,active-phase-6

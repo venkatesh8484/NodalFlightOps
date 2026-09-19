@@ -1,0 +1,8 @@
+notation,pref_label,definition,phase,status
+scheduled,Scheduled,The flight instance exists in the schedule but has not yet begun its operational day.,3,active
+active,Active,The flight instance has departed and has not yet arrived.,3,active
+landed,Landed,The flight instance has arrived at its destination (or diversion) airport.,3,active
+delayed,Delayed,Estimated/actual times are materially later than scheduled; see the associated DelayEvent.,3,active
+cancelled,Cancelled,The flight instance was withdrawn and did not operate.,3,active
+diverted,Diverted,The flight instance landed at an airport other than its scheduled destination.,3,active
+unknown,Unknown,No source has reported a status within the freshness window.,3,active

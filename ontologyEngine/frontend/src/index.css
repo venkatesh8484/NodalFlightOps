@@ -1,0 +1,39 @@
+:root {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande", "Segoe UI", sans-serif;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 232, 184, 0.5), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(133, 221, 225, 0.38), transparent 36%),
+    #f6f2e8;
+  color: #2f2a1f;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+p {
+  margin: 0;
+}

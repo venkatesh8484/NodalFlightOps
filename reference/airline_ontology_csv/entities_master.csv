@@ -1,0 +1,65 @@
+entity_name,domain,meta_type,parent_class,iata_aidm_term,description,klm_context
+Organization,Organization,THING,None,Party,Legal or commercial entity in the airline business network.,"KLM Group, SkyTeam Alliance, AF-KLM Corporate Entities"
+Airline,Organization,THING,Organization,Carrier,AOC holder licensed for scheduled air passenger carriage.,"KLM Royal Dutch Airlines (IATA: KL, ICAO: KLM)"
+OperatingCarrier,Organization,THING,Airline,OperatingCarrier,The specific airline operating aircraft and crew for a flight.,KLM Mainline / KLM Cityhopper operating regional feeders
+MarketingCarrier,Organization,THING,Airline,MarketingCarrier,The commercial airline publishing and selling the flight number.,"KLM marketing Delta, Air France, and Virgin Atlantic flights"
+Alliance,Organization,THING,Organization,Alliance,Global commercial alliance of airlines sharing codes & lounges.,SkyTeam Alliance (Founding Member KLM / Air France)
+GroundHandler,Organization,THING,Organization,GroundHandler,"Apron, ramp, and terminal ground service operator.","KLM Ground Services at AMS Schiphol, Swissport at JFK"
+BusinessUnit,Organization,THING,Organization,OrganizationalUnit,Internal business operating unit or division.,"KLM Cargo, KLM Engineering & Maintenance (E&M)"
+LegalEntity,Organization,THING,Organization,LegalEntity,Registered commercial corporate legal entity.,Koninklijke Luchtvaart Maatschappij N.V. (Reg: NL)
+Subsidiary,Organization,THING,Organization,Subsidiary,Directly owned subsidiary airline or business unit.,"KLM Cityhopper B.V., Transavia Airlines C.V."
+Place,Place,THING,None,Location,Top-level spatial or geographic entity.,"Global destinations and hubs across Europe, Americas, Asia"
+Country,Place,THING,Place,Country,Sovereign nation state with ISO 3166-1 alpha-2 code.,"Netherlands (NL), United States (US), Hungary (HU)"
+City,Place,THING,Place,City,Metropolitan city served by airports with IATA city code.,"Amsterdam (AMS), New York (NYC), Budapest (BUD)"
+Airport,Place,THING,Place,Aerodrome,"Aerodrome with runways, stands, gates, and navigation aids.","Schiphol (AMS/EHAM), JFK (JFK/KJFK), Liszt Ferenc (BUD/LHBP)"
+CommercialAirport,Place,THING,Airport,CommercialAerodrome,Airport handling scheduled commercial passenger services.,"AMS Main Hub, JFK Terminal 4, CDG Joint SkyTeam Hub"
+Terminal,Place,THING,Place,PassengerTerminal,"Passenger terminal building containing lounges, check-in, and gates.","AMS Lounge 1/2/3, Terminal 1/2/3, JFK T4"
+Gate,Place,THING,Place,BoardingGate,Departure and arrival passenger boarding gate.,"AMS Gate D04, E18, F06, B22; JFK Gate B24, B20"
+Stand,Place,THING,Place,AircraftStand,Designated apron aircraft parking stand with jet bridge/remote bus.,"AMS Stand D04, Pier E Stand 18 (Heavy Widebody Stand)"
+TransportNetwork,TransportNetwork,THING,None,Network,"Commercial route network, timetables, and legs.",KLM Global Hub-and-Spoke Schedule & Transatlantic Joint Venture
+Route,TransportNetwork,THING,TransportNetwork,Route,Directional or bidirectional airport pair route.,"AMS-JFK (Transatlantic Longhaul), AMS-BUD (European Feeder)"
+ScheduledFlight,TransportNetwork,THING,TransportNetwork,ScheduledFlight,Timetabled commercial flight service repeating weekly.,"KL641 (AMS-JFK Daily 13:20), KL1972 (BUD-AMS Daily 06:30)"
+FlightLeg,TransportNetwork,THING,TransportNetwork,FlightLeg,Non-stop takeoff-to-touchdown operational movement.,AMS-JFK Leg 1 (8h 25m Block Time)
+FlightSegment,TransportNetwork,THING,TransportNetwork,FlightSegment,Commercial unit of carriage sold under one flight number.,BUD-AMS-JFK Connecting Itinerary Segment 1 & Segment 2
+CodeshareService,TransportNetwork,THING,TransportNetwork,CodeshareFlight,Marketed flight service sold by partner carrier.,DL9380 (KLM operated KL641 marketed by Delta Air Lines)
+Asset,Asset,THING,None,PhysicalAsset,"Physical asset owned, leased, or tracked by the airline.","Aircraft Fleet, Ground Service Equipment, Passenger Baggage"
+Aircraft,Asset,THING,Asset,Aircraft,Physical airframe identified by civil aviation registration.,"PH-BHA (Boeing 787-9), PH-BXV (Boeing 737-800), PH-NXA (E195-E2)"
+AircraftType,Asset,THING,Asset,AircraftModel,"Manufacturer model, ICAO/IATA type code, and engine spec.","B789 (Boeing 787-9), B738 (Boeing 737-800), E295 (Embraer E195-E2)"
+Cabin,Asset,THING,Asset,CabinCompartment,Physical passenger seating cabin compartment.,"World Business Class (30 seats), Premium Comfort (21), Economy (243)"
+Seat,Asset,THING,Asset,PassengerSeat,"Individual seating unit with row number, column letter, and pitch.","14A (Economy Comfort Window), 01A (World Business Full-Flat)"
+Bag,Asset,THING,Asset,BaggageItem,Checked baggage item tracked with 10-digit IATA barcode tag.,Tag #0074829104 (23kg Checked Bag linked to PNR AB12CD)
+FlightOperations,FlightOperations,THING,None,FlightOperation,"Operational flight instances, movements, and telemetry.",KLM OCC (Operations Control Centre) Dispatch & Flight Tracking
+FlightInstance,FlightOperations,THING,FlightOperations,DatedFlightInstance,Dated physical execution of a flight schedule.,"KL641 / 2026-09-01 (AMS -> JFK, Aircraft: PH-BHA)"
+DepartureEvent,FlightOperations,ACTION,Event,DepartureMovement,Off-blocks and wheels-up event with AIDX timestamp.,"KL641 Off-Blocks: 13:45 UTC, Wheels-Up: 14:02 UTC at AMS RWY 24"
+ArrivalEvent,FlightOperations,ACTION,Event,ArrivalMovement,Touchdown and on-blocks event at destination gate.,"KL641 Touchdown: 22:05 UTC, On-Blocks: 22:15 UTC at JFK Gate B24"
+DelayEvent,FlightOperations,ACTION,Event,DelayRecord,Flight disruption event with IATA AHM730 delay codes.,KL641 Delay: 25 mins (Code 51: Damage by Cargo Loading equipment)
+CancellationEvent,FlightOperations,ACTION,Event,CancellationRecord,Flight cancellation record with reason and rebooking cascade.,Weather / ATC slot cancellations at AMS Schiphol
+DiversionEvent,FlightOperations,ACTION,Event,DiversionRecord,Flight diversion to alternate aerodrome.,Diverted flight landing at BOS / EWR alternate airports
+PositionReportEvent,FlightOperations,AUTO_RECORD,Event,TelemetryVector,"Live ADS-B transponder position vector (altitude, speed, heading).","PH-BHA at 36,000 ft, 485 kts groundspeed, Lat 54.2 N, Lon 32.1 W"
+MaintenanceEvent,Asset,ACTION,Event,MaintenanceAction,"Line check, A-Check, C-Check, engine overhaul, or MEL defect log.",PH-BHA A-Check due 2026-10-15; PH-BXC Borescope Inspection
+Person,Person,THING,None,Person,Human individual interacting with the airline system.,"Travelers, Flying Blue Members, Flight Pilots, Cabin Crew"
+Passenger,Person,THING,Person,Passenger,Individual holding confirmed air transportation booking.,"Elena Novak (Flying Blue Gold), Marco Silva (Economy Traveler)"
+CrewMember,Person,THING,Person,CrewMember,"Cockpit captain, first officer, purser, or cabin attendant.","Captain Jan Van Der Beek (B787 Type Rated), Purser Sophie De Jong"
+CommercialDocument,CommercialDocument,THING,None,CommercialRecord,"Accountable commercial transaction, booking, or fare document.",Amadeus Altéa PSS & KLM.com Commercial Distribution Layer
+PNR,CommercialDocument,AUTO_RECORD,CommercialDocument,PassengerNameRecord,6-character alphanumeric booking locator in GDS/PSS.,"Locator AB12CD (Novak / Elena), Locator XZ99KP (Silva / Marco)"
+Booking,CommercialDocument,THING,CommercialDocument,BookingSegment,Confirmed passenger reservation linking passenger to flight segment.,Booking ID BKG-2026-088192 (Status: CONFIRMED)
+Order,CommercialDocument,THING,CommercialDocument,IATA_Order,IATA ONE Order NDC commercial purchase transaction.,Order #ORD-KLM-9941029 (Contains Fare + Ancillaries)
+Ticket,CommercialDocument,AUTO_RECORD,CommercialDocument,ElectronicTicket,Accountable 13-digit e-ticket document (KLM prefix: 074).,"074-2491048201 (Elena Novak), 074-9840192841 (Marco Silva)"
+TicketCoupon,CommercialDocument,AUTO_RECORD,CommercialDocument,FlightCoupon,"Individual flight leg coupon in e-ticket (Coupon 1, Coupon 2).","Coupon 1: AMS-JFK (FLOWN), Coupon 2: JFK-AMS (OPEN)"
+Fare,CommercialDocument,THING,CommercialDocument,FareBasis,"Fare basis code, tariff rules, change penalties, and class.","Fare Basis YSTD (Full Economy Flexible, 2x Bags included)"
+Service,Service,THING,None,Service,"Commercial passenger product, service, or loyalty program.","Flying Blue Loyalty, Lounge Access, Inflight Dining"
+AncillaryService,Service,THING,Service,AncillaryItem,"Optional purchased add-on service (Seat selection, extra bag, meal).","Extra Legroom Seat (14A), Special Meal (VGML), Additional 23kg Bag"
+LoyaltyProgram,Service,THING,Service,FrequentFlyerProgram,Frequent flyer loyalty scheme with tier status rules.,Flying Blue (Air France-KLM Group Loyalty Program)
+LoyaltyAccount,Service,AUTO_RECORD,Service,MemberAccount,"Individual member account with tier status, points, and XP points.","FB-90218402 (Elena Novak: Gold Tier, 180 XP, SkyPriority)"
+CheckInEvent,FlightOperations,ACTION,Event,CheckInAction,"Passenger check-in transaction via web, mobile, kiosk, or desk.","Elena Novak checked in via KLM Mobile App (Seat 14A, 1 Bag)"
+BoardingEvent,FlightOperations,ACTION,Event,BoardingScan,Optical gate scan confirming passenger embarked aircraft.,Elena Novak scanned at Gate D04 at 13:10 UTC (Seq #042)
+Governance,Governance,THING,None,GovernanceEntity,"Data provenance, dataset metadata, and confidence assertions.",Data Catalog & Pipeline Lineage Tracking for Enterprise Semantic Mesh
+SourceSystem,Governance,THING,Governance,SourceApplication,Originating source system application or feed.,"Amadeus Altéa PSS, SITA Baggage Hub, OpenSky Network, Jeppesen FliteDeck"
+Dataset,Governance,THING,Governance,DataPackage,Snapshot version of ingested operational dataset.,"KLM-OPS-2026-09-01, OpenFlights-2026-08-30, Wikidata-Aviation-Q219342"
+SourceRecord,Governance,AUTO_RECORD,Governance,SourceRecord,Raw source record ID and timestamp.,"Record #4948 (OpenFlights KLM Carrier Record), Record #Q219342 (Wikidata)"
+Assertion,Governance,AUTO_RECORD,Governance,FactAssertion,Semantic statement asserted by a specific source record.,KLM brand name asserted by OpenFlights (conf: 0.98) & Wikidata (0.95)
+ConfidenceScore,Governance,THING,Governance,QualityScore,Computed entity resolution and data confidence metric 0.0-1.0.,Match Score: 0.98 (Auto-Approved for Semantic Master Data)
+PassengerRecovery,PassengerRecovery,THING,None,DisruptionRecovery,"Top-level domain for delay/diversion/cancellation recovery: connection-risk checks, the business rules that gate rerouting, and the alternate itineraries they evaluate.",KLM OCC Duty Manager desk; EU261 passenger-rights obligations; SkyTeam interline rebooking
+ConnectionRiskAssessment,PassengerRecovery,AUTO_RECORD,PassengerRecovery,MisconnectRiskCheck,"Computed buffer between an inbound flight's actual or projected arrival and a specific booked onward flight's scheduled departure, checked against the minimum connecting time for that connection.",KL1008 projected arrival AMS 13:40 vs booked KL605 AMS-JFK departure 15:00: buffer 80min against 50min non-Schengen MCT -> STANDARD
+ReroutingBusinessRule,PassengerRecovery,THING,PassengerRecovery,DisruptionPolicyRule,"A codified, versioned decision rule the OCC applies to a ConnectionRiskAssessment: it checks measurable parameters (buffer vs MCT, delay cause/duration, cabin and fare eligibility, partner seat availability, loyalty tier, EU261 thresholds) and returns an outcome for one candidate AlternateConnectionOption.",Rule R-MCT-01 rejects any alternate whose own buffer is below MCT; Rule R-VOUCHER-01 requires a HOTEL_MEAL voucher once delayDurationMinutes >= 180 (EU261 Art. 9)
+AlternateConnectionOption,PassengerRecovery,THING,FlightSegment,AlternativeItinerary,"A candidate replacement flight segment (own-metal, joint-venture, interline, or codeshare) that a ReroutingBusinessRule evaluates as a substitute for a passenger's missed or at-risk onward connection, carrying the data needed to check its own feasibility rather than being free text.","DL47 (Delta joint-venture, AMS-JFK Dep 17:35 local, Y availability 4); VS103 (Virgin Atlantic interline, Dep 18:40 local, availability 0)"

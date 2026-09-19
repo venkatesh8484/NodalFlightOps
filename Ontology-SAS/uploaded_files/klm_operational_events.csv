@@ -1,0 +1,6 @@
+event_id,flight_instance_id,event_category,event_name,timestamp,facility,source_system,data_payload
+EVT-KL641-01,FL-KL641-20260901,DEPARTURE_AIDX,Off-Blocks (Out),2026-09-01T13:45:00Z,AMS Gate D04,Schiphol AODB / AIDX,Gate pushback initiated; tug connected; 25m ground delay
+EVT-KL641-02,FL-KL641-20260901,DEPARTURE_AIDX,Wheels-Up (Off),2026-09-01T14:02:00Z,AMS Runway 24 (Kaagbaan),Aeronautical Telemetry / Eurocontrol,Airborne heading 280; Climb to FL360 initiated
+EVT-KL641-03,FL-KL641-20260901,TELEMETRY_ADSB,Oceanic Waypoint 54N030W,2026-09-01T17:30:00Z,North Atlantic NAT-Track Charlie,OpenSky Network / ADS-B,"Alt: 36,000 ft · Speed: 485 kts · Lat: 54.21 · Lon: -30.04 · Squawk: 4421"
+EVT-KL641-04,FL-KL641-20260901,ARRIVAL_AIDX,Touchdown (On),2026-09-01T22:05:00Z,JFK Runway 22L,FAA ASDE-X / AIDX,Touchdown successful; taxiing to Terminal 4 via Taxiway Bravo
+EVT-KL641-05,FL-KL641-20260901,ARRIVAL_AIDX,On-Blocks (In),2026-09-01T22:15:00Z,JFK Gate B24,Port Authority NYNJ / SITA,Chocks on; passenger jet bridge attached; ground power connected

@@ -1,0 +1,6 @@
+registration,icao24_hex,aircraft_model,iata_type,icao_type,airline,manufacturer,msn_serial,delivery_date,total_capacity,business_seats,premium_economy_seats,economy_seats,engine_type,status,current_flight,assigned_hub,next_scheduled_maintenance,flight_hours,flight_cycles
+PH-BHA,484B68,Boeing 787-9 Dreamliner,789,B789,KLM Royal Dutch Airlines,Boeing Commercial Airplanes,38787,2015-11-14,294,30,21,243,GEnx-1B70/75,IN_FLIGHT,KL641,AMS,2026-10-15 (A-Check),38420,4620
+PH-BHB,484B69,Boeing 787-9 Dreamliner,789,B789,KLM Royal Dutch Airlines,Boeing Commercial Airplanes,38788,2016-02-18,294,30,21,243,GEnx-1B70/75,SCHEDULED,KL642,JFK,2026-11-02 (Line Check),37110,4480
+PH-BXV,4851E8,Boeing 737-800,738,B738,KLM Royal Dutch Airlines,Boeing Commercial Airplanes,30368,2008-04-20,162,20,0,142,CFM56-7B26,ON_GROUND,KL1972,AMS,2026-09-20 (Line Inspection),44200,21850
+PH-BXC,4851DC,Boeing 737-800,738,B738,KLM Royal Dutch Airlines,Boeing Commercial Airplanes,29598,2007-09-12,162,20,0,142,CFM56-7B26,MAINTENANCE,None,AMS,In Progress (Engine Borescope),47800,24100
+PH-NXA,485A11,Embraer 195-E2,295,E295,KLM Cityhopper,Embraer S.A.,19020042,2021-02-24,132,20,8,104,PW1900G,OPERATIONAL,WA1104,AMS,2026-10-01 (A-Check),11200,7900

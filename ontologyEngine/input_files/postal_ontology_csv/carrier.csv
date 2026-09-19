@@ -1,0 +1,7 @@
+carrier_id,carrier_name,carrier_type,home_country,reliability_rating,cost_index,certifications
+CAR-INH,National Carrier In-House Linehaul,IN_HOUSE,DE,94,1.0,ADR;GDP
+CAR-DBS,Contract Hauler Alpha (road),CONTRACT_3PL,DE,91,1.08,ADR
+CAR-GLS,Contract Hauler Beta (express),CONTRACT_3PL,DE,89,1.12,GDP
+CAR-DPD,Contract Hauler Gamma (X-border),CONTRACT_3PL,FR,88,1.05,
+CAR-RAIL,Rail Freight Partner,CONTRACT_3PL,DE,96,0.82,
+CAR-AIR,Air Cargo Partner,CONTRACT_3PL,DE,92,2.4,

@@ -1,0 +1,256 @@
+[
+  {
+    "Concept_ID": "C001",
+    "PT": "Hub",
+    "UF": [
+      "Terminal",
+      "Sorting Centre",
+      "Sorting Center",
+      "Sorting Facility"
+    ],
+    "BT": [],
+    "NT": [
+      "C011",
+      "C012",
+      "C013"
+    ],
+    "Related_Term_RT": [
+      "C004",
+      "C008",
+      "C016"
+    ],
+    "Scope_Note_SN": "A physical logistics facility where mail and parcels are received, sorted, and routed to other destinations."
+  },
+  {
+    "Concept_ID": "C002",
+    "PT": "Carrier",
+    "UF": [
+      "Logistics Provider",
+      "3PL Carrier",
+      "Hauler"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C003",
+      "C004"
+    ],
+    "Scope_Note_SN": "A logistics provider or transport operator carrying out linehaul movements."
+  },
+  {
+    "Concept_ID": "C003",
+    "PT": "Driver",
+    "UF": [
+      "Operator",
+      "Chauffeur",
+      "Truck Driver"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C002",
+      "C005"
+    ],
+    "Scope_Note_SN": "A person employed or contracted by a carrier to operate transport vehicles."
+  },
+  {
+    "Concept_ID": "C004",
+    "PT": "LinehaulRoute",
+    "UF": [
+      "Linehaul",
+      "Logistics Route",
+      "Transit Leg"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001",
+      "C002",
+      "C005"
+    ],
+    "Scope_Note_SN": "A planned road, rail, or air transit route between an origin hub and a destination hub."
+  },
+  {
+    "Concept_ID": "C005",
+    "PT": "TransportVehicle",
+    "UF": [
+      "Vehicle",
+      "Fleet Asset",
+      "Truck"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C003",
+      "C004",
+      "C007",
+      "C008"
+    ],
+    "Scope_Note_SN": "A vehicle (e.g. trailer, rigid truck, swap body, cargo jet) used for moving consignments."
+  },
+  {
+    "Concept_ID": "C006",
+    "PT": "ShipmentConsignment",
+    "UF": [
+      "Consignment",
+      "Shipment",
+      "Parcel Batch"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C007",
+      "C014"
+    ],
+    "Scope_Note_SN": "A collection of parcels or mail transported together under a single consignment ID with an SLA."
+  },
+  {
+    "Concept_ID": "C007",
+    "PT": "ConsignmentVehicleAssignment",
+    "UF": [
+      "Assignment",
+      "Vehicle Assignment",
+      "Manifest Entry"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C004",
+      "C005",
+      "C006"
+    ],
+    "Scope_Note_SN": "An association that binds a consignment to a vehicle on a specific route leg."
+  },
+  {
+    "Concept_ID": "C008",
+    "PT": "TelemetryEvent",
+    "UF": [
+      "Telemetry",
+      "Alert Event",
+      "SCADA Event"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001",
+      "C005"
+    ],
+    "Scope_Note_SN": "A status or sensor reading emitted by a vehicle IoT device or a hub PLC/SCADA system."
+  },
+  {
+    "Concept_ID": "C009",
+    "PT": "ActionType",
+    "UF": [
+      "Operational Action",
+      "Action Class",
+      "Intervention Type"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C010"
+    ],
+    "Scope_Note_SN": "A defined operational intervention category that can be executed to resolve delays or capacity issues."
+  },
+  {
+    "Concept_ID": "C010",
+    "PT": "ActionExecutionLog",
+    "UF": [
+      "Action Log",
+      "Execution Record",
+      "Operational Log"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C009"
+    ],
+    "Scope_Note_SN": "A record of an execution instance of an ActionType, including status and approvals."
+  },
+  {
+    "Concept_ID": "C011",
+    "PT": "Mega-Hub",
+    "UF": [
+      "Mega Sorting Centre",
+      "Central Hub"
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "A large-scale sorting facility designed for maximum throughput, typically operating 24/7."
+  },
+  {
+    "Concept_ID": "C012",
+    "PT": "Regional Hub",
+    "UF": [
+      "Regional sorting terminal",
+      "Secondary Hub"
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "A medium-scale facility serving a specific region, routing regional volume to local depots."
+  },
+  {
+    "Concept_ID": "C013",
+    "PT": "Depot",
+    "UF": [
+      "Delivery Depot",
+      "Local Office"
+    ],
+    "BT": [
+      "C001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "A local delivery facility where parcels are sorted for the final mile delivery."
+  },
+  {
+    "Concept_ID": "C014",
+    "PT": "Universal Postal Service",
+    "UF": [
+      "Universal Service Obligation",
+      "USO",
+      "Public Service Mail"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C006"
+    ],
+    "Scope_Note_SN": "The statutory obligation to deliver mail and parcels to all addresses within a national territory."
+  },
+  {
+    "Concept_ID": "C015",
+    "PT": "Parcel Locker",
+    "UF": [
+      "Smart Locker",
+      "Locker Box"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001"
+    ],
+    "Scope_Note_SN": "An automated self-service station for picking up and dropping off parcels."
+  },
+  {
+    "Concept_ID": "C016",
+    "PT": "Service Point",
+    "UF": [
+      "PUDO",
+      "Pick-up Drop-off Point",
+      "Retail Outlet"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "C001"
+    ],
+    "Scope_Note_SN": "A retail location or shop where customers can send or collect parcels."
+  }
+]

@@ -1,0 +1,159 @@
+[
+  {
+    "Concept_ID": "C001",
+    "Preferred_Term_PT": "Hub",
+    "Used_For_UF": [
+      "Terminal",
+      "Sorting Centre",
+      "Sorting Center",
+      "Sorting Facility"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C002",
+    "Preferred_Term_PT": "Carrier",
+    "Used_For_UF": [
+      "Logistics Provider",
+      "3PL Carrier",
+      "Hauler"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C003",
+    "Preferred_Term_PT": "Driver",
+    "Used_For_UF": [
+      "Operator",
+      "Chauffeur",
+      "Truck Driver"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C004",
+    "Preferred_Term_PT": "LinehaulRoute",
+    "Used_For_UF": [
+      "Linehaul",
+      "Logistics Route",
+      "Transit Leg"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C005",
+    "Preferred_Term_PT": "TransportVehicle",
+    "Used_For_UF": [
+      "Vehicle",
+      "Fleet Asset",
+      "Truck"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C006",
+    "Preferred_Term_PT": "ShipmentConsignment",
+    "Used_For_UF": [
+      "Consignment",
+      "Shipment",
+      "Parcel Batch"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C007",
+    "Preferred_Term_PT": "ConsignmentVehicleAssignment",
+    "Used_For_UF": [
+      "Assignment",
+      "Vehicle Assignment",
+      "Manifest Entry"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C008",
+    "Preferred_Term_PT": "TelemetryEvent",
+    "Used_For_UF": [
+      "Telemetry",
+      "Alert Event",
+      "SCADA Event"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C009",
+    "Preferred_Term_PT": "ActionType",
+    "Used_For_UF": [
+      "Operational Action",
+      "Action Class",
+      "Intervention Type"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C010",
+    "Preferred_Term_PT": "ActionExecutionLog",
+    "Used_For_UF": [
+      "Action Log",
+      "Execution Record",
+      "Operational Log"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C011",
+    "Preferred_Term_PT": "Mega-Hub",
+    "Used_For_UF": [
+      "Mega Sorting Centre",
+      "Central Hub"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C012",
+    "Preferred_Term_PT": "Regional Hub",
+    "Used_For_UF": [
+      "Regional sorting terminal",
+      "Secondary Hub"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C013",
+    "Preferred_Term_PT": "Depot",
+    "Used_For_UF": [
+      "Delivery Depot",
+      "Local Office"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C014",
+    "Preferred_Term_PT": "Universal Postal Service",
+    "Used_For_UF": [
+      "Universal Service Obligation",
+      "USO",
+      "Public Service Mail"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C015",
+    "Preferred_Term_PT": "Parcel Locker",
+    "Used_For_UF": [
+      "Smart Locker",
+      "Locker Box"
+    ],
+    "Status": "ACTIVE"
+  },
+  {
+    "Concept_ID": "C016",
+    "Preferred_Term_PT": "Service Point",
+    "Used_For_UF": [
+      "PUDO",
+      "Pick-up Drop-off Point",
+      "Retail Outlet"
+    ],
+    "Status": "ACTIVE"
+  }
+]

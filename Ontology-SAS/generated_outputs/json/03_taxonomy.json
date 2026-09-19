@@ -1,0 +1,641 @@
+[
+  {
+    "Concept_ID": "B001",
+    "Preferred_Term_PT": "Organizations",
+    "Broader_Term_BT": [],
+    "Narrower_Term_NT": [
+      "C002",
+      "C041",
+      "C042",
+      "B002",
+      "B003",
+      "B004",
+      "B005"
+    ]
+  },
+  {
+    "Concept_ID": "B002",
+    "Preferred_Term_PT": "Facilities",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": [
+      "C004",
+      "C005",
+      "C046",
+      "C059",
+      "C060",
+      "C064"
+    ]
+  },
+  {
+    "Concept_ID": "B003",
+    "Preferred_Term_PT": "Aircraft",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": [
+      "C016",
+      "C017",
+      "C018",
+      "C019",
+      "C020",
+      "C021",
+      "C022",
+      "C023",
+      "C024",
+      "C053"
+    ]
+  },
+  {
+    "Concept_ID": "B004",
+    "Preferred_Term_PT": "Passenger Services",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": [
+      "C009",
+      "C010",
+      "C011",
+      "C012",
+      "C013",
+      "C014",
+      "C015",
+      "C037",
+      "C038",
+      "C051",
+      "C055",
+      "C056",
+      "C057",
+      "C062",
+      "C063"
+    ]
+  },
+  {
+    "Concept_ID": "B005",
+    "Preferred_Term_PT": "Operations and Logistics",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": [
+      "C040",
+      "C043",
+      "C044",
+      "C045",
+      "C052",
+      "C054",
+      "C058",
+      "C061",
+      "C065"
+    ]
+  },
+  {
+    "Concept_ID": "C001",
+    "Preferred_Term_PT": "KLM Royal Dutch Airlines",
+    "Broader_Term_BT": [
+      "C002"
+    ],
+    "Narrower_Term_NT": [
+      "C006",
+      "C007",
+      "C008",
+      "C028",
+      "C032"
+    ]
+  },
+  {
+    "Concept_ID": "C002",
+    "Preferred_Term_PT": "Air France-KLM S.A.",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": [
+      "C001",
+      "C003"
+    ]
+  },
+  {
+    "Concept_ID": "C003",
+    "Preferred_Term_PT": "SkyTeam Alliance",
+    "Broader_Term_BT": [
+      "C002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C004",
+    "Preferred_Term_PT": "Amsterdam Airport Schiphol",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": [
+      "C033",
+      "C034",
+      "C035",
+      "C036",
+      "C039"
+    ]
+  },
+  {
+    "Concept_ID": "C005",
+    "Preferred_Term_PT": "Paris Charles de Gaulle",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C006",
+    "Preferred_Term_PT": "KLM Cityhopper",
+    "Broader_Term_BT": [
+      "C001"
+    ],
+    "Narrower_Term_NT": [
+      "C025",
+      "C026",
+      "C027"
+    ]
+  },
+  {
+    "Concept_ID": "C007",
+    "Preferred_Term_PT": "Transavia Airlines",
+    "Broader_Term_BT": [
+      "C001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C008",
+    "Preferred_Term_PT": "Martinair Holland",
+    "Broader_Term_BT": [
+      "C001"
+    ],
+    "Narrower_Term_NT": [
+      "C029"
+    ]
+  },
+  {
+    "Concept_ID": "C009",
+    "Preferred_Term_PT": "Flying Blue Program",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C010",
+    "Preferred_Term_PT": "Passenger Name Record",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C011",
+    "Preferred_Term_PT": "Electronic Ticket",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C012",
+    "Preferred_Term_PT": "World Business Class",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C013",
+    "Preferred_Term_PT": "Premium Comfort Class",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C014",
+    "Preferred_Term_PT": "Economy Comfort Zone",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C015",
+    "Preferred_Term_PT": "Economy Standard Class",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C016",
+    "Preferred_Term_PT": "Boeing 777-200ER",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C017",
+    "Preferred_Term_PT": "Boeing 777-300ER",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C018",
+    "Preferred_Term_PT": "Boeing 787-9",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C019",
+    "Preferred_Term_PT": "Boeing 787-10",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C020",
+    "Preferred_Term_PT": "Airbus A330",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C021",
+    "Preferred_Term_PT": "Boeing 737-700",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C022",
+    "Preferred_Term_PT": "Boeing 737-800",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C023",
+    "Preferred_Term_PT": "Boeing 737-900",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C024",
+    "Preferred_Term_PT": "Airbus A321neo",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C025",
+    "Preferred_Term_PT": "Embraer 175",
+    "Broader_Term_BT": [
+      "C006"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C026",
+    "Preferred_Term_PT": "Embraer 190",
+    "Broader_Term_BT": [
+      "C006"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C027",
+    "Preferred_Term_PT": "Embraer 195-E2",
+    "Broader_Term_BT": [
+      "C006"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C028",
+    "Preferred_Term_PT": "KLM Cargo",
+    "Broader_Term_BT": [
+      "C001"
+    ],
+    "Narrower_Term_NT": [
+      "C030",
+      "C031"
+    ]
+  },
+  {
+    "Concept_ID": "C029",
+    "Preferred_Term_PT": "Martinair",
+    "Broader_Term_BT": [
+      "C008"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C030",
+    "Preferred_Term_PT": "Boeing 747-400BCF",
+    "Broader_Term_BT": [
+      "C028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C031",
+    "Preferred_Term_PT": "Boeing 747-400ERF",
+    "Broader_Term_BT": [
+      "C028"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C032",
+    "Preferred_Term_PT": "KLM Engineering & Maintenance",
+    "Broader_Term_BT": [
+      "C001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C033",
+    "Preferred_Term_PT": "Hangar 10",
+    "Broader_Term_BT": [
+      "C004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C034",
+    "Preferred_Term_PT": "Hangar 11",
+    "Broader_Term_BT": [
+      "C004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C035",
+    "Preferred_Term_PT": "Hangar 12",
+    "Broader_Term_BT": [
+      "C004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C036",
+    "Preferred_Term_PT": "Hangar 14",
+    "Broader_Term_BT": [
+      "C004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C037",
+    "Preferred_Term_PT": "Amadeus Alt\u00e9a Passenger Service System",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C038",
+    "Preferred_Term_PT": "Boarding Pass Barcode",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C039",
+    "Preferred_Term_PT": "Schiphol Wave Hub Base",
+    "Broader_Term_BT": [
+      "C004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C040",
+    "Preferred_Term_PT": "Aviation Information Data Exchange",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C041",
+    "Preferred_Term_PT": "Eurocontrol",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C042",
+    "Preferred_Term_PT": "FAA",
+    "Broader_Term_BT": [
+      "B001"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C043",
+    "Preferred_Term_PT": "IATA Delay Code",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C044",
+    "Preferred_Term_PT": "Triple-A Passenger-Baggage Reconciliation Security Rule",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C045",
+    "Preferred_Term_PT": "Unit Load Device",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C046",
+    "Preferred_Term_PT": "Computed Tomography Explosive Detection Systems",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C047",
+    "Preferred_Term_PT": "Flying Blue Explorer",
+    "Broader_Term_BT": [
+      "C051"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C048",
+    "Preferred_Term_PT": "Flying Blue Silver",
+    "Broader_Term_BT": [
+      "C051"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C049",
+    "Preferred_Term_PT": "Flying Blue Gold",
+    "Broader_Term_BT": [
+      "C051"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C050",
+    "Preferred_Term_PT": "Flying Blue Platinum",
+    "Broader_Term_BT": [
+      "C051"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C051",
+    "Preferred_Term_PT": "Passenger Lifecycle",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": [
+      "C047",
+      "C048",
+      "C049",
+      "C050"
+    ]
+  },
+  {
+    "Concept_ID": "C052",
+    "Preferred_Term_PT": "Aircraft Turnaround",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C053",
+    "Preferred_Term_PT": "Aircraft Airframe",
+    "Broader_Term_BT": [
+      "B003"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C054",
+    "Preferred_Term_PT": "Maintenance Check",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C055",
+    "Preferred_Term_PT": "SkyPriority",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C056",
+    "Preferred_Term_PT": "Crown Lounge",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C057",
+    "Preferred_Term_PT": "Delft Blue Miniature House",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C058",
+    "Preferred_Term_PT": "ADS-B State Vectors",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C059",
+    "Preferred_Term_PT": "Airport Surface Radar",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C060",
+    "Preferred_Term_PT": "Gate Docking Guidance System",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C061",
+    "Preferred_Term_PT": "IATA Resolution 753",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C062",
+    "Preferred_Term_PT": "Checked Bag",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C063",
+    "Preferred_Term_PT": "IATA Barcode Tag",
+    "Broader_Term_BT": [
+      "B004"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C064",
+    "Preferred_Term_PT": "Baggage Reclaim Carousel",
+    "Broader_Term_BT": [
+      "B002"
+    ],
+    "Narrower_Term_NT": []
+  },
+  {
+    "Concept_ID": "C065",
+    "Preferred_Term_PT": "Code 15 Baggage Offload Hold",
+    "Broader_Term_BT": [
+      "B005"
+    ],
+    "Narrower_Term_NT": []
+  }
+]

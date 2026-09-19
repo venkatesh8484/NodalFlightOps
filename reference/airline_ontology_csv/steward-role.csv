@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+data-domain-owner,Data Domain Owner,Accountable for one bounded context's model correctness,5,active-phase-5
+data-steward,Data Steward,Responsible for day-to-day data quality within a subject area,5,active-phase-5
+source-system-liaison,Source System Liaison,Consulted point of contact for one external source's terms/schema,5,active-phase-5
+governance-council-chair,Governance Council Chair,Accountable for cross-domain arbitration and breaking-change approval,5,active-phase-5

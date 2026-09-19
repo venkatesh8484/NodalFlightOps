@@ -1,0 +1,6 @@
+airline_id,airline_name,carrier_type,home_country,reliability_rating,cost_index,alliance_membership
+KLM,KLM Royal Dutch Airlines,MAINLINE,NL,94,1.00,SkyTeam
+AFR,Air France,ALLIANCE_PARTNER,FR,91,1.05,SkyTeam (JV partner)
+DAL,Delta Air Lines,ALLIANCE_PARTNER,US,90,1.08,SkyTeam (Transatlantic JV)
+SIA,Singapore Airlines,CODESHARE_PARTNER,SG,96,1.15,Star Alliance (interline)
+ANA,All Nippon Airways,CODESHARE_PARTNER,JP,95,1.12,Star Alliance (interline)

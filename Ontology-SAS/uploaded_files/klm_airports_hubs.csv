@@ -1,0 +1,4 @@
+airport_id,iata_code,icao_code,airport_name,city,country,iso_country,latitude,longitude,elevation_ft,facility_type,is_primary_hub,terminals,assigned_gates,hourly_passenger_capacity,daily_flights,utilization_rate_pct,operational_status,metar_weather
+AMS,AMS,EHAM,Amsterdam Airport Schiphol,Amsterdam,Netherlands,NL,52.3105,4.7683,-11,CommercialAirport,True,"Terminal 1, Terminal 2, Terminal 3","D04, E18, F06, B22, C14",4200,1420,84,OPERATIONAL,16C · Wind 12kt NW · 1014 hPa · Clear
+JFK,JFK,KJFK,John F. Kennedy International Airport,New York,United States,US,40.6413,-73.7781,13,CommercialAirport,False,"Terminal 4 (SkyTeam), Terminal 7, Terminal 8","A02, B20, B24",3950,1280,92,CONGESTED,22C · Wind 8kt SW · 1008 hPa · Slight Rain
+BUD,BUD,LHBP,Budapest Ferenc Liszt International Airport,Budapest,Hungary,HU,47.4369,19.2556,495,CommercialAirport,False,"Terminal 2A, Terminal 2B","A12, B08",1150,340,68,OPERATIONAL,24C · Sunny · Wind 5kt NE · 1018 hPa

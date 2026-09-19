@@ -1,0 +1,676 @@
+{
+  "airport_operates_route": [
+    {
+      "airportId": "LHR",
+      "routeId": "RTE-LHR-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-LHR"
+    },
+    {
+      "airportId": "CDG",
+      "routeId": "RTE-CDG-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-CDG"
+    },
+    {
+      "airportId": "DXB",
+      "routeId": "RTE-DXB-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-DXB"
+    },
+    {
+      "airportId": "CPH",
+      "routeId": "RTE-CPH-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-CPH"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-JFK"
+    },
+    {
+      "airportId": "JFK",
+      "routeId": "RTE-JFK-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-SIN"
+    },
+    {
+      "airportId": "SIN",
+      "routeId": "RTE-SIN-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-GRU"
+    },
+    {
+      "airportId": "GRU",
+      "routeId": "RTE-GRU-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-HND"
+    },
+    {
+      "airportId": "HND",
+      "routeId": "RTE-HND-AMS"
+    },
+    {
+      "airportId": "AMS",
+      "routeId": "RTE-AMS-FRA"
+    },
+    {
+      "airportId": "FRA",
+      "routeId": "RTE-FRA-AMS"
+    }
+  ],
+  "route_destinates_at_airport": [
+    {
+      "routeId": "RTE-LHR-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-LHR",
+      "airportId": "LHR"
+    },
+    {
+      "routeId": "RTE-CDG-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-CDG",
+      "airportId": "CDG"
+    },
+    {
+      "routeId": "RTE-DXB-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-DXB",
+      "airportId": "DXB"
+    },
+    {
+      "routeId": "RTE-CPH-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-CPH",
+      "airportId": "CPH"
+    },
+    {
+      "routeId": "RTE-AMS-JFK",
+      "airportId": "JFK"
+    },
+    {
+      "routeId": "RTE-JFK-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-SIN",
+      "airportId": "SIN"
+    },
+    {
+      "routeId": "RTE-SIN-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-GRU",
+      "airportId": "GRU"
+    },
+    {
+      "routeId": "RTE-GRU-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-HND",
+      "airportId": "HND"
+    },
+    {
+      "routeId": "RTE-HND-AMS",
+      "airportId": "AMS"
+    },
+    {
+      "routeId": "RTE-AMS-FRA",
+      "airportId": "FRA"
+    },
+    {
+      "routeId": "RTE-FRA-AMS",
+      "airportId": "AMS"
+    }
+  ],
+  "flight_assigned_to_aircraft": [
+    {
+      "flightId": "KL1008",
+      "tailNumber": "PH-BVA"
+    },
+    {
+      "flightId": "KL1009",
+      "tailNumber": "PH-AXA"
+    },
+    {
+      "flightId": "KL1250",
+      "tailNumber": "PH-AXB"
+    },
+    {
+      "flightId": "KL1251",
+      "tailNumber": "PH-AXC"
+    },
+    {
+      "flightId": "KL427",
+      "tailNumber": "PH-BHA"
+    },
+    {
+      "flightId": "KL428",
+      "tailNumber": "PH-BHB"
+    },
+    {
+      "flightId": "KL198",
+      "tailNumber": "PH-BXA"
+    },
+    {
+      "flightId": "KL199",
+      "tailNumber": "PH-BXB"
+    },
+    {
+      "flightId": "KL605",
+      "tailNumber": "PH-BVB"
+    },
+    {
+      "flightId": "KL606",
+      "tailNumber": "PH-BVC"
+    },
+    {
+      "flightId": "KL607",
+      "tailNumber": "PH-AKA"
+    },
+    {
+      "flightId": "KL608",
+      "tailNumber": "PH-AKB"
+    },
+    {
+      "flightId": "KL837",
+      "tailNumber": "PH-BHC"
+    },
+    {
+      "flightId": "KL836",
+      "tailNumber": "PH-AOE"
+    },
+    {
+      "flightId": "KL839",
+      "tailNumber": "PH-AKC"
+    },
+    {
+      "flightId": "KL838",
+      "tailNumber": "PH-BHC"
+    },
+    {
+      "flightId": "KL791",
+      "tailNumber": "PH-BVA"
+    },
+    {
+      "flightId": "KL792",
+      "tailNumber": "PH-BHA"
+    },
+    {
+      "flightId": "KL793",
+      "tailNumber": "PH-AKA"
+    },
+    {
+      "flightId": "KL794",
+      "tailNumber": "PH-BVB"
+    },
+    {
+      "flightId": "KL861",
+      "tailNumber": "PH-BHB"
+    },
+    {
+      "flightId": "KL862",
+      "tailNumber": "PH-BHC"
+    },
+    {
+      "flightId": "KL863",
+      "tailNumber": "PH-AOE"
+    },
+    {
+      "flightId": "KL864",
+      "tailNumber": "PH-BHC"
+    },
+    {
+      "flightId": "KL1837",
+      "tailNumber": "PH-BXC"
+    },
+    {
+      "flightId": "KL1838",
+      "tailNumber": "PH-EZA"
+    },
+    {
+      "flightId": "KL1839",
+      "tailNumber": "PH-BXC"
+    },
+    {
+      "flightId": "KL1840",
+      "tailNumber": "PH-BXA"
+    }
+  ],
+  "flight_departs_from_airport": [
+    {
+      "flightId": "KL1008",
+      "airportId": "LHR"
+    },
+    {
+      "flightId": "KL1009",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1250",
+      "airportId": "CDG"
+    },
+    {
+      "flightId": "KL1251",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL427",
+      "airportId": "DXB"
+    },
+    {
+      "flightId": "KL428",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL198",
+      "airportId": "CPH"
+    },
+    {
+      "flightId": "KL199",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL605",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL606",
+      "airportId": "JFK"
+    },
+    {
+      "flightId": "KL607",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL608",
+      "airportId": "JFK"
+    },
+    {
+      "flightId": "KL837",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL836",
+      "airportId": "SIN"
+    },
+    {
+      "flightId": "KL839",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL838",
+      "airportId": "SIN"
+    },
+    {
+      "flightId": "KL791",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL792",
+      "airportId": "GRU"
+    },
+    {
+      "flightId": "KL793",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL794",
+      "airportId": "GRU"
+    },
+    {
+      "flightId": "KL861",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL862",
+      "airportId": "HND"
+    },
+    {
+      "flightId": "KL863",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL864",
+      "airportId": "HND"
+    },
+    {
+      "flightId": "KL1837",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1838",
+      "airportId": "FRA"
+    },
+    {
+      "flightId": "KL1839",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1840",
+      "airportId": "FRA"
+    }
+  ],
+  "flight_arrives_at_airport": [
+    {
+      "flightId": "KL1008",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1009",
+      "airportId": "LHR"
+    },
+    {
+      "flightId": "KL1250",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1251",
+      "airportId": "CDG"
+    },
+    {
+      "flightId": "KL427",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL428",
+      "airportId": "DXB"
+    },
+    {
+      "flightId": "KL198",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL199",
+      "airportId": "CPH"
+    },
+    {
+      "flightId": "KL605",
+      "airportId": "JFK"
+    },
+    {
+      "flightId": "KL606",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL607",
+      "airportId": "JFK"
+    },
+    {
+      "flightId": "KL608",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL837",
+      "airportId": "SIN"
+    },
+    {
+      "flightId": "KL836",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL839",
+      "airportId": "SIN"
+    },
+    {
+      "flightId": "KL838",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL791",
+      "airportId": "GRU"
+    },
+    {
+      "flightId": "KL792",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL793",
+      "airportId": "GRU"
+    },
+    {
+      "flightId": "KL794",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL861",
+      "airportId": "HND"
+    },
+    {
+      "flightId": "KL862",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL863",
+      "airportId": "HND"
+    },
+    {
+      "flightId": "KL864",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1837",
+      "airportId": "FRA"
+    },
+    {
+      "flightId": "KL1838",
+      "airportId": "AMS"
+    },
+    {
+      "flightId": "KL1839",
+      "airportId": "FRA"
+    },
+    {
+      "flightId": "KL1840",
+      "airportId": "AMS"
+    }
+  ],
+  "flight_operates_on_route": [
+    {
+      "flightId": "KL1008",
+      "routeId": "RTE-LHR-AMS"
+    },
+    {
+      "flightId": "KL1009",
+      "routeId": "RTE-AMS-LHR"
+    },
+    {
+      "flightId": "KL1250",
+      "routeId": "RTE-CDG-AMS"
+    },
+    {
+      "flightId": "KL1251",
+      "routeId": "RTE-AMS-CDG"
+    },
+    {
+      "flightId": "KL427",
+      "routeId": "RTE-DXB-AMS"
+    },
+    {
+      "flightId": "KL428",
+      "routeId": "RTE-AMS-DXB"
+    },
+    {
+      "flightId": "KL198",
+      "routeId": "RTE-CPH-AMS"
+    },
+    {
+      "flightId": "KL199",
+      "routeId": "RTE-AMS-CPH"
+    },
+    {
+      "flightId": "KL605",
+      "routeId": "RTE-AMS-JFK"
+    },
+    {
+      "flightId": "KL606",
+      "routeId": "RTE-JFK-AMS"
+    },
+    {
+      "flightId": "KL607",
+      "routeId": "RTE-AMS-JFK"
+    },
+    {
+      "flightId": "KL608",
+      "routeId": "RTE-JFK-AMS"
+    },
+    {
+      "flightId": "KL837",
+      "routeId": "RTE-AMS-SIN"
+    },
+    {
+      "flightId": "KL836",
+      "routeId": "RTE-SIN-AMS"
+    },
+    {
+      "flightId": "KL839",
+      "routeId": "RTE-AMS-SIN"
+    },
+    {
+      "flightId": "KL838",
+      "routeId": "RTE-SIN-AMS"
+    },
+    {
+      "flightId": "KL791",
+      "routeId": "RTE-AMS-GRU"
+    },
+    {
+      "flightId": "KL792",
+      "routeId": "RTE-GRU-AMS"
+    },
+    {
+      "flightId": "KL793",
+      "routeId": "RTE-AMS-GRU"
+    },
+    {
+      "flightId": "KL794",
+      "routeId": "RTE-GRU-AMS"
+    },
+    {
+      "flightId": "KL861",
+      "routeId": "RTE-AMS-HND"
+    },
+    {
+      "flightId": "KL862",
+      "routeId": "RTE-HND-AMS"
+    },
+    {
+      "flightId": "KL863",
+      "routeId": "RTE-AMS-HND"
+    },
+    {
+      "flightId": "KL864",
+      "routeId": "RTE-HND-AMS"
+    },
+    {
+      "flightId": "KL1837",
+      "routeId": "RTE-AMS-FRA"
+    },
+    {
+      "flightId": "KL1838",
+      "routeId": "RTE-FRA-AMS"
+    },
+    {
+      "flightId": "KL1839",
+      "routeId": "RTE-AMS-FRA"
+    },
+    {
+      "flightId": "KL1840",
+      "routeId": "RTE-FRA-AMS"
+    }
+  ],
+  "aircraft_travels_along_route": [
+    {
+      "tailNumber": "PH-BVA",
+      "routeId": "RTE-LHR-AMS"
+    },
+    {
+      "tailNumber": "PH-BVB",
+      "routeId": "RTE-AMS-JFK"
+    },
+    {
+      "tailNumber": "PH-BVC",
+      "routeId": "RTE-JFK-AMS"
+    },
+    {
+      "tailNumber": "PH-BHA",
+      "routeId": "RTE-DXB-AMS"
+    },
+    {
+      "tailNumber": "PH-BHB",
+      "routeId": "RTE-AMS-DXB"
+    },
+    {
+      "tailNumber": "PH-BHC",
+      "routeId": "RTE-AMS-SIN"
+    },
+    {
+      "tailNumber": "PH-AKA",
+      "routeId": "RTE-AMS-JFK"
+    },
+    {
+      "tailNumber": "PH-AKB",
+      "routeId": "RTE-JFK-AMS"
+    },
+    {
+      "tailNumber": "PH-AKC",
+      "routeId": "RTE-AMS-SIN"
+    },
+    {
+      "tailNumber": "PH-AOE",
+      "routeId": "RTE-SIN-AMS"
+    },
+    {
+      "tailNumber": "PH-AXA",
+      "routeId": "RTE-AMS-LHR"
+    },
+    {
+      "tailNumber": "PH-AXB",
+      "routeId": "RTE-CDG-AMS"
+    },
+    {
+      "tailNumber": "PH-AXC",
+      "routeId": "RTE-AMS-CDG"
+    },
+    {
+      "tailNumber": "PH-BXA",
+      "routeId": "RTE-CPH-AMS"
+    },
+    {
+      "tailNumber": "PH-BXB",
+      "routeId": "RTE-AMS-CPH"
+    },
+    {
+      "tailNumber": "PH-BXC",
+      "routeId": "RTE-AMS-FRA"
+    },
+    {
+      "tailNumber": "PH-EZA",
+      "routeId": "RTE-FRA-AMS"
+    }
+  ]
+}

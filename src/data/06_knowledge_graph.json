@@ -1,0 +1,881 @@
+{
+  "@context": {
+    "@vocab": "http://klm.com/ontology/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "dct": "http://purl.org/dc/terms/",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#",
+    "prefLabel": "skos:prefLabel",
+    "altLabel": "skos:altLabel",
+    "broader": "skos:broader",
+    "narrower": "skos:narrower",
+    "related": "skos:related",
+    "scopeNote": "skos:scopeNote",
+    "definition": "skos:definition",
+    "inScheme": "skos:inScheme",
+    "hasTopConcept": "skos:hasTopConcept",
+    "created": "dct:created",
+    "modified": "dct:modified"
+  },
+  "@graph": [
+    {
+      "@id": "http://klm.com/scheme/FlightOpsOntology",
+      "@type": "skos:ConceptScheme",
+      "dct:title": "KLM Amsterdam Schiphol Knowledge Graph",
+      "dct:description": "Semantic knowledge graph representing KLM's Amsterdam Schiphol (AMS) hub network, fleet, crew, and flight operations.",
+      "dct:creator": "Ontology Engine",
+      "dct:created": "2026-08-30",
+      "hasTopConcept": [
+        {
+          "@id": "concept:F001"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F001",
+      "@type": "skos:Concept",
+      "prefLabel": "Airport",
+      "altLabel": [
+        "Aerodrome",
+        "Airfield"
+      ],
+      "scopeNote": "Fixed-wing aircraft facility where flights take off, land, and passengers connect between legs. AMS (Amsterdam Schiphol) is KLM's home hub; the other nine airports in this network are spokes.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [
+        {
+          "@id": "concept:F002"
+        },
+        {
+          "@id": "concept:F003"
+        },
+        {
+          "@id": "concept:F004"
+        },
+        {
+          "@id": "concept:F007"
+        },
+        {
+          "@id": "concept:F008"
+        },
+        {
+          "@id": "concept:F009"
+        }
+      ],
+      "related": []
+    },
+    {
+      "@id": "concept:F002",
+      "@type": "skos:Concept",
+      "prefLabel": "Passenger Terminal",
+      "altLabel": [
+        "Departure Hall",
+        "Arrivals Terminal"
+      ],
+      "scopeNote": "The passenger-facing building at an airport handling check-in, security, boarding, and arrivals processing.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F003",
+      "@type": "skos:Concept",
+      "prefLabel": "Cargo Terminal",
+      "altLabel": [
+        "Freight Terminal",
+        "Air Cargo Facility"
+      ],
+      "scopeNote": "Airport facility handling belly cargo and freight loading/unloading, kept separate from passenger flow.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F004",
+      "@type": "skos:Concept",
+      "prefLabel": "Ground Handling Facility",
+      "altLabel": [
+        "Ramp Services",
+        "Apron Operations"
+      ],
+      "scopeNote": "Facility coordinating aircraft turnaround: baggage handling, catering, fueling, and pushback services on the ramp.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F005",
+      "@type": "skos:Concept",
+      "prefLabel": "Transfer Desk",
+      "altLabel": [
+        "Connections Desk",
+        "Transit Desk"
+      ],
+      "scopeNote": "Airport counter where connecting passengers get rebooking help, boarding passes, and MCT (minimum connecting time) guidance.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F006"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F006",
+      "@type": "skos:Concept",
+      "prefLabel": "Self-Service Kiosk",
+      "altLabel": [
+        "Check-in Kiosk",
+        "Bag-Drop Kiosk"
+      ],
+      "scopeNote": "Automated terminal for passenger check-in and self-service bag drop, reducing counter queue time.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F005"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F007",
+      "@type": "skos:Concept",
+      "prefLabel": "Hub Airport",
+      "altLabel": [
+        "Primary Hub",
+        "Home Base"
+      ],
+      "scopeNote": "An airport role: the carrier's central connecting point where most routes originate or terminate. AMS is KLM's sole hub airport.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F008"
+        },
+        {
+          "@id": "concept:F009"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F008",
+      "@type": "skos:Concept",
+      "prefLabel": "Spoke Airport",
+      "altLabel": [
+        "Destination Airport",
+        "Outstation"
+      ],
+      "scopeNote": "An airport role: a point-to-point destination served from the hub, without its own onward connecting bank.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F007"
+        },
+        {
+          "@id": "concept:F009"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F009",
+      "@type": "skos:Concept",
+      "prefLabel": "International Gateway",
+      "altLabel": [
+        "Long-Haul Gateway",
+        "Intercontinental Hub"
+      ],
+      "scopeNote": "An airport role: a spoke airport that itself serves as a long-haul gateway for onward intercontinental connections (e.g. JFK, SIN, HND, GRU).",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F001"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F007"
+        },
+        {
+          "@id": "concept:F008"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F010",
+      "@type": "skos:Concept",
+      "prefLabel": "Airline",
+      "altLabel": [
+        "Operating Carrier",
+        "Air Carrier"
+      ],
+      "scopeNote": "The commercial entity operating a flight and holding responsibility for its schedule, crew, and passenger service.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [
+        {
+          "@id": "concept:F011"
+        },
+        {
+          "@id": "concept:F012"
+        }
+      ],
+      "related": [
+        {
+          "@id": "concept:F014"
+        },
+        {
+          "@id": "concept:F015"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F011",
+      "@type": "skos:Concept",
+      "prefLabel": "Mainline Carrier",
+      "altLabel": [
+        "KLM Mainline"
+      ],
+      "scopeNote": "The primary carrier operating a flight under its own brand and flight numbers \u2014 KLM for the flights in this network.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F010"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F012"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F012",
+      "@type": "skos:Concept",
+      "prefLabel": "Codeshare Partner",
+      "altLabel": [
+        "Joint-Venture Partner",
+        "Alliance Partner"
+      ],
+      "scopeNote": "A partner airline (e.g. Delta on the transatlantic joint venture) that markets or operates a flight jointly with the mainline carrier.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F010"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F011"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F013",
+      "@type": "skos:Concept",
+      "prefLabel": "Crew",
+      "altLabel": [
+        "Cockpit Crew",
+        "Cabin Crew"
+      ],
+      "scopeNote": "Pilots and cabin crew rostered to operate a flight, employed by or contracted to an airline.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F010"
+        },
+        {
+          "@id": "concept:F015"
+        },
+        {
+          "@id": "concept:F014"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F014",
+      "@type": "skos:Concept",
+      "prefLabel": "Flight Route",
+      "altLabel": [
+        "City Pair",
+        "Sector"
+      ],
+      "scopeNote": "A scheduled origin-destination pair an airline operates, e.g. AMS-JFK, independent of any specific day's flight instance.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F015"
+        },
+        {
+          "@id": "concept:F010"
+        },
+        {
+          "@id": "concept:F001"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F015",
+      "@type": "skos:Concept",
+      "prefLabel": "Aircraft",
+      "altLabel": [
+        "Airframe",
+        "Tail Number"
+      ],
+      "scopeNote": "A physical aircraft, identified by its tail number, that operates flights along an assigned route rotation.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [
+        {
+          "@id": "concept:F016"
+        },
+        {
+          "@id": "concept:F017"
+        },
+        {
+          "@id": "concept:F018"
+        },
+        {
+          "@id": "concept:F019"
+        }
+      ],
+      "related": [
+        {
+          "@id": "concept:F013"
+        },
+        {
+          "@id": "concept:F014"
+        },
+        {
+          "@id": "concept:F021"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F016",
+      "@type": "skos:Concept",
+      "prefLabel": "Widebody Aircraft",
+      "altLabel": [
+        "Long-Haul Aircraft"
+      ],
+      "scopeNote": "Twin-aisle aircraft used on long-haul intercontinental routes \u2014 B777-300ER, B787-9/10, A330-300 in this fleet.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F015"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F017"
+        },
+        {
+          "@id": "concept:F018"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F017",
+      "@type": "skos:Concept",
+      "prefLabel": "Narrowbody Aircraft",
+      "altLabel": [
+        "Mainline Narrowbody"
+      ],
+      "scopeNote": "Single-aisle aircraft used on medium-haul European routes \u2014 the A321neo family in this fleet.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F015"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F016"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F018",
+      "@type": "skos:Concept",
+      "prefLabel": "Short-Haul Aircraft",
+      "altLabel": [
+        "Regional Mainline"
+      ],
+      "scopeNote": "Single-aisle aircraft used on short intra-European hops \u2014 the B737-800 family in this fleet.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F015"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F016"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F019",
+      "@type": "skos:Concept",
+      "prefLabel": "Regional Jet",
+      "altLabel": [
+        "E-Jet"
+      ],
+      "scopeNote": "Smaller single-aisle jets used on thinner short-haul routes \u2014 the E195-E2 family in this fleet.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F015"
+        }
+      ],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F020",
+      "@type": "skos:Concept",
+      "prefLabel": "Flight",
+      "altLabel": [
+        "Flight Instance",
+        "Scheduled Flight"
+      ],
+      "scopeNote": "A single scheduled operating instance of a route on a specific day, carrying passengers under a connection-time SLA \u2014 the at-risk/flow entity tracked for disruption.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F021",
+      "@type": "skos:Concept",
+      "prefLabel": "Aircraft Assignment",
+      "altLabel": [
+        "Tail Assignment",
+        "Rotation Assignment"
+      ],
+      "scopeNote": "The binding of a specific aircraft tail number to a flight leg within its daily rotation.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F020"
+        },
+        {
+          "@id": "concept:F015"
+        },
+        {
+          "@id": "concept:F014"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F022",
+      "@type": "skos:Concept",
+      "prefLabel": "Telemetry Event",
+      "altLabel": [
+        "Ops Signal",
+        "Disruption Event"
+      ],
+      "scopeNote": "A real-time operational signal \u2014 a fault, delay, or position update \u2014 emitted by an airport or aircraft that operations control monitors.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [
+        {
+          "@id": "concept:F023"
+        },
+        {
+          "@id": "concept:F024"
+        },
+        {
+          "@id": "concept:F025"
+        },
+        {
+          "@id": "concept:F026"
+        },
+        {
+          "@id": "concept:F027"
+        }
+      ],
+      "related": [
+        {
+          "@id": "concept:F001"
+        },
+        {
+          "@id": "concept:F015"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F023",
+      "@type": "skos:Concept",
+      "prefLabel": "Mechanical Fault",
+      "altLabel": [
+        "MEL Item",
+        "Tech Log Entry"
+      ],
+      "scopeNote": "An aircraft maintenance defect logged against the tech log, potentially grounding or delaying the aircraft.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F022"
+        }
+      ],
+      "narrower": [],
+      "related": []
+    },
+    {
+      "@id": "concept:F024",
+      "@type": "skos:Concept",
+      "prefLabel": "Passenger Surge",
+      "altLabel": [
+        "Peak Load Event"
+      ],
+      "scopeNote": "An unexpected spike in passenger or connecting-bag volume at a terminal beyond planned throughput.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F022"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F030"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F025",
+      "@type": "skos:Concept",
+      "prefLabel": "ADS-B Position Ping",
+      "altLabel": [
+        "Live Position Update"
+      ],
+      "scopeNote": "A live aircraft position/altitude/speed update received from the ADS-B transponder feed (OpenSky Network), used for ambient traffic awareness.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F022"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F015"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F026",
+      "@type": "skos:Concept",
+      "prefLabel": "Delay Event",
+      "altLabel": [
+        "Departure Delay",
+        "Arrival Delay"
+      ],
+      "scopeNote": "A recorded schedule deviation on a flight leg, the primary trigger for downstream connection-risk calculations.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F022"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F014"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F027",
+      "@type": "skos:Concept",
+      "prefLabel": "Weather Hold",
+      "altLabel": [
+        "ATC Ground Stop",
+        "Weather Delay"
+      ],
+      "scopeNote": "A ground stop or holding pattern imposed by ATC or weather, affecting arrival/departure sequencing at an airport.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F022"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F019"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F028",
+      "@type": "skos:Concept",
+      "prefLabel": "Action Type",
+      "altLabel": [
+        "Operational Command",
+        "Playbook Action"
+      ],
+      "scopeNote": "A defined, governance-gated operational command the recovery planner can propose \u2014 deterministic, auditable, and requiring named approval.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [
+        {
+          "@id": "concept:F029"
+        },
+        {
+          "@id": "concept:F030"
+        },
+        {
+          "@id": "concept:F031"
+        },
+        {
+          "@id": "concept:F032"
+        }
+      ],
+      "related": [
+        {
+          "@id": "concept:F033"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F029",
+      "@type": "skos:Concept",
+      "prefLabel": "Rebook Passengers",
+      "altLabel": [
+        "Reroute Passengers"
+      ],
+      "scopeNote": "Rebooks an at-risk connecting passenger cohort onto an alternate or partner flight and issues EU261 vouchers where applicable. Requires OCC Duty Manager approval.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F028"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F020"
+        },
+        {
+          "@id": "concept:F014"
+        },
+        {
+          "@id": "concept:F010"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F030",
+      "@type": "skos:Concept",
+      "prefLabel": "Reallocate Gate Capacity",
+      "altLabel": [
+        "Reallocate Hub Capacity"
+      ],
+      "scopeNote": "Opens additional gate/stand hours at an airport and sets a divert threshold above which inbound flights are auto-diverted to a remote stand. Requires Airport Ops Manager approval.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F028"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F001"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F031",
+      "@type": "skos:Concept",
+      "prefLabel": "Reassign Aircraft",
+      "altLabel": [
+        "Swap Tail Number"
+      ],
+      "scopeNote": "Swaps the aircraft tail number assigned to a flight leg to recover from a mechanical fault or rotation conflict.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F028"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F015"
+        },
+        {
+          "@id": "concept:F013"
+        },
+        {
+          "@id": "concept:F014"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F032",
+      "@type": "skos:Concept",
+      "prefLabel": "Notify Passenger SLA",
+      "altLabel": [
+        "Passenger Notification"
+      ],
+      "scopeNote": "Sends proactive passenger notifications when a flight's connection-risk SLA is breached.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [
+        {
+          "@id": "concept:F028"
+        }
+      ],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F020"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F033",
+      "@type": "skos:Concept",
+      "prefLabel": "Action Execution",
+      "altLabel": [
+        "Action Log",
+        "Execution Record"
+      ],
+      "scopeNote": "An audited record of a proposed or executed action: who proposed it, who approved it, and its resulting side effects.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F028"
+        }
+      ]
+    },
+    {
+      "@id": "concept:F034",
+      "@type": "skos:Concept",
+      "prefLabel": "IATA",
+      "altLabel": [
+        "International Air Transport Association"
+      ],
+      "scopeNote": "The global airline trade body that sets interline, cargo, and safety standards airlines and airports operate under.",
+      "inScheme": {
+        "@id": "http://klm.com/scheme/FlightOpsOntology"
+      },
+      "broader": [],
+      "narrower": [],
+      "related": [
+        {
+          "@id": "concept:F003"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+base,Base,Entry-level membership tier with no elite benefits,6,active-phase-6
+silver,Silver,"First elite tier: priority check-in, extra baggage allowance",6,active-phase-6
+gold,Gold,"Mid elite tier: lounge access, priority boarding",6,active-phase-6
+platinum,Platinum,"Top elite tier: guaranteed upgrades, premium lounge access",6,active-phase-6

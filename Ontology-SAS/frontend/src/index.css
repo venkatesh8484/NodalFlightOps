@@ -1,0 +1,53 @@
+:root {
+  font-family: "Aptos", "Segoe UI", "Trebuchet MS", sans-serif;
+  font-size: 14px;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 232, 184, 0.5), transparent 35%),
+    radial-gradient(circle at 80% 30%, rgba(133, 221, 225, 0.38), transparent 36%),
+    linear-gradient(180deg, #f6f7f8 0%, #eef4f6 100%);
+  color: #2f2a1f;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+h1 {
+  margin: 0;
+  font-size: clamp(1.7rem, 3vw, 2.4rem);
+  line-height: 1.1;
+}
+
+h2 {
+  margin: 0;
+  font-size: 1.08rem;
+}
+
+p {
+  margin: 0;
+  font-size: 0.95rem;
+}
+
+@keyframes graph-spin {
+  to { transform: rotate(360deg); }
+}
+.graph-spinner {
+  width: 40px;
+  height: 40px;
+  border: 3px solid rgba(255, 255, 255, 0.1);
+  border-top-color: #60a5fa;
+  border-radius: 50%;
+  animation: graph-spin 0.8s linear infinite;
+}

@@ -1,0 +1,604 @@
+[
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00001",
+        "Concept_ID": "CON_00001",
+        "Preferred_Term_PT": "Protection Of Evidence",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Flight Recorders",
+            "Custody And Removal Of Aircraft"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Protection Of Evidence.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00002",
+        "Concept_ID": "CON_00002",
+        "Preferred_Term_PT": "Custody And Removal Of Aircraft",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Protection Of Evidence"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Custody And Removal Of Aircraft.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00003",
+        "Concept_ID": "CON_00003",
+        "Preferred_Term_PT": "International Civil Aviation Organization",
+        "Used_For_UF": [
+            "Convention on International Civil Aviation"
+        ],
+        "Broader_Term_BT": [],
+        "Narrower_Term_NT": [
+            "International Standards And Recommended Practices",
+            "Aircraft Accident And Incident Investigation",
+            "Products And Services Catalogue",
+            "Contracting State"
+        ],
+        "Related_Term_RT": [
+            "International Standards And Recommended Practices",
+            "Contracting State",
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Scope_Note_SN": "A specialized agency of the United Nations that coordinates international air navigation and fosters the planning and development of international air transport. It was established by the 1944 Convention on International Civil Aviation to ensure safe and orderly growth.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00004",
+        "Concept_ID": "CON_00004",
+        "Preferred_Term_PT": "International Standards And Recommended Practices",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "International Civil Aviation Organization"
+        ],
+        "Narrower_Term_NT": [
+            "Notification Of Differences",
+            "Recommended Practice"
+        ],
+        "Related_Term_RT": [
+            "Recommended Practice",
+            "Notification Of Differences",
+            "International Civil Aviation Organization"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under International Standards And Recommended Practices.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00005",
+        "Concept_ID": "CON_00005",
+        "Preferred_Term_PT": "Final Report",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Preliminary Report",
+            "Adrep Reporting",
+            "Accident/Incident Data Report"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Final Report.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00006",
+        "Concept_ID": "CON_00006",
+        "Preferred_Term_PT": "Notification Of Differences",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "International Standards And Recommended Practices"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Recommended Practice",
+            "International Standards And Recommended Practices"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Notification Of Differences.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00007",
+        "Concept_ID": "CON_00007",
+        "Preferred_Term_PT": "Recommended Practice",
+        "Used_For_UF": [
+            "safety recommendations"
+        ],
+        "Broader_Term_BT": [
+            "International Standards And Recommended Practices"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Notification Of Differences",
+            "International Standards And Recommended Practices"
+        ],
+        "Scope_Note_SN": "A set of non-mandatory guidelines or procedures advised for adoption to ensure safety, consistency, and operational efficiency within an industry. These represent recognized methods for achieving specific outcomes based on established professional consensus.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00008",
+        "Concept_ID": "CON_00008",
+        "Preferred_Term_PT": "Flight Recorders",
+        "Used_For_UF": [
+            "Flight recorder read-out and analysis"
+        ],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Protection Of Evidence"
+        ],
+        "Scope_Note_SN": "Electronic recording devices placed in an aircraft for the purpose of facilitating the investigation of aviation accidents and incidents. This term encompasses both the physical hardware and the subsequent processes of data extraction and technical analysis.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00009",
+        "Concept_ID": "CON_00009",
+        "Preferred_Term_PT": "State Of Registry",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Contracting State"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "State Of The Operator",
+            "State Of Occurrence",
+            "State Of Manufacture",
+            "State Of Design",
+            "Contracting State"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under State Of Registry.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00010",
+        "Concept_ID": "CON_00010",
+        "Preferred_Term_PT": "State Of The Operator",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Contracting State"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "State Of Registry",
+            "State Of Occurrence",
+            "State Of Manufacture",
+            "State Of Design",
+            "Contracting State"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under State Of The Operator.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00011",
+        "Concept_ID": "CON_00011",
+        "Preferred_Term_PT": "State Of Occurrence",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Contracting State"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "State Of Registry",
+            "State Of The Operator",
+            "State Of Manufacture",
+            "State Of Design",
+            "Contracting State"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under State Of Occurrence.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00012",
+        "Concept_ID": "CON_00012",
+        "Preferred_Term_PT": "Aircraft Accident And Incident Investigation",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "International Civil Aviation Organization"
+        ],
+        "Narrower_Term_NT": [
+            "Protection Of Evidence",
+            "Custody And Removal Of Aircraft",
+            "Final Report",
+            "Flight Recorders",
+            "Accredited Representatives",
+            "Adrep Reporting",
+            "Medical Examinations",
+            "Accident Prevention Measures",
+            "Serious Incidents",
+            "Airworthiness Of The Aircraft",
+            "Determination Of Aircraft Damage",
+            "Preliminary Report",
+            "Notification And Reporting Checklist",
+            "Investigator-In-Charge"
+        ],
+        "Related_Term_RT": [
+            "Serious Incidents",
+            "Accident Prevention Measures",
+            "Investigator-In-Charge",
+            "International Civil Aviation Organization",
+            "Autopsy Examinations"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Aircraft Accident And Incident Investigation.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00013",
+        "Concept_ID": "CON_00013",
+        "Preferred_Term_PT": "Accredited Representatives",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Investigator-In-Charge"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Accredited Representatives.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00014",
+        "Concept_ID": "CON_00014",
+        "Preferred_Term_PT": "Aviation Security Authorities",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Judicial Authorities"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Aviation Security Authorities.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00015",
+        "Concept_ID": "CON_00015",
+        "Preferred_Term_PT": "Products And Services Catalogue",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "International Civil Aviation Organization"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [],
+        "Scope_Note_SN": "Use for items or services designated under Products And Services Catalogue.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00016",
+        "Concept_ID": "CON_00016",
+        "Preferred_Term_PT": "Judicial Authorities",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Aviation Security Authorities"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Judicial Authorities.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00017",
+        "Concept_ID": "CON_00017",
+        "Preferred_Term_PT": "Contracting State",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "International Civil Aviation Organization"
+        ],
+        "Narrower_Term_NT": [
+            "State Of Registry",
+            "State Of The Operator",
+            "State Of Occurrence",
+            "State Of Manufacture",
+            "State Of Design"
+        ],
+        "Related_Term_RT": [
+            "State Of Registry",
+            "State Of The Operator",
+            "State Of Occurrence",
+            "State Of Manufacture",
+            "State Of Design",
+            "International Civil Aviation Organization"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Contracting State.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00018",
+        "Concept_ID": "CON_00018",
+        "Preferred_Term_PT": "Adrep Reporting",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [
+            "Accident/Incident Data Report"
+        ],
+        "Related_Term_RT": [
+            "Accident/Incident Data Report",
+            "Preliminary Report",
+            "Final Report"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Adrep Reporting.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00019",
+        "Concept_ID": "CON_00019",
+        "Preferred_Term_PT": "Medical Examinations",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [
+            "Autopsy Examinations"
+        ],
+        "Related_Term_RT": [
+            "Autopsy Examinations"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Medical Examinations.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00020",
+        "Concept_ID": "CON_00020",
+        "Preferred_Term_PT": "Accident Prevention Measures",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Serious Incidents",
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Accident Prevention Measures.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00021",
+        "Concept_ID": "CON_00021",
+        "Preferred_Term_PT": "State Of Manufacture",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Contracting State"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "State Of Registry",
+            "State Of The Operator",
+            "State Of Occurrence",
+            "State Of Design",
+            "Contracting State"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under State Of Manufacture.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00022",
+        "Concept_ID": "CON_00022",
+        "Preferred_Term_PT": "Serious Incidents",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Accident Prevention Measures",
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Serious Incidents.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00023",
+        "Concept_ID": "CON_00023",
+        "Preferred_Term_PT": "Airworthiness Of The Aircraft",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Determination Of Aircraft Damage"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Airworthiness Of The Aircraft.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00024",
+        "Concept_ID": "CON_00024",
+        "Preferred_Term_PT": "State Of Design",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Contracting State"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "State Of Registry",
+            "State Of The Operator",
+            "State Of Occurrence",
+            "State Of Manufacture",
+            "Contracting State"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under State Of Design.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00025",
+        "Concept_ID": "CON_00025",
+        "Preferred_Term_PT": "Determination Of Aircraft Damage",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Airworthiness Of The Aircraft"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Determination Of Aircraft Damage.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00026",
+        "Concept_ID": "CON_00026",
+        "Preferred_Term_PT": "Preliminary Report",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Final Report",
+            "Adrep Reporting"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Preliminary Report.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00027",
+        "Concept_ID": "CON_00027",
+        "Preferred_Term_PT": "Aeronautical Information Service",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Notification And Reporting Checklist"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Aeronautical Information Service.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00028",
+        "Concept_ID": "CON_00028",
+        "Preferred_Term_PT": "Autopsy Examinations",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Medical Examinations"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Aircraft Accident And Incident Investigation",
+            "Medical Examinations"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Autopsy Examinations.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00029",
+        "Concept_ID": "CON_00029",
+        "Preferred_Term_PT": "Notification And Reporting Checklist",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Aeronautical Information Service"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Notification And Reporting Checklist.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00030",
+        "Concept_ID": "CON_00030",
+        "Preferred_Term_PT": "Investigator-In-Charge",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Accredited Representatives",
+            "Aircraft Accident And Incident Investigation"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Investigator-In-Charge.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    },
+    {
+        "URI": "http://taxonomy.enterprise.com/concept/CON_00031",
+        "Concept_ID": "CON_00031",
+        "Preferred_Term_PT": "Accident/Incident Data Report",
+        "Used_For_UF": [],
+        "Broader_Term_BT": [
+            "Adrep Reporting"
+        ],
+        "Narrower_Term_NT": [],
+        "Related_Term_RT": [
+            "Final Report",
+            "Adrep Reporting"
+        ],
+        "Scope_Note_SN": "Use for items or services designated under Accident/Incident Data Report.",
+        "Status": "APPROVED",
+        "Language": "en-US",
+        "Created_At": "2026-08-20T06:48:32.198223+00:00"
+    }
+]

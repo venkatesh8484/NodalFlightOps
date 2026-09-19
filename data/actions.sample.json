@@ -1,0 +1,111 @@
+{
+  "scenario": "KL1008 (LHR -> AMS) delayed 45 minutes, arriving 14:25Z against a 13:40Z schedule. Three downstream connections at risk under the 50-minute non-Schengen MCT: KL605 (JFK), KL837 (SIN), KL861 (HND). Human-in-the-loop rebooking to partner flights.",
+  "invocations": [
+    {
+      "actionType": "ReallocateGateCapacity",
+      "invocationId": "ACT-20260830-1410",
+      "parameters": {
+        "airportId": "AMS",
+        "additionalGateHours": 3,
+        "divertThresholdPct": 85
+      },
+      "resolvedContext": {
+        "airportBeforeUtilizationPct": 79,
+        "spareGateThroughputPerHr": 1900,
+        "projectedUtilizationPct": 88
+      },
+      "sideEffects": ["AODB.updateStandPlan", "AODB.setDivertThreshold"],
+      "governance": {
+        "requiresApproval": true,
+        "approver": "M. Hendriks",
+        "approverRole": "AIRPORT_OPS_MANAGER",
+        "marking": "NL-OPS//SCHIPHOL",
+        "approvedAtUtc": "2026-08-30T14:11:20Z",
+        "auditRef": "AUD-FL01-771A"
+      },
+      "status": "COMMITTED"
+    },
+    {
+      "actionType": "RebookPassengers",
+      "invocationId": "ACT-20260830-1412",
+      "parameters": {
+        "flightId": "KL1008",
+        "alternateConnectingFlightId": "DL47",
+        "voucherPolicy": "NONE"
+      },
+      "resolvedContext": {
+        "originalConnectingFlightId": "KL605",
+        "destinationAirportId": "JFK",
+        "paxAffected": 10,
+        "connectionRiskTier": "TIGHT_MCT",
+        "newDepartureLocal": "17:35",
+        "mctMet": true
+      },
+      "sideEffects": ["PSS.reissueTicket", "CNS.notifyPassengers"],
+      "governance": {
+        "requiresApproval": true,
+        "approver": "S. de Vries",
+        "approverRole": "OCC_DUTY_MANAGER",
+        "marking": "NL-OPS//SCHIPHOL",
+        "approvedAtUtc": "2026-08-30T14:12:05Z",
+        "auditRef": "AUD-FL02-33BD"
+      },
+      "status": "COMMITTED"
+    },
+    {
+      "actionType": "RebookPassengers",
+      "invocationId": "ACT-20260830-1413",
+      "parameters": {
+        "flightId": "KL1008",
+        "alternateConnectingFlightId": "SQ323",
+        "voucherPolicy": "NONE"
+      },
+      "resolvedContext": {
+        "originalConnectingFlightId": "KL837",
+        "destinationAirportId": "SIN",
+        "paxAffected": 10,
+        "connectionRiskTier": "TIGHT_MCT",
+        "newDepartureLocal": "21:00",
+        "mctMet": true
+      },
+      "sideEffects": ["PSS.reissueTicket", "CNS.notifyPassengers"],
+      "governance": {
+        "requiresApproval": true,
+        "approver": "S. de Vries",
+        "approverRole": "OCC_DUTY_MANAGER",
+        "marking": "NL-OPS//SCHIPHOL",
+        "approvedAtUtc": "2026-08-30T14:12:40Z",
+        "auditRef": "AUD-FL03-9C02"
+      },
+      "status": "COMMITTED"
+    },
+    {
+      "actionType": "RebookPassengers",
+      "invocationId": "ACT-20260830-1414",
+      "parameters": {
+        "flightId": "KL1008",
+        "alternateConnectingFlightId": "NH204",
+        "voucherPolicy": "HOTEL_MEAL"
+      },
+      "resolvedContext": {
+        "originalConnectingFlightId": "KL861",
+        "destinationAirportId": "HND",
+        "paxAffected": 6,
+        "connectionRiskTier": "TIGHT_MCT",
+        "newDepartureLocal": "20:15",
+        "mctMet": true,
+        "eu261Basis": "Overnight rebooking (>3h original delay to onward connection) — meal + hotel vouchers per EU261 during-delay obligations."
+      },
+      "sideEffects": ["PSS.reissueTicket", "VMS.allocateVoucher", "CNS.notifyPassengers"],
+      "governance": {
+        "requiresApproval": true,
+        "approver": "S. de Vries",
+        "approverRole": "OCC_DUTY_MANAGER",
+        "marking": "NL-OPS//SCHIPHOL",
+        "approvedAtUtc": "2026-08-30T14:13:15Z",
+        "auditRef": "AUD-FL04-E419"
+      },
+      "status": "COMMITTED"
+    }
+  ]
+}

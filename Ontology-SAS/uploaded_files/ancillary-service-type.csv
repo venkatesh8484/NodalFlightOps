@@ -1,0 +1,10 @@
+notation,pref_label,definition,phase,status
+extra-bag,Extra Bag,An additional checked bag beyond the fare's included allowance,6,active-phase-6
+seat-selection,Seat Selection,Advance selection of a specific seat,6,active-phase-6
+meal,Meal,A pre-ordered or special meal,6,active-phase-6
+lounge-access,Lounge Access,A day pass or membership entry to an airport lounge,6,active-phase-6
+priority-boarding,Priority Boarding,Early boarding group assignment,6,active-phase-6
+wifi,Wi-Fi,In-flight internet access,6,active-phase-6
+unaccompanied-minor-service,Unaccompanied Minor Service,Airline-supervised care for a child traveling alone,6,active-phase-6
+pet-in-cabin,Pet in Cabin,A small pet carried in the cabin,6,active-phase-6
+upgrade,Upgrade,A paid cabin upgrade from the booked cabin,6,active-phase-6

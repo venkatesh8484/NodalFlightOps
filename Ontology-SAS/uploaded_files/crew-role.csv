@@ -1,0 +1,6 @@
+notation,pref_label,definition,phase,status
+captain,Captain,Pilot-in-command of the aircraft,6,active-phase-6
+first-officer,First Officer,"Co-pilot, second-in-command",6,active-phase-6
+purser,Purser,Senior cabin crew member in charge of the cabin crew,6,active-phase-6
+flight-attendant,Flight Attendant,Cabin crew responsible for safety and service,6,active-phase-6
+flight-engineer,Flight Engineer,Monitors aircraft systems on types that carry one,6,active-phase-6

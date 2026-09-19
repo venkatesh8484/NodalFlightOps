@@ -1,0 +1,538 @@
+[
+  {
+    "Concept_ID": "F001",
+    "PT": "Airport",
+    "UF": [
+      "Aerodrome",
+      "Airfield"
+    ],
+    "BT": [],
+    "NT": [
+      "F002",
+      "F003",
+      "F004",
+      "F007",
+      "F008",
+      "F009"
+    ],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "Fixed-wing aircraft facility where flights take off, land, and passengers connect between legs. AMS (Amsterdam Schiphol) is KLM's home hub; the other nine airports in this network are spokes."
+  },
+  {
+    "Concept_ID": "F002",
+    "PT": "Passenger Terminal",
+    "UF": [
+      "Departure Hall",
+      "Arrivals Terminal"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "The passenger-facing building at an airport handling check-in, security, boarding, and arrivals processing."
+  },
+  {
+    "Concept_ID": "F003",
+    "PT": "Cargo Terminal",
+    "UF": [
+      "Freight Terminal",
+      "Air Cargo Facility"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "Airport facility handling belly cargo and freight loading/unloading, kept separate from passenger flow."
+  },
+  {
+    "Concept_ID": "F004",
+    "PT": "Ground Handling Facility",
+    "UF": [
+      "Ramp Services",
+      "Apron Operations"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "Facility coordinating aircraft turnaround: baggage handling, catering, fueling, and pushback services on the ramp."
+  },
+  {
+    "Concept_ID": "F005",
+    "PT": "Transfer Desk",
+    "UF": [
+      "Connections Desk",
+      "Transit Desk"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F006"
+    ],
+    "Scope_Note_SN": "Airport counter where connecting passengers get rebooking help, boarding passes, and MCT (minimum connecting time) guidance."
+  },
+  {
+    "Concept_ID": "F006",
+    "PT": "Self-Service Kiosk",
+    "UF": [
+      "Check-in Kiosk",
+      "Bag-Drop Kiosk"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F005"
+    ],
+    "Scope_Note_SN": "Automated terminal for passenger check-in and self-service bag drop, reducing counter queue time."
+  },
+  {
+    "Concept_ID": "F007",
+    "PT": "Hub Airport",
+    "UF": [
+      "Primary Hub",
+      "Home Base"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F008",
+      "F009"
+    ],
+    "Scope_Note_SN": "An airport role: the carrier's central connecting point where most routes originate or terminate. AMS is KLM's sole hub airport."
+  },
+  {
+    "Concept_ID": "F008",
+    "PT": "Spoke Airport",
+    "UF": [
+      "Destination Airport",
+      "Outstation"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F007",
+      "F009"
+    ],
+    "Scope_Note_SN": "An airport role: a point-to-point destination served from the hub, without its own onward connecting bank."
+  },
+  {
+    "Concept_ID": "F009",
+    "PT": "International Gateway",
+    "UF": [
+      "Long-Haul Gateway",
+      "Intercontinental Hub"
+    ],
+    "BT": [
+      "F001"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F007",
+      "F008"
+    ],
+    "Scope_Note_SN": "An airport role: a spoke airport that itself serves as a long-haul gateway for onward intercontinental connections (e.g. JFK, SIN, HND, GRU)."
+  },
+  {
+    "Concept_ID": "F010",
+    "PT": "Airline",
+    "UF": [
+      "Operating Carrier",
+      "Air Carrier"
+    ],
+    "BT": [],
+    "NT": [
+      "F011",
+      "F012"
+    ],
+    "Related_Term_RT": [
+      "F014",
+      "F015"
+    ],
+    "Scope_Note_SN": "The commercial entity operating a flight and holding responsibility for its schedule, crew, and passenger service."
+  },
+  {
+    "Concept_ID": "F011",
+    "PT": "Mainline Carrier",
+    "UF": [
+      "KLM Mainline"
+    ],
+    "BT": [
+      "F010"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F012"
+    ],
+    "Scope_Note_SN": "The primary carrier operating a flight under its own brand and flight numbers \u2014 KLM for the flights in this network."
+  },
+  {
+    "Concept_ID": "F012",
+    "PT": "Codeshare Partner",
+    "UF": [
+      "Joint-Venture Partner",
+      "Alliance Partner"
+    ],
+    "BT": [
+      "F010"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F011"
+    ],
+    "Scope_Note_SN": "A partner airline (e.g. Delta on the transatlantic joint venture) that markets or operates a flight jointly with the mainline carrier."
+  },
+  {
+    "Concept_ID": "F013",
+    "PT": "Crew",
+    "UF": [
+      "Cockpit Crew",
+      "Cabin Crew"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F010",
+      "F015",
+      "F014"
+    ],
+    "Scope_Note_SN": "Pilots and cabin crew rostered to operate a flight, employed by or contracted to an airline."
+  },
+  {
+    "Concept_ID": "F014",
+    "PT": "Flight Route",
+    "UF": [
+      "City Pair",
+      "Sector"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F015",
+      "F010",
+      "F001"
+    ],
+    "Scope_Note_SN": "A scheduled origin-destination pair an airline operates, e.g. AMS-JFK, independent of any specific day's flight instance."
+  },
+  {
+    "Concept_ID": "F015",
+    "PT": "Aircraft",
+    "UF": [
+      "Airframe",
+      "Tail Number"
+    ],
+    "BT": [],
+    "NT": [
+      "F016",
+      "F017",
+      "F018",
+      "F019"
+    ],
+    "Related_Term_RT": [
+      "F013",
+      "F014",
+      "F021"
+    ],
+    "Scope_Note_SN": "A physical aircraft, identified by its tail number, that operates flights along an assigned route rotation."
+  },
+  {
+    "Concept_ID": "F016",
+    "PT": "Widebody Aircraft",
+    "UF": [
+      "Long-Haul Aircraft"
+    ],
+    "BT": [
+      "F015"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F017",
+      "F018"
+    ],
+    "Scope_Note_SN": "Twin-aisle aircraft used on long-haul intercontinental routes \u2014 B777-300ER, B787-9/10, A330-300 in this fleet."
+  },
+  {
+    "Concept_ID": "F017",
+    "PT": "Narrowbody Aircraft",
+    "UF": [
+      "Mainline Narrowbody"
+    ],
+    "BT": [
+      "F015"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F016"
+    ],
+    "Scope_Note_SN": "Single-aisle aircraft used on medium-haul European routes \u2014 the A321neo family in this fleet."
+  },
+  {
+    "Concept_ID": "F018",
+    "PT": "Short-Haul Aircraft",
+    "UF": [
+      "Regional Mainline"
+    ],
+    "BT": [
+      "F015"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F016"
+    ],
+    "Scope_Note_SN": "Single-aisle aircraft used on short intra-European hops \u2014 the B737-800 family in this fleet."
+  },
+  {
+    "Concept_ID": "F019",
+    "PT": "Regional Jet",
+    "UF": [
+      "E-Jet"
+    ],
+    "BT": [
+      "F015"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "Smaller single-aisle jets used on thinner short-haul routes \u2014 the E195-E2 family in this fleet."
+  },
+  {
+    "Concept_ID": "F020",
+    "PT": "Flight",
+    "UF": [
+      "Flight Instance",
+      "Scheduled Flight"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "A single scheduled operating instance of a route on a specific day, carrying passengers under a connection-time SLA \u2014 the at-risk/flow entity tracked for disruption."
+  },
+  {
+    "Concept_ID": "F021",
+    "PT": "Aircraft Assignment",
+    "UF": [
+      "Tail Assignment",
+      "Rotation Assignment"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F020",
+      "F015",
+      "F014"
+    ],
+    "Scope_Note_SN": "The binding of a specific aircraft tail number to a flight leg within its daily rotation."
+  },
+  {
+    "Concept_ID": "F022",
+    "PT": "Telemetry Event",
+    "UF": [
+      "Ops Signal",
+      "Disruption Event"
+    ],
+    "BT": [],
+    "NT": [
+      "F023",
+      "F024",
+      "F025",
+      "F026",
+      "F027"
+    ],
+    "Related_Term_RT": [
+      "F001",
+      "F015"
+    ],
+    "Scope_Note_SN": "A real-time operational signal \u2014 a fault, delay, or position update \u2014 emitted by an airport or aircraft that operations control monitors."
+  },
+  {
+    "Concept_ID": "F023",
+    "PT": "Mechanical Fault",
+    "UF": [
+      "MEL Item",
+      "Tech Log Entry"
+    ],
+    "BT": [
+      "F022"
+    ],
+    "NT": [],
+    "Related_Term_RT": [],
+    "Scope_Note_SN": "An aircraft maintenance defect logged against the tech log, potentially grounding or delaying the aircraft."
+  },
+  {
+    "Concept_ID": "F024",
+    "PT": "Passenger Surge",
+    "UF": [
+      "Peak Load Event"
+    ],
+    "BT": [
+      "F022"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F030"
+    ],
+    "Scope_Note_SN": "An unexpected spike in passenger or connecting-bag volume at a terminal beyond planned throughput."
+  },
+  {
+    "Concept_ID": "F025",
+    "PT": "ADS-B Position Ping",
+    "UF": [
+      "Live Position Update"
+    ],
+    "BT": [
+      "F022"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F015"
+    ],
+    "Scope_Note_SN": "A live aircraft position/altitude/speed update received from the ADS-B transponder feed (OpenSky Network), used for ambient traffic awareness."
+  },
+  {
+    "Concept_ID": "F026",
+    "PT": "Delay Event",
+    "UF": [
+      "Departure Delay",
+      "Arrival Delay"
+    ],
+    "BT": [
+      "F022"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F014"
+    ],
+    "Scope_Note_SN": "A recorded schedule deviation on a flight leg, the primary trigger for downstream connection-risk calculations."
+  },
+  {
+    "Concept_ID": "F027",
+    "PT": "Weather Hold",
+    "UF": [
+      "ATC Ground Stop",
+      "Weather Delay"
+    ],
+    "BT": [
+      "F022"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F019"
+    ],
+    "Scope_Note_SN": "A ground stop or holding pattern imposed by ATC or weather, affecting arrival/departure sequencing at an airport."
+  },
+  {
+    "Concept_ID": "F028",
+    "PT": "Action Type",
+    "UF": [
+      "Operational Command",
+      "Playbook Action"
+    ],
+    "BT": [],
+    "NT": [
+      "F029",
+      "F030",
+      "F031",
+      "F032"
+    ],
+    "Related_Term_RT": [
+      "F033"
+    ],
+    "Scope_Note_SN": "A defined, governance-gated operational command the recovery planner can propose \u2014 deterministic, auditable, and requiring named approval."
+  },
+  {
+    "Concept_ID": "F029",
+    "PT": "Rebook Passengers",
+    "UF": [
+      "Reroute Passengers"
+    ],
+    "BT": [
+      "F028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F020",
+      "F014",
+      "F010"
+    ],
+    "Scope_Note_SN": "Rebooks an at-risk connecting passenger cohort onto an alternate or partner flight and issues EU261 vouchers where applicable. Requires OCC Duty Manager approval."
+  },
+  {
+    "Concept_ID": "F030",
+    "PT": "Reallocate Gate Capacity",
+    "UF": [
+      "Reallocate Hub Capacity"
+    ],
+    "BT": [
+      "F028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F001"
+    ],
+    "Scope_Note_SN": "Opens additional gate/stand hours at an airport and sets a divert threshold above which inbound flights are auto-diverted to a remote stand. Requires Airport Ops Manager approval."
+  },
+  {
+    "Concept_ID": "F031",
+    "PT": "Reassign Aircraft",
+    "UF": [
+      "Swap Tail Number"
+    ],
+    "BT": [
+      "F028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F015",
+      "F013",
+      "F014"
+    ],
+    "Scope_Note_SN": "Swaps the aircraft tail number assigned to a flight leg to recover from a mechanical fault or rotation conflict."
+  },
+  {
+    "Concept_ID": "F032",
+    "PT": "Notify Passenger SLA",
+    "UF": [
+      "Passenger Notification"
+    ],
+    "BT": [
+      "F028"
+    ],
+    "NT": [],
+    "Related_Term_RT": [
+      "F020"
+    ],
+    "Scope_Note_SN": "Sends proactive passenger notifications when a flight's connection-risk SLA is breached."
+  },
+  {
+    "Concept_ID": "F033",
+    "PT": "Action Execution",
+    "UF": [
+      "Action Log",
+      "Execution Record"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F028"
+    ],
+    "Scope_Note_SN": "An audited record of a proposed or executed action: who proposed it, who approved it, and its resulting side effects."
+  },
+  {
+    "Concept_ID": "F034",
+    "PT": "IATA",
+    "UF": [
+      "International Air Transport Association"
+    ],
+    "BT": [],
+    "NT": [],
+    "Related_Term_RT": [
+      "F003"
+    ],
+    "Scope_Note_SN": "The global airline trade body that sets interline, cargo, and safety standards airlines and airports operate under."
+  }
+]

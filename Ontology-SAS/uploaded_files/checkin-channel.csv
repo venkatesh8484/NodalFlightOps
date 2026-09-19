@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+online,Online,Web check-in via the airline's website,6,active-phase-6
+mobile-app,Mobile App,Check-in via the airline's mobile app,6,active-phase-6
+kiosk,Kiosk,Self-service check-in kiosk at the airport,6,active-phase-6
+counter,Counter,Staffed check-in counter at the airport,6,active-phase-6

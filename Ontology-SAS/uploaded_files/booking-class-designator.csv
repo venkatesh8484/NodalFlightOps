@@ -1,0 +1,8 @@
+notation,pref_label,cabin_class,definition,phase,status
+Y,Y,Y,Full-fare Economy reservation booking designator,6,active-phase-6
+M,M,Y,Discounted Economy reservation booking designator,6,active-phase-6
+K,K,Y,Deep-discount Economy reservation booking designator,6,active-phase-6
+W,W,W,Premium Economy reservation booking designator,6,active-phase-6
+J,J,J,Full-fare Business reservation booking designator,6,active-phase-6
+D,D,J,Discounted Business reservation booking designator,6,active-phase-6
+F,F,F,Full-fare First reservation booking designator,6,active-phase-6

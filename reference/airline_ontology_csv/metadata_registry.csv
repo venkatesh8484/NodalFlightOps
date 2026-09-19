@@ -1,0 +1,8 @@
+catalog_id,system_name,authority_level,domain_coverage,update_frequency,governance_tier,data_format,owner
+CAT-AODP-01,Airline Operations Data Platform (AODP),Authoritative,"FlightOperations, Asset, Facility, Event",Real-time Streaming (<2s),Mission-Critical (Level 1),JSON / Kafka / AIDX XML,KLM Flight Operations OCC
+CAT-ALTEA-02,Amadeus Altéa PSS / GDS,Authoritative,"CommercialDocument, Passenger, Fare, PNR, Ticket",Near Real-time Event Driven,Commercial Confidential / GDPR (Level 1),IATA NDC / EDIFACT / REST,KLM Commercial & Distribution
+CAT-FLYINGBLUE-03,Flying Blue Loyalty Core Engine,Authoritative,"Service, LoyaltyProgram, LoyaltyAccount",Near Real-time (Batch Sync 15m),Personal Identifiable Info (GDPR),JSON / REST API,Air France-KLM Customer Experience
+CAT-SITA-BAG-04,SITA BagJourney / WorldTracer,Authoritative,"Asset (Bag), PassengerService, CheckInEvent",Real-time IATA 753 Scan Events,Operational Compliance,Type B Telecommunications / JSON,KLM Ground Services AMS
+CAT-OPENSKY-05,OpenSky Network ADS-B Feed,Community-Maintained,FlightOperations (PositionReportEvent),Streaming 1 Hz State Vectors,Public Telemetry,JSON State Vector Array,OpenSky Network Association
+CAT-OPENFLIGHTS-06,OpenFlights Aviation Registry,Non-Authoritative (Reference Only),"Organization (Airlines), Place (Airports)",Static Snapshot (2026-08-30),Reference Master Data,CSV Master Tables,OpenFlights Community Project
+CAT-OCCRULES-07,KLM OCC Rerouting Rule Engine,Authoritative,"PassengerRecovery (ReroutingBusinessRule, ConnectionRiskAssessment, AlternateConnectionOption)","Computed on-demand (client-side, per operator action)",Mission-Critical (Level 1),JSON (client-side JS),KLM OCC Duty Manager / FlightOps Engineering

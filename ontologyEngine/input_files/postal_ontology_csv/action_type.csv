@@ -1,0 +1,5 @@
+action_name,description,parameter_schema,side_effect_systems,required_permission,human_in_loop
+RerouteLinehaul,"Divert a consignment (or batch) to an alternate target hub via an alternate carrier, updating TMS routing and WMS inbound plans.","RerouteLinehaul(consignment_id: Consignment, new_target_hub_id: Hub, alternate_carrier_id: Carrier)",TMS;WMS,ROLE_OPS_DISPATCH_WRITE,True
+ReallocateHubCapacity,Extend a hub's processing window and set a divert threshold so inbound volume above the threshold auto-diverts.,"ReallocateHubCapacity(hub_id: Hub, additional_hours: Int, divert_threshold_pct: Int)",WMS;LABOR-MGMT,ROLE_OPS_CAPACITY_WRITE,True
+ReassignVehicle,"Bind an AVAILABLE vehicle+driver to a route leg, respecting EU drive-time hours.","ReassignVehicle(vehicle_id: Vehicle, route_id: LinehaulRoute, driver_id: Driver)",TMS;FLEET,ROLE_OPS_FLEET_WRITE,True
+NotifyCustomerSLA,Emit a proactive SLA-risk notification for affected consignments to the CRM/notification bus.,"NotifyCustomerSLA(consignment_id: Consignment, new_eta: Timestamp)",CRM;NOTIFY,ROLE_OPS_COMMS_WRITE,False

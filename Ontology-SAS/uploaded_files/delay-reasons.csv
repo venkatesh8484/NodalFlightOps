@@ -1,0 +1,12 @@
+notation,pref_label,definition,phase,status
+11,Late Check-In,"Late check-in, acceptance of passengers after the deadline.",3,active
+15,Boarding Discrepancy,Boarding discrepancies and paging; a checked-in passenger missing at the gate.,3,active
+31,Aircraft Documentation,Aircraft documentation late or inaccurate; weight and balance (loadsheet).,3,active
+36,Fuelling,"Fuelling or defuelling, including fuel-supplier delay.",3,active
+41,Aircraft Defect,A technical aircraft defect.,3,active
+62,Operational Requirements,Operational requirements: fuel or load alteration.,3,active
+64,Flight Deck Crew Shortage,Flight deck crew shortage or crew rest requirement.,3,active
+71,Departure Station Weather,Weather conditions at the departure station.,3,active
+75,De-Icing,De-icing of the aircraft; removal of ice/snow; frost prevention.,3,active
+81,ATC En-Route Restriction,Air traffic control restriction en-route or ATC capacity restriction.,3,active
+93,Aircraft Rotation,Reactionary delay: late arrival of the aircraft from a previous flight.,3,active

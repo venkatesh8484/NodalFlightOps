@@ -1,0 +1,5 @@
+notation,pref_label,definition,phase,status
+J,Business,Premium cabin with full recline/lie-flat seating on most widebody long-haul aircraft,4,active-phase-4
+Y,Economy,Standard cabin class,4,active-phase-4
+W,Premium Economy,Intermediate cabin between Economy and Business,4,active-phase-4
+F,First,"Highest service tier cabin, offered on select long-haul aircraft",4,active-phase-4

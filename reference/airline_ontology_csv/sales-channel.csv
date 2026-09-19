@@ -1,0 +1,6 @@
+notation,pref_label,definition,phase,status
+direct,Direct,"Sold directly by the airline (website, app, ticket office)",6,active-phase-6
+ota,Online Travel Agency,Sold through a third-party online travel agency,6,active-phase-6
+gds,Global Distribution System,Sold through a traditional travel-agent GDS,6,active-phase-6
+corporate,Corporate,Sold under a corporate travel program agreement,6,active-phase-6
+call-center,Call Center,Sold through the airline's telephone reservations center,6,active-phase-6

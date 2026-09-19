@@ -1,0 +1,11 @@
+airport_id,role,name,city,lat,lon,gate_throughput_hr,current_throughput_hr,utilization_pct,status,gates,free_gates
+AMS,HUB,Amsterdam Airport Schiphol,Amsterdam,52.3086,4.7639,9000,7100,79,OPERATIONAL,120,9
+LHR,SPOKE,London Heathrow Airport,London,51.47,-0.4543,3200,2350,73,OPERATIONAL,45,6
+CDG,SPOKE,Paris Charles de Gaulle Airport,Paris,49.0097,2.5479,3400,2600,76,OPERATIONAL,50,5
+DXB,SPOKE,Dubai International Airport,Dubai,25.2048,55.2708,4200,3100,74,OPERATIONAL,60,8
+CPH,SPOKE,Copenhagen Airport,Copenhagen,55.6761,12.5683,1800,1150,64,OPERATIONAL,25,6
+JFK,SPOKE,John F. Kennedy International Airport,New York,40.6413,-73.7781,3100,2500,81,OPERATIONAL,40,3
+SIN,SPOKE,Singapore Changi Airport,Singapore,1.3521,103.9898,3600,2400,67,OPERATIONAL,55,9
+GRU,SPOKE,São Paulo/Guarulhos International Airport,São Paulo,-23.4356,-46.4731,2600,1700,65,OPERATIONAL,38,7
+HND,SPOKE,Tokyo Haneda Airport,Tokyo,35.5494,139.7798,3000,2450,82,OPERATIONAL,42,2
+FRA,SPOKE,Frankfurt Airport,Frankfurt,50.0379,8.5622,3300,2200,67,OPERATIONAL,48,7

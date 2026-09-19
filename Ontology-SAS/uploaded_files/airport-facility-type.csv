@@ -1,0 +1,9 @@
+notation,pref_label,definition,phase,status
+large_airport,Large Airport,"A major airport with substantial scheduled commercial service, per OurAirports' classification.",2,active
+medium_airport,Medium Airport,"A regional airport with some scheduled service, per OurAirports' classification.",2,active
+small_airport,Small Airport,"A small airfield, typically general aviation, rarely with scheduled service.",2,active
+heliport,Heliport,"A facility for helicopter takeoff/landing only, no fixed-wing runway.",2,active
+seaplane_base,Seaplane Base,A facility for seaplane/floatplane takeoff and landing on water.,2,active
+balloonport,Balloonport,A facility for hot-air balloon launch/landing.,2,active
+closed_airport,Closed Airport,"A facility no longer in operation, retained for historical/geospatial completeness.",2,active
+airfield,Airfield,"Legacy informal synonym for a small general-aviation airfield; deprecated, superseded by small_airport.",2,deprecated

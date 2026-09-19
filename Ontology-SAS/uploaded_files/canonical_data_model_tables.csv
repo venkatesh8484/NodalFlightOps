@@ -1,0 +1,11 @@
+table_name,domain,primary_key,business_natural_key,table_type,description
+dim_airline,Organization,airline_key,iata_code / icao_code,Dimension (SCD Type 2),"Master dimension of commercial and cargo airlines, callsigns, alliances, and active flags."
+dim_alliance,Organization,alliance_key,alliance_code,Dimension (SCD Type 1),"Global commercial airline alliances (SkyTeam, Star Alliance, oneworld)."
+dim_airport,Place,airport_key,iata_code / icao_code,Dimension (SCD Type 1),"Global aerodromes, geographic coordinates, runway elevation, and city linkage."
+dim_terminal_gate,Place,terminal_gate_key,airport_iata + terminal + gate_code,Dimension (SCD Type 1),"Airport passenger terminals, jet bridge boarding gates, and remote aircraft stands."
+dim_aircraft,Asset,aircraft_key,tail_registration,Dimension (SCD Type 2),"Physical airframes, manufacturer MSN, seat maps, engine models, and maintenance cycles."
+dim_flight_schedule,TransportNetwork,schedule_key,marketing_carrier + flight_number + season,Dimension (SCD Type 2),"Published timetable schedules, repeating days of week, and route pairings."
+fact_flight_instance,FlightOperations,flight_instance_key,flight_number + flight_date,Fact (Accumulating Snapshot),"Operational flight instances, block times, delay minutes, fuel burn, and passenger counts."
+fact_passenger_booking,CommercialDocument,booking_key,pnr_locator + ticket_number,Fact (Transaction),"Passenger reservations, fare basis, cabin assignment, loyalty tier, and check-in channel."
+fact_baggage_scan,PassengerService,bag_scan_key,bag_tag_number + scan_timestamp,Fact (Streaming Transaction),"IATA Resolution 753 baggage touchpoints (Drop, Security, ULD Load, Ramp, Reclaim)."
+fact_flight_telemetry,FlightOperations,telemetry_key,icao24 + timestamp,Fact (High-Volume Time-Series),"Live ADS-B state vectors (altitude, groundspeed, track heading, latitude, longitude)."

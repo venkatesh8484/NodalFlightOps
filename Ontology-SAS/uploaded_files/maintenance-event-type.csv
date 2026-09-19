@@ -1,0 +1,6 @@
+notation,pref_label,definition,phase,status
+line-maintenance,Line Maintenance,"Routine, short-duration maintenance performed between flights at an airport",4,active-phase-4
+a-check,A-Check,A light scheduled check performed roughly every 400-600 flight hours,4,active-phase-4
+c-check,C-Check,A more extensive scheduled check performed roughly every 18-24 months,4,active-phase-4
+d-check,D-Check,"The most extensive scheduled check, roughly every 6-10 years",4,active-phase-4
+aog-unscheduled,AOG Unscheduled,An unscheduled repair for an Aircraft On Ground defect discovered outside a planned check cycle,4,active-phase-4
