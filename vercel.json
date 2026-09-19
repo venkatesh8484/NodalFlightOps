@@ -2,11 +2,11 @@
   "rewrites": [
     {
       "source": "/opensky-api/:path*",
-      "destination": "/api/opensky-api/:path*"
+      "destination": "/api/opensky-api?path=:path*"
     },
     {
       "source": "/opensky-auth/:path*",
-      "destination": "/api/opensky-auth/:path*"
+      "destination": "/api/opensky-auth?path=:path*"
     },
     {
       "source": "/((?!api/).*)",
