@@ -88,6 +88,20 @@ export async function callProviderChat(aiConfig, systemPrompt, userPrompt, maxTo
   }
 
   if (provider === 'claude') {
+    // Claude 4.6-generation-and-later model IDs are dateless (e.g.
+    // "claude-sonnet-5", "claude-opus-4-7"); everything before that
+    // generation kept a dated snapshot suffix (e.g.
+    // "claude-haiku-4-5-20251001"). That split also happens to be exactly
+    // where Anthropic switched thinking from opt-in ("classic": off by
+    // default, enabled via `{type:'enabled', budget_tokens}`) to adaptive
+    // (ON by default, only turned off via `{type:'disabled'}` — and a
+    // handful of newer non-Sonnet/Opus families reject `disabled` outright).
+    // `{type:'disabled'}` is itself a 400 on any classic-thinking model, so
+    // this can't be sent unconditionally — only the dateless Sonnet/Opus
+    // models get it; older/dated snapshots are already thinking-off by
+    // default and get no `thinking` field at all.
+    const isAdaptiveThinkingModel = /^claude-(sonnet|opus)-\d+(-\d+)*$/.test(model || '');
+
     const res = await fetchWithRetry('https://api.anthropic.com/v1/messages', {
       method: 'POST',
       headers: {
@@ -99,14 +113,41 @@ export async function callProviderChat(aiConfig, systemPrompt, userPrompt, maxTo
       body: JSON.stringify({
         model,
         max_tokens: maxTokens,
-        temperature: 0,
+        // No `temperature` here on purpose. Newer Claude models (Sonnet 5 /
+        // Opus 4.7+) reject it outright with a 400 "`temperature` is
+        // deprecated for this model" — their adaptive-thinking sampling has
+        // taken over what temperature used to control, and there's no value
+        // (including 0 or 1) that's accepted instead. Determinism/strict-JSON
+        // behavior is asked for via the system prompt instead (see
+        // SYSTEM_PROMPT / askJson's retry prompts in pipeline.js).
+        //
+        // Explicitly disable adaptive thinking on models that have it on by
+        // default. Its hidden reasoning tokens are drawn from the same
+        // max_tokens budget as the visible answer, with no guarantee the
+        // thinking block finishes before max_tokens runs out — that silently
+        // produces a 200 response whose `content` is all `thinking` blocks
+        // and zero `text` blocks (no error, so askJson's retry logic never
+        // even fires). That's exactly what happened with ChatTab's
+        // maxTokens=4000 calls once Sonnet 5 became the default model. This
+        // app wants a direct, gradeable answer every time, not open-ended
+        // deliberation, so disabling it outright is more predictable than
+        // tuning `output_config.effort` / raising max_tokens and hoping
+        // thinking stops in time.
+        ...(isAdaptiveThinkingModel ? { thinking: { type: 'disabled' } } : {}),
         system: systemPrompt,
         messages: [{ role: 'user', content: userPrompt }],
       }),
     });
     if (!res.ok) throw new Error(`Claude API error ${res.status}: ${await res.text()}`);
     const data = await res.json();
-    return (data?.content || []).map((c) => c.text || '').join('');
+    // Select by block type rather than assuming position/shape — Sonnet 5
+    // responses can include `thinking` (and other non-text) blocks, and per
+    // Anthropic's own migration guidance `content[0]` is no longer safely
+    // assumed to be the text block.
+    return (data?.content || [])
+      .filter((c) => c?.type === 'text')
+      .map((c) => c.text || '')
+      .join('');
   }
 
   throw new Error(`Unsupported AI provider: ${provider}`);

@@ -87,6 +87,25 @@ function decodeText(buf) {
   return new TextDecoder('utf-8', { fatal: false }).decode(buf);
 }
 
+// PDFs (and occasionally other formats) built with subsetted/custom fonts can
+// yield glyphs with no usable Unicode mapping. pdf.js then emits raw control
+// characters (commonly U+0000) or, for a broken surrogate pair, a lone
+// high/low surrogate half in the extracted text. Those are syntactically
+// legal inside a JS string and inside the JSON we build from it, but Gemini's
+// generateContent endpoint rejects a request whose text contains them with a
+// bare "400 Request contains an invalid argument" — no detail on which
+// character. Strip C0/C1 control characters (keeping \n and \t) and any
+// unpaired surrogate before this text is ever used in an AI prompt.
+function sanitizeText(text) {
+  if (!text) return text;
+  return text
+    // eslint-disable-next-line no-control-regex
+    .replace(/[\u0000-\u0008\u000B\u000C\u000E-\u001F\u007F-\u009F]/g, ' ')
+    .replace(/[\uD800-\uDBFF](?![\uDC00-\uDFFF])/g, '')
+    .replace(/(?:[^\uD800-\uDBFF]|^)[\uDC00-\uDFFF]/g, (m) => m.slice(0, -1))
+    .replace(/[ \t]{2,}/g, ' ');
+}
+
 // Ported from Ontology-SAS's data_extractor._extract_sql: pulls table names,
 // column names, and foreign-key relationships out of SQL DDL deterministically
 // (no AI call needed for this file type).
@@ -148,11 +167,11 @@ function extractSqlSchema(text) {
 }
 
 /**
- * Extract plain text from an uploaded File. Returns { text, warning }.
- * warning is null on a clean parse, or a short human-readable note
- * (mirrors ProcessedFile.warning from the original API).
+ * Format-dispatching extraction, unsanitized. Returns { text, warning }.
+ * Call extractTextFromFile (below) instead — this is wrapped there so the
+ * result always gets sanitizeText() applied before it reaches an AI prompt.
  */
-export async function extractTextFromFile(file) {
+async function extractTextFromFileRaw(file) {
   const ext = getExtension(file.name);
 
   if (!ALLOWED_EXTENSIONS.has(ext)) {
@@ -245,4 +264,19 @@ export async function extractTextFromFile(file) {
   } catch (err) {
     return { text: '', warning: `Parse failed: ${err.message || err}` };
   }
+}
+
+/**
+ * Extract plain text from an uploaded File. Returns { text, warning }.
+ * warning is null on a clean parse, or a short human-readable note
+ * (mirrors ProcessedFile.warning from the original API).
+ *
+ * Thin wrapper around extractTextFromFileRaw that sanitizes the extracted
+ * text so control characters / broken surrogates picked up from a file
+ * (most commonly a PDF with subsetted fonts) never reach an AI provider —
+ * see sanitizeText above.
+ */
+export async function extractTextFromFile(file) {
+  const result = await extractTextFromFileRaw(file);
+  return { text: sanitizeText(result.text), warning: result.warning };
 }

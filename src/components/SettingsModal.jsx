@@ -42,8 +42,12 @@ export default function SettingsModal({
 
   const providerModels = {
     gemini: ['gemini-3.6-flash', 'gemini-3.7-flash', 'gemini-3.5-flash', 'gemini-3.5-flash-lite', 'gemini-3.1-pro-preview'],
-    openrouter: ['google/gemini-3.6-flash', 'anthropic/claude-sonnet-4', 'openai/gpt-4o', 'meta-llama/llama-4-maverick'],
-    claude: ['claude-sonnet-4-20250514', 'claude-haiku-4-20250414', 'claude-opus-4-20250514'],
+    openrouter: ['google/gemini-3.6-flash', 'anthropic/claude-sonnet-5', 'openai/gpt-4o', 'meta-llama/llama-4-maverick'],
+    // claude-sonnet-4-20250514 / claude-haiku-4-20250414 / claude-opus-4-20250514
+    // (the Claude 4 snapshot IDs this list used to offer) were retired in 2026;
+    // the direct Anthropic API now 404s on them with a bare "not_found_error".
+    // Current dateless IDs, per https://platform.claude.com/docs/en/models/overview:
+    claude: ['claude-sonnet-5', 'claude-haiku-4-5-20251001', 'claude-opus-5'],
   };
 
   return (
