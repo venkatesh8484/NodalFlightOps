@@ -9,18 +9,29 @@
 // makes the real request in Node's fetch — the same technique main.js
 // already uses.
 //
-// Previously this was a vercel.json "external rewrite" straight to
-// opensky-network.org. That returned an opaque HTTP 502 to the browser on
-// the live site. A serverless function gives us the same effect with a
-// real error message on failure instead of a bare 502, and one less layer
-// that can behave unexpectedly.
+// IMPORTANT: don't reconstruct the upstream path from req.url. Vercel
+// keeps req.url as the original pre-rewrite browser path (/opensky-api/...)
+// even when this function is reached via the vercel.json rewrite to
+// /api/opensky-api/:path* — it does NOT become the rewritten destination
+// path. Parsing req.url here previously produced a mangled, doubled-up
+// upstream path and OpenSky returned a 404. The route's captured segments
+// live in req.query.path instead (how Vercel's [...path] catch-all
+// functions expose the matched segments), which is what this uses.
 
 const ALLOWED_HOST = 'opensky-network.org';
 
 export default async function handler(req, res) {
-  const incoming = new URL(req.url, 'http://internal');
-  const upstreamPath = incoming.pathname.replace(/^\/api\/opensky-api/, '/api') + incoming.search;
-  const target = `https://${ALLOWED_HOST}${upstreamPath}`;
+  const { path, ...rest } = req.query || {};
+  const segments = Array.isArray(path) ? path : path ? [path] : [];
+  const upstreamPath = '/api/' + segments.join('/');
+
+  const search = new URLSearchParams();
+  for (const [key, value] of Object.entries(rest)) {
+    if (Array.isArray(value)) value.forEach((v) => search.append(key, v));
+    else if (value != null) search.append(key, value);
+  }
+  const qs = search.toString();
+  const target = `https://${ALLOWED_HOST}${upstreamPath}${qs ? `?${qs}` : ''}`;
 
   const headers = {};
   if (req.headers.authorization) headers.authorization = req.headers.authorization;
