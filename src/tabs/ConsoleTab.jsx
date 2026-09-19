@@ -222,6 +222,12 @@ function resolveTiles(style, cartoKey) {
 
 const TRAIL_MAX_POINTS = 80;
 
+// Caps how many aircraft actually render on the map/list, independent of
+// how many the feed/scope returns — a busy Europe or Global snapshot can
+// otherwise put 100+ markers on screen at once. Headline stats (the `stats`
+// useMemo below) are NOT capped — they still reflect the real fleet size.
+const MAX_VISIBLE_AIRCRAFT = 50;
+
 const PLANE_PATH =
   'M21 16v-2l-8-5V3.5c0-.83-.67-1.5-1.5-1.5S10 2.67 10 3.5V9l-8 5v2l8-2.5V19l-2 1.5V22l3.5-1 3.5 1v-1.5L14 19v-5.5l8 2.5z';
 
@@ -518,7 +524,7 @@ export default function ConsoleTab({ openSkyConfig = {}, basemapConfig = {}, onO
      ══════════════════════════════════════════════════════════════════ */
   const visible = useMemo(() => {
     const q = query.trim().toUpperCase();
-    return fleet.filter((ac) => {
+    const matches = fleet.filter((ac) => {
       if (!prefixes.includes(ac.operator)) return false;
       if (!showOnGround && ac.onGround) return false;
       if (!q) return true;
@@ -529,6 +535,13 @@ export default function ConsoleTab({ openSkyConfig = {}, basemapConfig = {}, onO
         ac.originCountry.toUpperCase().includes(q)
       );
     });
+
+    // MAX_VISIBLE_AIRCRAFT caps the real feed only — the synthetic
+    // disruption-demo aircraft (isDemo: true) is exempt so it never gets
+    // pushed out by a large real fleet mid-scenario.
+    const real = matches.filter((ac) => !ac.isDemo);
+    const demo = matches.filter((ac) => ac.isDemo);
+    return real.slice(0, MAX_VISIBLE_AIRCRAFT).concat(demo);
   }, [fleet, query, showOnGround, prefixes]);
 
   const sortedVisible = useMemo(
