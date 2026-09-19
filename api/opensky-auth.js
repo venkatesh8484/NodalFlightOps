@@ -1,11 +1,9 @@
 // Serverless proxy for OpenSky's OAuth2 token endpoint
 // (auth.opensky-network.org). See api/opensky-api.js for the full
-// rationale and routing notes — same idea, but this one also forwards a
-// request body, since the OAuth2 client_credentials grant (used by the
-// Settings modal's "Test connection" and by openSkyClient.js) is a POST
-// with a form-urlencoded body.
+// rationale, routing notes, and why errors surface err.cause.
 
 const ALLOWED_HOST = 'auth.opensky-network.org';
+const USER_AGENT = 'NodalFlightOps/1.0 (+https://github.com/venkatesh8484/NodalFlightOps)';
 
 export default async function handler(req, res) {
   const { path, ...rest } = req.query || {};
@@ -20,7 +18,7 @@ export default async function handler(req, res) {
   const qs = search.toString();
   const target = `https://${ALLOWED_HOST}${upstreamPath}${qs ? `?${qs}` : ''}`;
 
-  const headers = {};
+  const headers = { 'user-agent': USER_AGENT };
   if (req.headers['content-type']) headers['content-type'] = req.headers['content-type'];
 
   let body;
@@ -46,8 +44,10 @@ export default async function handler(req, res) {
     res.setHeader('x-proxy-target', target);
     res.send(text);
   } catch (err) {
+    const cause = err && err.cause ? (err.cause.code || err.cause.message || String(err.cause)) : null;
     res.status(502).json({
       error: `Proxy could not reach ${ALLOWED_HOST}: ${err.message}`,
+      cause,
       target,
     });
   }

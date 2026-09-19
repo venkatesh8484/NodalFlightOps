@@ -8,15 +8,19 @@
 //
 // Routing: vercel.json rewrites /opensky-api/:path* to
 // /api/opensky-api?path=:path* — the captured segments are passed
-// EXPLICITLY as a query parameter in the rewrite destination, rather than
-// relying on Vercel to implicitly bind them the way a direct request to a
-// [...path].js catch-all function would. Two earlier attempts assumed that
-// implicit binding (and, before that, that req.url held the rewritten
-// path) — both produced a malformed upstream path and OpenSky 404s. This
-// explicit ?path=:path* mapping is the documented, unambiguous way to pass
-// a rewrite's captured segments into a plain function.
+// EXPLICITLY as a query parameter in the rewrite destination (see git log
+// for the earlier, wrong attempts at this).
+//
+// Node's global fetch() (undici) collapses real connection failures (DNS,
+// TLS, connection reset, timeout) into a bare "fetch failed" Error whose
+// .message says nothing useful — the actual cause lives in err.cause.
+// Surface that explicitly below instead of the useless top-level message.
+// Also sends an explicit User-Agent: some APIs silently reset connections
+// from requests that look like anonymous server/bot traffic (no UA at
+// all), which Node's fetch sends by default.
 
 const ALLOWED_HOST = 'opensky-network.org';
+const USER_AGENT = 'NodalFlightOps/1.0 (+https://github.com/venkatesh8484/NodalFlightOps)';
 
 export default async function handler(req, res) {
   const { path, ...rest } = req.query || {};
@@ -31,7 +35,7 @@ export default async function handler(req, res) {
   const qs = search.toString();
   const target = `https://${ALLOWED_HOST}${upstreamPath}${qs ? `?${qs}` : ''}`;
 
-  const headers = {};
+  const headers = { 'user-agent': USER_AGENT };
   if (req.headers.authorization) headers.authorization = req.headers.authorization;
 
   try {
@@ -49,8 +53,10 @@ export default async function handler(req, res) {
     res.setHeader('x-proxy-target', target);
     res.send(text);
   } catch (err) {
+    const cause = err && err.cause ? (err.cause.code || err.cause.message || String(err.cause)) : null;
     res.status(502).json({
       error: `Proxy could not reach ${ALLOWED_HOST}: ${err.message}`,
+      cause,
       target,
     });
   }
